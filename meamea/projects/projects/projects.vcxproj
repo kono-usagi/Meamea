@@ -140,10 +140,15 @@
   </ItemDefinitionGroup>
   <ItemGroup>
 
+    <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
+    <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
+
+
     <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp" />
 
     <ClCompile Include="..\..\code\Character\GameObject\GameObject.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
+
 
     <ClCompile Include="..\..\code\main.cpp" />
     <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
@@ -155,6 +160,11 @@
   <ItemGroup>
     <ClInclude Include="..\..\code\Character\GameObject\GameObject.h" />
     <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\Character\GameObject\ObjectTag.h" />
+    <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h" />
+    <ClInclude Include="..\..\code\GameSystem\Window\Window.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

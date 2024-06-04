@@ -14,6 +14,25 @@
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
 
+    <Filter Include="ソース ファイル\GameSystem">
+      <UniqueIdentifier>{61ea081a-bac9-427c-b447-3027aa72d295}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameSystem\Window">
+      <UniqueIdentifier>{1c5ca234-5108-4f6b-b249-827c6f0cf529}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameSystem\GameSetting">
+      <UniqueIdentifier>{8e06e5b7-1dd0-411d-81bc-aac3c223c135}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character">
+      <UniqueIdentifier>{0bdf6a72-6f9a-4eb2-912b-a752f27cfe45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character\GameObject">
+      <UniqueIdentifier>{b774ad58-6dff-448a-88b2-74c95236d2ea}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character\GameObject\ObjectTag">
+      <UniqueIdentifier>{e6b607de-3bf9-4d76-801a-3c0e79ed330d}</UniqueIdentifier>
+
+
     <Filter Include="ソース ファイル\Scene">
       <UniqueIdentifier>{91e40d6d-a56b-47cc-a748-87e61cc6d16a}</UniqueIdentifier>
     </Filter>
@@ -38,12 +57,31 @@
     <Filter Include="ソース ファイル\GameSystem\GameManager">
       <UniqueIdentifier>{a0f6a68f-e6da-4721-aa95-beed4e0c100d}</UniqueIdentifier>
 
+
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+
+    <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp">
+      <Filter>ソース ファイル\GameSystem\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp">
+      <Filter>ソース ファイル\GameSystem\GameSetting</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\GameSystem\Window\Window.h">
+      <Filter>ソース ファイル\GameSystem\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h">
+      <Filter>ソース ファイル\GameSystem\GameSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\GameObject\ObjectTag.h">
+      <Filter>ソース ファイル\Character\GameObject\ObjectTag</Filter>
+
 
     <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp">
       <Filter>ソース ファイル\Asset\AseetBase</Filter>
@@ -72,6 +110,7 @@
     </ClInclude>
     <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h">
       <Filter>ソース ファイル\GameSystem\GameManager</Filter>
+
 
     </ClInclude>
   </ItemGroup>
