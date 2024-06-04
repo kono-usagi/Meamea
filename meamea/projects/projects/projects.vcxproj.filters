@@ -13,6 +13,7 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+
     <Filter Include="ソース ファイル\Scene">
       <UniqueIdentifier>{91e40d6d-a56b-47cc-a748-87e61cc6d16a}</UniqueIdentifier>
     </Filter>
@@ -24,12 +25,26 @@
     </Filter>
     <Filter Include="ソース ファイル\Asset\AseetBase">
       <UniqueIdentifier>{3ba8cbbd-db91-42d0-a3df-25d941731fd5}</UniqueIdentifier>
+
+    <Filter Include="ソース ファイル\Character">
+      <UniqueIdentifier>{94b1fca0-0911-46bd-a9bf-1d05533e80eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameSystem">
+      <UniqueIdentifier>{435f95d3-2440-4006-8025-734d7939dd3a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character\GameObject">
+      <UniqueIdentifier>{92721057-a833-4c5e-8265-e914eb3fb251}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameSystem\GameManager">
+      <UniqueIdentifier>{a0f6a68f-e6da-4721-aa95-beed4e0c100d}</UniqueIdentifier>
+
     </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+
     <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp">
       <Filter>ソース ファイル\Asset\AseetBase</Filter>
     </ClCompile>
@@ -43,6 +58,21 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h">
       <Filter>ソース ファイル\Scene\SceneManager</Filter>
+
+    <ClCompile Include="..\..\code\Character\GameObject\GameObject.cpp">
+      <Filter>ソース ファイル\Character\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp">
+      <Filter>ソース ファイル\GameSystem\GameManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\Character\GameObject\GameObject.h">
+      <Filter>ソース ファイル\Character\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h">
+      <Filter>ソース ファイル\GameSystem\GameManager</Filter>
+
     </ClInclude>
   </ItemGroup>
 </Project>
