@@ -13,10 +13,36 @@
       <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
       <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
     </Filter>
+    <Filter Include="ソース ファイル\Scene">
+      <UniqueIdentifier>{91e40d6d-a56b-47cc-a748-87e61cc6d16a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\SceneManager">
+      <UniqueIdentifier>{3a0cad5a-e8d0-4c1a-a89a-895ce4c44eca}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Asset">
+      <UniqueIdentifier>{f525126c-7c20-4a41-960c-757483a7398e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Asset\AseetBase">
+      <UniqueIdentifier>{3ba8cbbd-db91-42d0-a3df-25d941731fd5}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
       <Filter>ソース ファイル</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp">
+      <Filter>ソース ファイル\Asset\AseetBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp">
+      <Filter>ソース ファイル\Scene\SceneManager</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h">
+      <Filter>ソース ファイル\Asset\AseetBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h">
+      <Filter>ソース ファイル\Scene\SceneManager</Filter>
+    </ClInclude>
   </ItemGroup>
 </Project>
