@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
+
     <Filter Include="ソース ファイル">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
@@ -92,5 +93,25 @@
     <ClInclude Include="..\..\code\Scene\End\End.h">
       <Filter>ソース ファイル\Scene\End</Filter>
     </ClInclude>
+
+    <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
+    <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
+    <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp" />
+    <ClCompile Include="..\..\code\Character\GameObject\GameObject.cpp" />
+    <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
+    <ClCompile Include="..\..\code\main.cpp" />
+    <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h" />
+    <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
+    <ClInclude Include="..\..\code\Character\GameObject\GameObject.h" />
+    <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
+    <ClInclude Include="..\..\code\Character\GameObject\ObjectTag.h" />
+    <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h" />
+    <ClInclude Include="..\..\code\GameSystem\Window\Window.h" />
+    <ClInclude Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.h" />
+
   </ItemGroup>
 </Project>
