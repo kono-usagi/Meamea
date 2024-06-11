@@ -14,15 +14,14 @@ namespace mea
     SceneBase* End::Update(float deltaTime)
     {
         // すべてのゲームオブジェクトの更新
-        My3dApp::GameObjectManager::Update(deltaTime);
-        My3dApp::GameObjectManager::Collision();
+        GameObjectManager::Update(deltaTime);
         return this;
     }
 
     void End::Draw()
     {
         //すべてのゲームオブジェクトの描画
-        My3dApp::GameObjectManager::Draw();
-        My3dApp::DrawGrid(3000, 30);
+        GameObjectManager::Draw();
+        DrawGrid(3000, 30);
     }
 }

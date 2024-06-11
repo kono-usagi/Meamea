@@ -1,7 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-
     <Filter Include="ソース ファイル">
       <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
       <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
@@ -44,6 +43,30 @@
     <Filter Include="ソース ファイル\Scene\End">
       <UniqueIdentifier>{a8f8d383-a15c-4dd4-9ea9-b288979e13de}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\GameSystem\GameSetting">
+      <UniqueIdentifier>{4c0c3a45-c22c-4efc-8976-32340ceb6b3c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\GameSystem\Window">
+      <UniqueIdentifier>{887e7f7a-94d9-4334-a693-ce1a5071e43f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Asset">
+      <UniqueIdentifier>{da3191c9-0b37-410f-be23-1d78229fd9ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Asset\AssetBase">
+      <UniqueIdentifier>{76fe21fb-a63a-4510-8d09-5eecb52882c6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Scene\SceneManager">
+      <UniqueIdentifier>{bd90ae80-5c95-44c3-a7b1-50c08363c03b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character\PlayCharacterBase">
+      <UniqueIdentifier>{b5eb8516-ba08-4062-bd67-8effbd6bea78}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character\Player">
+      <UniqueIdentifier>{78e00ce7-fed6-4f92-9773-9f35629f03cb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character\MapObject">
+      <UniqueIdentifier>{1305753e-3fa7-4e14-ba47-148fd5e572ef}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
@@ -70,6 +93,27 @@
     <ClCompile Include="..\..\code\Scene\End\End.cpp">
       <Filter>ソース ファイル\Scene\End</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp">
+      <Filter>ソース ファイル\GameSystem\GameSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp">
+      <Filter>ソース ファイル\GameSystem\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp">
+      <Filter>ソース ファイル\Asset\AssetBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp">
+      <Filter>ソース ファイル\Scene\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.cpp">
+      <Filter>ソース ファイル\Character\PlayCharacterBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Character\Player\Player.cpp">
+      <Filter>ソース ファイル\Character\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Character\Player\MapObject.cpp">
+      <Filter>ソース ファイル\Character\MapObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Character\GameObject\GameObject.h">
@@ -93,25 +137,36 @@
     <ClInclude Include="..\..\code\Scene\End\End.h">
       <Filter>ソース ファイル\Scene\End</Filter>
     </ClInclude>
-
-    <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
-    <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
-    <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp" />
     <ClCompile Include="..\..\code\Character\GameObject\GameObject.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
     <ClCompile Include="..\..\code\main.cpp" />
-    <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
-    <ClCompile Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.cpp" />
+    <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h">
+      <Filter>ソース ファイル\GameSystem\GameSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\GameSystem\Window\Window.h">
+      <Filter>ソース ファイル\GameSystem\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h">
+      <Filter>ソース ファイル\Asset\AssetBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h">
+      <Filter>ソース ファイル\Scene\SceneManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\GameObject\ObjectTag.h">
+      <Filter>ソース ファイル\Character\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.h">
+      <Filter>ソース ファイル\Character\PlayCharacterBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\Player\Player.h">
+      <Filter>ソース ファイル\Character\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\Player\MapObject.h">
+      <Filter>ソース ファイル\Character\MapObject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h" />
-    <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
     <ClInclude Include="..\..\code\Character\GameObject\GameObject.h" />
     <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
-    <ClInclude Include="..\..\code\Character\GameObject\ObjectTag.h" />
-    <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h" />
-    <ClInclude Include="..\..\code\GameSystem\Window\Window.h" />
-    <ClInclude Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.h" />
-
   </ItemGroup>
 </Project>
