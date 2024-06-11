@@ -1,4 +1,5 @@
 #include"../../Scene/SceneBase/SceneBase.h"
+#include"../../GameSystem/GameManager/GameManager.h"
 
 namespace mea
 {
