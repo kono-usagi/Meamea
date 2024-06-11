@@ -146,16 +146,29 @@
     <ClCompile Include="..\..\code\Character\GameObject\GameObject.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
     <ClCompile Include="..\..\code\main.cpp" />
+
+    <ClCompile Include="..\..\code\Scene\End\End.cpp" />
+    <ClCompile Include="..\..\code\Scene\Play\Play.cpp" />
+    <ClCompile Include="..\..\code\Scene\SceneBase\SceneBase.cpp" />
+    <ClCompile Include="..\..\code\Scene\Story\Story.cpp" />
+    <ClCompile Include="..\..\code\Scene\Title\Title.cpp" />
+
     <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h" />
     <ClInclude Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.h" />
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
+
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Character\GameObject\GameObject.h" />
     <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
+    <ClInclude Include="..\..\code\Scene\End\End.h" />
+    <ClInclude Include="..\..\code\Scene\Play\Play.h" />
+    <ClInclude Include="..\..\code\Scene\SceneBase\SceneBase.h" />
+    <ClInclude Include="..\..\code\Scene\Story\Story.h" />
+    <ClInclude Include="..\..\code\Scene\Title\Title.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Character\GameObject\ObjectTag.h" />
