@@ -67,6 +67,9 @@
     <Filter Include="ソース ファイル\Character\MapObject">
       <UniqueIdentifier>{1305753e-3fa7-4e14-ba47-148fd5e572ef}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Character\Stage">
+      <UniqueIdentifier>{decdf299-d5a5-4e7e-96ff-e943d1165967}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
@@ -113,6 +116,9 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Character\Player\MapObject.cpp">
       <Filter>ソース ファイル\Character\MapObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Character\Stage\Stage.cpp">
+      <Filter>ソース ファイル\Character\Stage</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +169,9 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Character\Player\MapObject.h">
       <Filter>ソース ファイル\Character\MapObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\Stage\Stage.h">
+      <Filter>ソース ファイル\Character\Stage</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
