@@ -139,7 +139,6 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.cpp" />
     <ClCompile Include="..\..\code\Character\Player\MapObject.cpp" />
     <ClCompile Include="..\..\code\Character\Player\Player.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
@@ -157,7 +156,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h" />
-    <ClInclude Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.h" />
     <ClInclude Include="..\..\code\Character\Player\MapObject.h" />
     <ClInclude Include="..\..\code\Character\Player\Player.h" />
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
