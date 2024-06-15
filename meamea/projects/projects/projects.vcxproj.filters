@@ -58,9 +58,6 @@
     <Filter Include="ソース ファイル\Scene\SceneManager">
       <UniqueIdentifier>{bd90ae80-5c95-44c3-a7b1-50c08363c03b}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Character\PlayCharacterBase">
-      <UniqueIdentifier>{b5eb8516-ba08-4062-bd67-8effbd6bea78}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Character\Player">
       <UniqueIdentifier>{78e00ce7-fed6-4f92-9773-9f35629f03cb}</UniqueIdentifier>
     </Filter>
@@ -107,9 +104,6 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp">
       <Filter>ソース ファイル\Scene\SceneManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.cpp">
-      <Filter>ソース ファイル\Character\PlayCharacterBase</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\Character\Player\Player.cpp">
       <Filter>ソース ファイル\Character\Player</Filter>
@@ -160,9 +154,6 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Character\GameObject\ObjectTag.h">
       <Filter>ソース ファイル\Character\GameObject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Character\PlayCharacterBase\PlayCharacterBase.h">
-      <Filter>ソース ファイル\Character\PlayCharacterBase</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\Character\Player\Player.h">
       <Filter>ソース ファイル\Character\Player</Filter>
