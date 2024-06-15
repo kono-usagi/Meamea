@@ -1,50 +1,71 @@
 #pragma once
 #include<Dxlib>
 
+
+
+class Stage final
+
 namespace mea
+
 {
     class Stage final
     {
     public:
 
         /// <summary>
-        /// ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+        /// ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
         /// </summary>
         Stage();
 
         /// <summary>
-        /// ƒfƒXƒgƒ‰ƒNƒ^
+        /// ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
         /// </summary>
         ~Stage();
 
+
+    /// <summary>
+    /// æ›´æ–°å‡¦ç†
+    /// </summary>
+    void Update()/*override*/;
+
+    /// <summary>
+    /// æç”»å‡¦ç†
+    /// </summary>
+    void Draw()/*override*/;
+
         /// <summary>
-        /// XVˆ—
+        /// æ›´æ–°å‡¦ç†
         /// </summary>
         void Update()override;
 
         /// <summary>
-        /// •`‰æˆ—
+        /// æç”»å‡¦ç†
         /// </summary>
         void Draw()override;;
 
+
         /// <summary>
-        /// ƒ}ƒbƒvî•ñ‚ğ•Ô‚·
+        /// ãƒãƒƒãƒ—æƒ…å ±ã‚’è¿”ã™
         /// </summary>
-        /// <param name="x">x’l</param>
-        /// <param name="y">y’l</param>
+        /// <param name="x">xå€¤</param>
+        /// <param name="y">yå€¤</param>
         /// <returns></returns>
         int GetMapnumber(int x, int y)const { return mMapnumber[x][y]; }
 
     private:
 
-        int mMapnumber1[8][8];    //ƒ}ƒbƒvî•ñ
-        int mMapnumber2[16][16];    //ƒ}ƒbƒvî•ñ
-        int mMapnumber3[24][24];    //ƒ}ƒbƒvî•ñ
+
+    int mMapnumber[1][1];    //ãƒãƒƒãƒ—æƒ…å ±
+
+        int mMapnumber1[8][8];    //ãƒãƒƒãƒ—æƒ…å ±
+        int mMapnumber2[16][16];    //ãƒãƒƒãƒ—æƒ…å ±
+        int mMapnumber3[24][24];    //ãƒãƒƒãƒ—æƒ…å ±
 
 
-        int mMapChip;                  //ƒ}ƒbƒv‰æ‘œ
-        int mCharacterL;               //‘•ü—p‰æ‘œ¶
-        int mCharacterR;               //‘•ü—p‰æ‘œ‰E
+
+        int mMapChip;                  //ãƒãƒƒãƒ—ç”»åƒ
+        int mCharacterL;               //è£…é£¾ç”¨ç”»åƒå·¦
+        int mCharacterR;               //è£…é£¾ç”¨ç”»åƒå³
     };
 
 
