@@ -30,3 +30,5 @@ Stage::Draw()
     DrawGraph(0, 0, mCharacterL, FALSE);
     DrawGraph(0, 0, mCharacterR, FALSE);
 }
+
+

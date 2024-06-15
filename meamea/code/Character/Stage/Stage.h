@@ -1,6 +1,7 @@
 #pragma once
 #include<Dxlib>
 
+
 class Stage final
 {
 public:
@@ -18,12 +19,12 @@ public:
     /// <summary>
     /// 更新処理
     /// </summary>
-    void Update()override;
+    void Update()/*override*/;
 
     /// <summary>
     /// 描画処理
     /// </summary>
-    void Draw()override;;
+    void Draw()/*override*/;
 
     /// <summary>
     /// マップ情報を返す
@@ -35,7 +36,7 @@ public:
 
 private:
 
-    const int mMapnumber[1][1];    //マップ情報
+    int mMapnumber[1][1];    //マップ情報
 
     int mMapChip;                  //マップ画像
     int mCharacterL;               //装飾用画像左

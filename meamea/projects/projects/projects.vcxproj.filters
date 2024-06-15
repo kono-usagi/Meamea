@@ -67,6 +67,12 @@
     <Filter Include="ソース ファイル\Character\Stage">
       <UniqueIdentifier>{decdf299-d5a5-4e7e-96ff-e943d1165967}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Character\StoryPlayer">
+      <UniqueIdentifier>{480a3dce-bd6d-4b41-a42e-2086f0b786b6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character\Character">
+      <UniqueIdentifier>{47aea687-6934-4d9c-874c-c43ff2b82e06}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
@@ -113,6 +119,12 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Character\Stage\Stage.cpp">
       <Filter>ソース ファイル\Character\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Character\Character\Character.cpp">
+      <Filter>ソース ファイル\Character\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Character\StoryPlayer\StoryPlayer.cpp">
+      <Filter>ソース ファイル</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +175,12 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Character\Stage\Stage.h">
       <Filter>ソース ファイル\Character\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\Character\Character.h">
+      <Filter>ソース ファイル\Character\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\StoryPlayer\StoryPlayer.h">
+      <Filter>ヘッダー ファイル</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
