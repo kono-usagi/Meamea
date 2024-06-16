@@ -94,6 +94,12 @@
     <Filter Include="ソース ファイル\Object\Story\Player">
       <UniqueIdentifier>{480a3dce-bd6d-4b41-a42e-2086f0b786b6}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\FPS">
+      <UniqueIdentifier>{1bbfc5b0-b81a-4382-b1cd-ecc23699e91e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Asset\AssetManager">
+      <UniqueIdentifier>{60d20e56-bce6-4535-a777-b7e92c09f2fa}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
@@ -158,6 +164,12 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Object\Story\UI\Ui.cpp">
       <Filter>ソース ファイル\Object\Story\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="Fps.cpp">
+      <Filter>ソース ファイル\FPS</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Asset\AssetManager\AssetManager.cpp">
+      <Filter>ソース ファイル\Asset\AssetManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -231,6 +243,12 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h">
       <Filter>ソース ファイル\Object\GameObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="Fps.h">
+      <Filter>ソース ファイル\FPS</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Asset\AssetManager\AssetManager.h">
+      <Filter>ソース ファイル\Asset\AssetManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
