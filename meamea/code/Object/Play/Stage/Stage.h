@@ -1,12 +1,7 @@
 #pragma once
-#include<Dxlib>
-
-
-
-class Stage final
+#include<Dxlib.h>
 
 namespace mea
-
 {
     class Stage final
     {
