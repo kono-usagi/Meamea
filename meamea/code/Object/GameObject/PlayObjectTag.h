@@ -7,27 +7,29 @@ namespace mea
     /// <summary>
     /// ゲーム内の種類別タグ
     /// </summary>
-    static struct ObjectTag
+    static struct PlayObjectTag
     {
         std::string PLAYER = "player";
         std::string LILIAN = "lilian";
         std::string LAURENCE = "laurence";
         std::string LAYLA = "layla";
-        std::string BACKGROUND = "background";
+        std::string STAGE = "stage";
+        std::string MAPOBJECT = "mapobject";
         std::string UI = "ui";
-    }ObjectTag;
+    }PlayObjectTag;
 
 
     /// <summary>
     /// ループ制御用
     /// </summary>
-    static std::vector<std::string>ObjectTagAll
+    static std::vector<std::string>PlayObjectTagAll
     {
-        ObjectTag.PLAYER,
-        ObjecctTag.LILIAN,
-        ObjectTag.LAURENCE,
-        ObjectTag.LAYLA,
-        ObjectTag.BACKGROUND,
-        ObjectTag.UI,
+        PlayObjectTag.PLAYER,
+        PlayObjectTag.LILIAN,
+        PlayObjectTag.LAURENCE,
+        PlayObjectTag.LAYLA,
+        PlayObjectTag.MAPOBJECT,
+        PlayObjectTag.STAGE,
+        PlayObjectTag.UI,
     };
 }
