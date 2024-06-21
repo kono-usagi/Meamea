@@ -17,27 +17,15 @@ namespace mea
         /// </summary>
         ~Stage();
 
-
-    /// <summary>
-    /// 更新処理
-    /// </summary>
-    void Update()/*override*/;
-
-    /// <summary>
-    /// 描画処理
-    /// </summary>
-    void Draw()/*override*/;
-
         /// <summary>
         /// 更新処理
         /// </summary>
-        void Update()override;
+        void Update()/*override*/;
 
         /// <summary>
         /// 描画処理
         /// </summary>
-        void Draw()override;;
-
+        void Draw()/*override*/;
 
         /// <summary>
         /// マップ情報を返す
@@ -49,14 +37,11 @@ namespace mea
 
     private:
 
-
-    int mMapnumber[1][1];    //マップ情報
+        int mMapnumber[1][1];    //マップ情報
 
         int mMapnumber1[8][8];    //マップ情報
         int mMapnumber2[16][16];    //マップ情報
         int mMapnumber3[24][24];    //マップ情報
-
-
 
         int mMapChip;                  //マップ画像
         int mCharacterL;               //装飾用画像左

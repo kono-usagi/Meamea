@@ -139,6 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\code\Asset\AssetManager\AssetManager.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
     <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
     <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp" />
@@ -160,9 +161,11 @@
     <ClCompile Include="..\..\code\Scene\Story\Story.cpp" />
     <ClCompile Include="..\..\code\Scene\Title\Title.cpp" />
     <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="Fps.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h" />
+    <ClInclude Include="..\..\code\Asset\AssetManager\AssetManager.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManajer\PlayObjectManajer.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManajer\StoryObjectManajer.h" />
@@ -177,6 +180,7 @@
     <ClInclude Include="..\..\code\Object\Story\Player\StoryPlayer.h" />
     <ClInclude Include="..\..\code\Object\Story\UI\Ui.h" />
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
+    <ClInclude Include="Fps.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
