@@ -9,6 +9,7 @@ namespace mea
     class GameObject
     {
     public:
+        //vectorに変更の可能性あり
         int mX;//オブジェクトのx座標
         int mY;//オブジェクトのy座標
         GameObject();//コンストラクタ
