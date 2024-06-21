@@ -8,8 +8,8 @@ namespace mea
         Player();//コンストラクタ
         ~Player();//デストラクタ
 
-        void Update();//更新
-        void Draw();//描画
-        bool IsMove(int keytype);//動けるかどうか
+        virtual void Update();//更新
+        virtual void Draw();//描画
+        virtual bool IsMove(int keytype);//動けるかどうか
     };
 }
