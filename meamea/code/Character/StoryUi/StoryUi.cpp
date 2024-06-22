@@ -19,7 +19,7 @@ namespace mea
 
     void StoryUi::Draw()
     {
-        //ファイルから1行読み込む
+        //ファイルから1行読み込む.
         FileRead_gets(String, 256, "読み込んだファイル");
         //読み込んだ文字列の表示
         DrawString(0, 0, String, GetColor(255, 255, 255));
