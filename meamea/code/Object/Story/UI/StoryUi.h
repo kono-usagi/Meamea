@@ -1,19 +1,20 @@
 #pragma once
+#include "DxLib.h"
 
 namespace mea
 {
-    class PlayUi
+    class StoryUi
     {
     public:
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        PlayUi();
+        StoryUi();
 
         /// <summary>
         /// デストラクタ
         /// </summary>
-        ~PlayUi();
+        ~StoryUi();
 
         /// <summary>
         /// 更新処理
