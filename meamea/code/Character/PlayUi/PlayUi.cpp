@@ -34,7 +34,7 @@ namespace mea
 
     void PlayUi::LoadFont()
     {
-        LPCSTR  fontPath = "test.ttf";　　//読み込むフォントファイルのパス
+        LPCSTR  fontPath = "test.ttf";
         if (AddFontResourceEx(fontPath, FR_PRIVATE, NULL) > 0) { }
         else
         {

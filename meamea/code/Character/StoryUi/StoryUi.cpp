@@ -19,7 +19,7 @@ namespace mea
 
     void StoryUi::Draw()
     {
-        //ファイルから1行読み込む.
+        //ファイルから1行読み込む
         FileRead_gets(String, 256, "読み込んだファイル");
         //読み込んだ文字列の表示
         DrawString(0, 0, String, GetColor(255, 255, 255));
@@ -37,7 +37,6 @@ namespace mea
         }
         //フォント変更
         ChangeFont("フォント名", DX_CHARSET_DEFAULT);
-
         //文字サイズ変更
         SetFontSize(36);
     }
