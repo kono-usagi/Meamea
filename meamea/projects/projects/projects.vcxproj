@@ -139,10 +139,12 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="..\..\code\Character\BackGround\BackGround.cpp" />
     <ClCompile Include="..\..\code\Character\Player\MapObject.cpp" />
     <ClCompile Include="..\..\code\Character\Player\Player.cpp" />
     <ClCompile Include="..\..\code\Character\PlayUi\PlayUi.cpp" />
     <ClCompile Include="..\..\code\Character\Stage\Stage.cpp" />
+    <ClCompile Include="..\..\code\Character\StoryUi\StoryUi.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
     <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
     <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp" />
@@ -158,10 +160,12 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h" />
+    <ClInclude Include="..\..\code\Character\BackGround\BackGround.h" />
     <ClInclude Include="..\..\code\Character\Player\MapObject.h" />
     <ClInclude Include="..\..\code\Character\Player\Player.h" />
     <ClInclude Include="..\..\code\Character\PlayUi\PlayUi.h" />
     <ClInclude Include="..\..\code\Character\Stage\Stage.h" />
+    <ClInclude Include="..\..\code\Character\StoryUi\StoryUi.h" />
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
   </ItemGroup>
   <ItemGroup>

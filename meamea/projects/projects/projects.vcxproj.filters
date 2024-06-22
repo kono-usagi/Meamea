@@ -67,6 +67,15 @@
     <Filter Include="ソース ファイル\Character\Stage">
       <UniqueIdentifier>{decdf299-d5a5-4e7e-96ff-e943d1165967}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Character\PlayUi">
+      <UniqueIdentifier>{362ea683-731e-4bf2-8cc6-27d033f29ee5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character\BackGround">
+      <UniqueIdentifier>{d54ad64f-2eef-40e3-abe6-ab1cfba4bbf9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Character\StoryUi">
+      <UniqueIdentifier>{9a21aa10-0b29-4fd2-8568-ae27626aa276}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
@@ -113,6 +122,15 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Character\Stage\Stage.cpp">
       <Filter>ソース ファイル\Character\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Character\PlayUi\PlayUi.cpp">
+      <Filter>ソース ファイル\Character\PlayUi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Character\BackGround\BackGround.cpp">
+      <Filter>ソース ファイル\Character\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Character\StoryUi\StoryUi.cpp">
+      <Filter>ソース ファイル\Character\StoryUi</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -163,6 +181,15 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Character\Stage\Stage.h">
       <Filter>ソース ファイル\Character\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\PlayUi\PlayUi.h">
+      <Filter>ソース ファイル\Character\PlayUi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\BackGround\BackGround.h">
+      <Filter>ソース ファイル\Character\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Character\StoryUi\StoryUi.h">
+      <Filter>ソース ファイル\Character\StoryUi</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

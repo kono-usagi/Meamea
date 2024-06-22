@@ -3,18 +3,18 @@
 
 namespace mea
 {
-    class PlayUi
+    class BackGround
     {
     public:
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        PlayUi();
+        BackGround();
 
         /// <summary>
         /// デストラクタ
         /// </summary>
-        ~PlayUi();
+        ~BackGround();
 
         /// <summary>
         /// 更新処理
@@ -25,13 +25,5 @@ namespace mea
         /// 描画処理
         /// </summary>
         void Draw();
-
-        /// <summary>
-        /// フォントの設定
-        /// </summary>
-        void LoadFont();
-
-    private:
-        int step;   //歩数
     };
 }

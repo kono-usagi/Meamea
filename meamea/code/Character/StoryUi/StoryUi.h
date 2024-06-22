@@ -1,19 +1,20 @@
 #pragma once
+#include "DxLib.h"
 
 namespace mea
 {
-    class PlayUi
+    class StoryUi
     {
     public:
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        PlayUi();
+        StoryUi();
 
         /// <summary>
         /// デストラクタ
         /// </summary>
-        ~PlayUi();
+        ~StoryUi();
 
         /// <summary>
         /// 更新処理
@@ -29,5 +30,8 @@ namespace mea
         /// フォントの設定
         /// </summary>
         void LoadFont();
+
+    private:
+        char String[256];   //文字列保持
     };
 }

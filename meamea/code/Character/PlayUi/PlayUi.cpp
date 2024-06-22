@@ -34,12 +34,16 @@ namespace mea
 
     void PlayUi::LoadFont()
     {
-        LPCSTR  fontPath = "test";　　//読み込むフォントファイルのパス
+        LPCSTR  fontPath = "test.ttf";　　//読み込むフォントファイルのパス
         if (AddFontResourceEx(fontPath, FR_PRIVATE, NULL) > 0) { }
         else
         {
             //フォント読み込みエラー表示
             MessegeBox(NULL, "フォント読み込み失敗", "", MB_OK);
         }
+        //フォント変更
+        ChangeFont("フォント名", DX_CHARSET_DEFAULT);
+        //文字サイズ変更
+        SetFontSize(36);
     }
 }
