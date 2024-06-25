@@ -31,10 +31,6 @@ namespace mea
 		}
 
 		ifs.close();
-
-		//アセットタイプ設定
-		rapidjson::Value::ConstMemberIterator type = mDoc.MemberBegin();
-		mAssetType = type->name.GetString();
 	}
 
 	const int AssetBase::GetHandle(std::string handleName)
@@ -47,7 +43,6 @@ namespace mea
 			//見つかったらハンドルを返却
 			return  mHandledata[handleName];
 		}
-
 		return -1;
 	}
 }

@@ -140,6 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\Asset\AssetManager\AssetManager.cpp" />
+    <ClCompile Include="..\..\code\Asset\Img\Img.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
     <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
     <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp" />
@@ -162,10 +163,14 @@
     <ClCompile Include="..\..\code\Scene\Title\Title.cpp" />
     <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
     <ClCompile Include="Fps.cpp" />
+    <ClCompile Include="Sound.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h" />
+    <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h" />
     <ClInclude Include="..\..\code\Asset\AssetManager\AssetManager.h" />
+    <ClInclude Include="..\..\code\Asset\Img\Img.h" />
+    <ClInclude Include="..\..\code\Asset\Sound\Sound.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManajer\PlayObjectManajer.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManajer\StoryObjectManajer.h" />
@@ -193,6 +198,10 @@
   <ItemGroup>
     <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h" />
     <ClInclude Include="..\..\code\GameSystem\Window\Window.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\code\Json\ImgData.json" />
+    <None Include="..\..\code\Json\StageData.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
