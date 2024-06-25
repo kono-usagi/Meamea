@@ -1,19 +1,25 @@
-#include"GameObject.h"
+ï»¿#include"GameObject.h"
 
 namespace mea
 {
-    GameObject::GameObject(){}
+    GameObject::GameObject(std::string tagName)
+    {
+        this->tagName = tagName;
+    }
+
     GameObject::~GameObject(){}
 
-    void Update()//XV
+    
+    void GameObject::Update(float deltatime)
     {
 
     }
-    void Draw()//•`‰æ
+
+    void GameObject::Draw()
     {
 
     }
-    void Input(float deltatime)//‘€ìˆ—
+    void GameObject::Input()
     {
 
     }
