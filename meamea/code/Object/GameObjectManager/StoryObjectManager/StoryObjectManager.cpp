@@ -1,26 +1,26 @@
-#include "StoryObjectManajer.h"
+#include "StoryObjectManager.h"
 
 namespace mea
 {
 	//実体の中身を空に
-	std::unique_ptr<StoryObjectManajer>StoryObjectManajer::mInstance = nullptr;
+	std::unique_ptr<StoryObjectManager>StoryObjectManager::mInstance = nullptr;
 
-	StoryObjectManajer::StoryObjectManajer()
+	StoryObjectManager::StoryObjectManager()
 		:mObjects()
 	{
 		mInstance = nullptr;
 	}
 
-	void StoryObjectManajer::Initialize()
+	void StoryObjectManager::Initialize()
 	{
 		//自身の中身が空ならインスタンス生成
 		if (!mInstance)
 		{
-			mInstance.reset(new StoryObjectManajer);
+			mInstance.reset(new StoryObjectManager);
 		}
 	}
 
-	void StoryObjectManajer::Entry(GameObject* newObj)
+	void StoryObjectManager::Entry(GameObject* newObj)
 	{
 		//タグの検索をしてオブジェクト登録
 		std::string tag = newObj->GetTag();
@@ -28,7 +28,7 @@ namespace mea
 
 	}
 
-	void StoryObjectManajer::ReleaseAllObj()
+	void StoryObjectManager::ReleaseAllObj()
 	{
 		for (std::string& tag : StoryObjectTagAll)
 		{
@@ -42,7 +42,7 @@ namespace mea
 		}
 	}
 
-	void StoryObjectManajer::Update(float deltaTime)
+	void StoryObjectManager::Update(float deltaTime)
 	{
 		for (std::string& tag : StoryObjectTagAll)
 		{
@@ -55,7 +55,7 @@ namespace mea
 		}
 	}
 
-	void StoryObjectManajer::Draw()
+	void StoryObjectManager::Draw()
 	{
 		for (std::string& tag : StoryObjectTagAll)
 		{
@@ -68,7 +68,7 @@ namespace mea
 
 	
 
-	GameObject* StoryObjectManajer::GetFirstGameObj(std::string tag)
+	GameObject* StoryObjectManager::GetFirstGameObj(std::string tag)
 	{
 		//アクティブリストに何も入ってなかったら
 		if (mInstance->mObjects[tag].size() == 0)
