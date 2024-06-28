@@ -11,16 +11,10 @@ namespace mea
     class GameObject
     {
     public:
-        std::vector<int> mPos = { 0,0 };
+        /// <summary>
+        /// プレイヤー座標
+        /// </summary>
         VECTOR mPos;
-        /// <summary>
-        /// オブジェクトのx座標
-        /// </summary>
-        int mX;
-        /// <summary>
-        /// オブジェクトのy座標
-        /// </summary>
-        int mY;
 
         /// <summary>
         /// コンストラクタ
