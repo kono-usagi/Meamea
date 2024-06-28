@@ -12,6 +12,7 @@ namespace mea
     {
     public:
         std::vector<int> mPos = { 0,0 };
+        VECTOR mPos;
         /// <summary>
         /// オブジェクトのx座標
         /// </summary>
