@@ -5,14 +5,14 @@
 #include <vector>
 
 #include"../IfObjectManager.h"
-#include"../../GameObject/StoryObjectTag.h"
+#include"../../GameObject/PlayObjectTag.h"
 
 namespace mea
 {
 	/// <summary>
-	/// StoryObjectManajerクラス
+	/// PlayObjectManagerクラス
 	/// </summary>
-	class StoryObjectManajer final :public IfObjectManager
+	class PlayObjectManager final :public IfObjectManager
 	{
 	public:
 		/// <summary>
@@ -43,6 +43,11 @@ namespace mea
 		void Draw() override;
 
 		/// <summary>
+		/// キー入力があったら
+		/// </summary>
+		void MoveByKey();
+
+		/// <summary>
 		/// タグ種類の初めのオブジェクトを返す
 		/// </summary>
 		/// <param name="tag">オブジェクトの種類</param>
@@ -55,9 +60,9 @@ namespace mea
 		/// <summary>
 		/// コンストラクタ シングルトン
 		/// </summary>
-		StoryObjectManajer();
+		PlayObjectManager();
 
-		static std::unique_ptr<StoryObjectManajer> mInstance;							    // storyマネージャの実体
+		static std::unique_ptr<PlayObjectManager> mInstance;							    // playマネージャの実体
 		std::unordered_map<std::string, std::vector<std::shared_ptr<GameObject>>> mObjects;	//オブジェクトリスト
 	};
 }

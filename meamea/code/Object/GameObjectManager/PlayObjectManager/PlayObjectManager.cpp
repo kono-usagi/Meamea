@@ -1,26 +1,26 @@
-#include "PlayObjectManajer.h"
+#include "PlayObjectManager.h"
 
 namespace mea
 {
 	//実体の中身を空に
-	std::unique_ptr<PlayObjectManajer>PlayObjectManajer::mInstance = nullptr;
+	std::unique_ptr<PlayObjectManager>PlayObjectManager::mInstance = nullptr;
 
-	PlayObjectManajer::PlayObjectManajer()
+	PlayObjectManager::PlayObjectManager()
 		:mObjects()
 	{
 		mInstance = nullptr;
 	}
 
-	void PlayObjectManajer::Initialize()
+	void PlayObjectManager::Initialize()
 	{
 		//自身の中身が空ならインスタンス生成
 		if (!mInstance)
 		{
-			mInstance.reset(new PlayObjectManajer);
+			mInstance.reset(new PlayObjectManager);
 		}
 	}
 
-	void PlayObjectManajer::Entry(GameObject* newObj)
+	void PlayObjectManager::Entry(GameObject* newObj)
 	{
 		//タグの検索をしてオブジェクト登録
 		std::string tag = newObj->GetTag();
@@ -28,7 +28,7 @@ namespace mea
 
 	}
 
-	void PlayObjectManajer::ReleaseAllObj()
+	void PlayObjectManager::ReleaseAllObj()
 	{
 		for (std::string& tag : PlayObjectTagAll)
 		{
@@ -42,7 +42,7 @@ namespace mea
 		}
 	}
 
-	void PlayObjectManajer::Update(float deltaTime)
+	void PlayObjectManager::Update(float deltaTime)
 	{
 		for (std::string& tag : PlayObjectTagAll)
 		{
@@ -55,7 +55,7 @@ namespace mea
 		}
 	}
 
-	void PlayObjectManajer::Draw()
+	void PlayObjectManager::Draw()
 	{
 		for (std::string& tag : PlayObjectTagAll)
 		{
@@ -66,7 +66,7 @@ namespace mea
 		}
 	}
 
-	void PlayObjectManajer::MoveByKey()
+	void PlayObjectManager::MoveByKey()
 	{
 		for (auto& playrnum : mInstance->mObjects[PlayObjectTag.PLAYER])
 		{
@@ -107,7 +107,7 @@ namespace mea
 		}
 	}
 
-	GameObject* PlayObjectManajer::GetFirstGameObj(std::string tag)
+	GameObject* PlayObjectManager::GetFirstGameObj(std::string tag)
 	{
 		//アクティブリストに何も入ってなかったら
 		if (mInstance->mObjects[tag].size() == 0)

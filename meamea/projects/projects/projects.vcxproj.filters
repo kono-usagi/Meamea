@@ -61,12 +61,6 @@
     <Filter Include="ソース ファイル\Object\GameObjectManager">
       <UniqueIdentifier>{b7ec1c81-7dfc-4fcd-8848-1aeb5d6ccffd}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Object\GameObjectManager\StoryObjectManajer">
-      <UniqueIdentifier>{19b87ba7-09d8-4be3-a2b6-8e05cf498bc7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\GameObjectManager\PlayObjectManajer">
-      <UniqueIdentifier>{fcc0c6bc-2f16-452f-8815-e5c909d8db50}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Object\Play">
       <UniqueIdentifier>{81a617c7-3597-411f-8ba8-7c9711981b00}</UniqueIdentifier>
     </Filter>
@@ -109,6 +103,12 @@
     <Filter Include="ソース ファイル\Json">
       <UniqueIdentifier>{0ade23e4-b298-4b7c-83cb-1deb2c2e79f8}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Object\GameObjectManager\PlayObjectManager">
+      <UniqueIdentifier>{fcc0c6bc-2f16-452f-8815-e5c909d8db50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Object\GameObjectManager\StoryObjectManager">
+      <UniqueIdentifier>{19b87ba7-09d8-4be3-a2b6-8e05cf498bc7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
@@ -147,12 +147,6 @@
     <ClCompile Include="..\..\code\Object\GameObject\GameObject.cpp">
       <Filter>ソース ファイル\Object\GameObject</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\Object\GameObjectManager\PlayObjectManajer\PlayObjectManajer.cpp">
-      <Filter>ソース ファイル\Object\GameObjectManager\PlayObjectManajer</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\GameObjectManager\StoryObjectManajer\StoryObjectManajer.cpp">
-      <Filter>ソース ファイル\Object\GameObjectManager\StoryObjectManajer</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\Object\Story\Character\Character.cpp">
       <Filter>ソース ファイル\Object\Story\Character</Filter>
     </ClCompile>
@@ -185,6 +179,12 @@
     </ClCompile>
     <ClCompile Include="Sound.cpp">
       <Filter>ソース ファイル\Asset\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.cpp">
+      <Filter>ソース ファイル\Object\GameObjectManager\PlayObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.cpp">
+      <Filter>ソース ファイル\Object\GameObjectManager\StoryObjectManager</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -229,12 +229,6 @@
     <ClInclude Include="..\..\code\Object\GameObject\StoryObjectTag.h">
       <Filter>ソース ファイル\Object\GameObject</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManajer\PlayObjectManajer.h">
-      <Filter>ソース ファイル\Object\GameObjectManager\PlayObjectManajer</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManajer\StoryObjectManajer.h">
-      <Filter>ソース ファイル\Object\GameObjectManager\StoryObjectManajer</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\Object\Story\Character\Character.h">
       <Filter>ソース ファイル\Object\Story\Character</Filter>
     </ClInclude>
@@ -273,6 +267,12 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h">
       <Filter>ソース ファイル\Asset\AssetBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.h">
+      <Filter>ソース ファイル\Object\GameObjectManager\PlayObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.h">
+      <Filter>ソース ファイル\Object\GameObjectManager\StoryObjectManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

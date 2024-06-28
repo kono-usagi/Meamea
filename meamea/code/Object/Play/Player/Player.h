@@ -1,4 +1,5 @@
 #include"DxLib.h"
+#include"../MapObject/MapObject.h"
 
 namespace mea
 {
