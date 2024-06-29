@@ -68,43 +68,54 @@ namespace mea
 
 	void PlayObjectManager::MoveByKey()
 	{
-		for (auto& playrnum : mInstance->mObjects[PlayObjectTag.PLAYER])
+		if (!CheckHitKeyAll) return;
+
+		auto stageInfos = mInstance->mObjects[PlayObjectTag.STAGE];
+		auto playerInfos = mInstance->mObjects[PlayObjectTag.PLAYER];
+		for (auto stageInfo : stageInfos)
 		{
-			//キー入力があれば
-			if (CheckHitKeyAll)
-			{
-				//プレイヤーの位置を取得
-				VECTOR plypos = VGet(0, 0, 0);
-				plypos=playrnum->GetPos();
-				
-				//マップ情報を取得
-				for (auto& stagenum : mInstance->mObjects[PlayObjectTag.STAGE])
-				{
-					int mapnum = stagenum->Getnumber(plypos.x, plypos.y);
-
-					//マップになにもなかったら移動処理
-					if (mapnum == )
-					{
-						playrnum->
-					}
-					else
-					{
-						//動くオブジェクトか？
-						if (mapnum == )
-						{
-							mapnum = stagenum->Getnumber(plypos.x, plypos.y);
-
-							//動ける状態だったら移動処理
-							if (mapnum == )
-							{
-								GameObject* mapobjnum = GetFirstGameObj(PlayObjectTag.MAPOBJECT);
-								mapobjnum->
-							}
-						}
-					}
-				}
-			}
 		}
+
+
+
+
+		//for (auto& playrnum : mInstance->mObjects[PlayObjectTag.PLAYER])
+		//{
+		//	//キー入力があれば
+		//	if (CheckHitKeyAll)
+		//	{
+		//		//プレイヤーの位置を取得
+		//		VECTOR plypos = VGet(0, 0, 0);
+		//		plypos=playrnum->GetPos();
+		//		
+		//		//マップ情報を取得
+		//		for (auto& stagenum : mInstance->mObjects[PlayObjectTag.STAGE])
+		//		{
+		//			VECTOR mapnum = stagenum->GetPos();
+
+		//			//マップになにもなかったら移動処理
+		//			if (mapnum == )
+		//			{
+		//				playrnum->
+		//			}
+		//			else
+		//			{
+		//				//動くオブジェクトか？
+		//				if (mapnum == )
+		//				{
+		//					mapnum = stagenum->GetPos();
+
+		//					//動ける状態だったら移動処理
+		//					if (mapnum == )
+		//					{
+		//						GameObject* mapobjnum = GetFirstGameObj(PlayObjectTag.MAPOBJECT);
+		//						mapobjnum->
+		//					}
+		//				}
+		//			}
+		//		}
+		//	}
+		//}
 	}
 
 	GameObject* PlayObjectManager::GetFirstGameObj(std::string tag)

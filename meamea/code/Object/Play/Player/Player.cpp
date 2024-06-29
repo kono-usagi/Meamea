@@ -21,23 +21,15 @@ namespace mea
         
     }
     
-    bool Player::IsMove(int keytype)//動けるかどうか
+    void Player::Move()//動けるかどうか
     {
-        //入力された方向のマップチップを見る
-        //上
-        //下
-        //右
-        //左
+        //上-Y
         
-        //動く壁があるときmapobjectの関数呼ぶ
+        //下+Y
         
-        //さらに横を見る
+        //右+X
         
-        //床または罠のとき移動
+        //左-Y
 
-        return true;
     }
-
-    //trueのとき動かす
-
 }
