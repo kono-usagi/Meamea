@@ -1,5 +1,6 @@
 #include"DxLib.h"
 #include"PlayObjectTag.h"
+#include"../GameObjectManager/PlayObjectManager/PlayObjectManager.h"
 #include<vector>
 
 
@@ -11,16 +12,13 @@ namespace mea
     class GameObject
     {
     public:
-        /// <summary>
-        /// プレイヤー座標
-        /// </summary>
-        VECTOR mPos;
 
         /// <summary>
         /// コンストラクタ
         /// </summary>
         /// <param name="tagNasme"></param>
         GameObject(std::string tagNasme);
+
         //GameObject(PlayObjectTag tag, VECTOR pos);//コンストラクタ
 
         /// <summary>
@@ -41,7 +39,6 @@ namespace mea
         /// <summary>
         /// 操作処理
         /// </summary>
-        /// <param name="deltatime"></param>
         virtual void Input() = 0;
 
         /// <summary>
@@ -50,7 +47,20 @@ namespace mea
         /// <returns></returns>
         std::string GetTagName() { return tagName; }
 
-    private:
+        /// <summary>
+        /// 渡したオブジェクトのタグを返す
+        /// </summary>
+        /// <returns></returns>
+        std::string GetTag();
+
+        /// <summary>
+        /// 座標取得
+        /// </summary>
+        /// <returns></returns>
+        const VECTOR& GetPos() const { return mPos; }
+
+    protected:
         std::string tagName;
+        VECTOR mPos;    //  オブジェクトの座標
     };
 }

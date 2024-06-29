@@ -16,7 +16,7 @@ namespace mea
         std::string STAGE = "stage";
         std::string MAPOBJECT = "mapobject";
         std::string UI = "ui";
-    };
+    } PlayObjectTag;
 
 
     /// <summary>

@@ -3,8 +3,10 @@
 namespace mea
 {
     GameObject::GameObject(std::string tagName)
+        :tagName(tagName)
+        ,mPos()
     {
-        this->tagName = tagName;
+       // this->tagName = tagName;
     }
 
     GameObject::~GameObject(){}
@@ -22,5 +24,10 @@ namespace mea
     void GameObject::Input()
     {
 
+    }
+
+    std::string GameObject::GetTag()
+    {
+        return tagName;
     }
 }
