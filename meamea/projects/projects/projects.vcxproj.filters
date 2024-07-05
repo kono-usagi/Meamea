@@ -109,6 +109,9 @@
     <Filter Include="ソース ファイル\Object\GameObjectManager\StoryObjectManager">
       <UniqueIdentifier>{19b87ba7-09d8-4be3-a2b6-8e05cf498bc7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Object\Story\BackGround">
+      <UniqueIdentifier>{cd13c92a-1206-4b6c-b63b-d3e94a1d7345}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
@@ -185,6 +188,9 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.cpp">
       <Filter>ソース ファイル\Object\GameObjectManager\StoryObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\Story\BackGround\BackGround.cpp">
+      <Filter>ソース ファイル\Object\Story\BackGround</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -273,6 +279,9 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.h">
       <Filter>ソース ファイル\Object\GameObjectManager\StoryObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\Story\BackGround\BackGround.h">
+      <Filter>ソース ファイル\Object\Story\BackGround</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
