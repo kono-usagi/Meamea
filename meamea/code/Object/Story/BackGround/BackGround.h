@@ -25,5 +25,8 @@ namespace mea
         /// •`‰æˆ—
         /// </summary>
         void Draw();
+
+        int BackGroundHandle;
+        int NameFrameHandle;
     };
 }
