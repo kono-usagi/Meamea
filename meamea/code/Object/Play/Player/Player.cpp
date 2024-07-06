@@ -21,15 +21,27 @@ namespace mea
         
     }
     
-    void Player::Move()//動けるかどうか
+    void Player::Move(int keyType)//動けるかどうか
     {
-        //上-Y
+        if (keyType == 0)//上-Y
+        {
+            mPos.y -= PlyDistance;
+        }
         
-        //下+Y
+        if (keyType == 1)//下+Y
+        {
+            mPos.y += PlyDistance;
+        }
         
-        //右+X
-        
-        //左-Y
-
+        if (keyType == 2)//右+X
+        {
+            PlyDir = 1;//プレイヤー画像を右向きに変更
+            mPos.x += PlyDistance;
+        }
+        if (keyType == 3)//左-X
+        {
+            PlyDir = 0;//プレイヤー画像を左向きに変更
+            mPos.x -= PlyDistance;
+        }
     }
 }
