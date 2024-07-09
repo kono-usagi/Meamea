@@ -16,7 +16,7 @@ namespace mea
         std::string STAGE = "stage";
         std::string MAPOBJECT = "mapobject";
         std::string UI = "ui";
-    } PlayObjectTag;
+    } PlayObjTag;
 
 
     /// <summary>
@@ -24,12 +24,12 @@ namespace mea
     /// </summary>
     static std::vector<std::string>PlayObjectTagAll
     {
-        PlayObjectTag.PLAYER,
-        PlayObjectTag.LILIAN,
-        PlayObjectTag.LAURENCE,
-        PlayObjectTag.LAYLA,
-        PlayObjectTag.MAPOBJECT,
-        PlayObjectTag.STAGE,
-        PlayObjectTag.UI,
+        PlayObjTag.PLAYER,
+        PlayObjTag.LILIAN,
+        PlayObjTag.LAURENCE,
+        PlayObjTag.LAYLA,
+        PlayObjTag.MAPOBJECT,
+        PlayObjTag.STAGE,
+        PlayObjTag.UI,
     };
 }

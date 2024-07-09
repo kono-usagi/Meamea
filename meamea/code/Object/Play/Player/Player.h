@@ -1,5 +1,6 @@
 #include"DxLib.h"
 #include"../../GameObject/GameObject.h"
+#include"../../GameObject/PlayObjectTag.h"
 
 const int ANIM_PATTERN_NUM = 2;//アニメーションパターン数　右向きと左向き
 const int ANIM_LEFT = 0;//左
@@ -20,7 +21,7 @@ int animNowIndex;//アニメーション画像配列の添え字
 
 namespace mea
 {
-    class Player:GameObject
+    class Player:public GameObject
     {
     public:
         int mPlayerHandle[ANIM_PATTERN_NUM * ANIM_TYPE_NUM];//プレイヤーの画像ハンドル
@@ -46,11 +47,11 @@ namespace mea
         /// アニメーション処理
         /// </summary>
         /// <param name="deltaTime"></param>
-        virtual void Animation(float deltaTime);
+        void Animation(float deltaTime);
         /// <summary>
         /// 移動
         /// </summary>
         /// <param name="keyType"></param>
-        virtual void Move(int keyType);
+        void Move(int keyType);
     };
 }
