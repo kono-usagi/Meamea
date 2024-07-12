@@ -1,8 +1,7 @@
 #pragma once
 #include<memory>
 
-#include "../Img/Img.h"
-#include "../Sound/Sound.h"
+#include "../ImageJson/ImageJson.h"
 
 namespace mea
 {
@@ -14,9 +13,15 @@ namespace mea
     public:
 
         /// <summary>
-        /// コンストラクタ
+        /// 初期化
         /// </summary>
-        AssetManager();
+        static void InitAssetManager();
+
+        /// <summary>
+        /// イメージインスタンス
+        /// </summary>
+        /// <returns></returns>
+        static class ImageJson* ImgInstance() { return assetmanager->imagejson.get(); }
 
         /// <summary>
         /// デストラクタ
@@ -24,7 +29,13 @@ namespace mea
         ~AssetManager();
     private:
 
-        std::unique_ptr<class Img> img;         //imgの実態
-        std::unique_ptr<class Sound> sound;     //サウンドの実態
-    };
+        /// <summary>
+        /// コンストラクタ(シングルトン)
+        /// </summary>
+        AssetManager();
+
+        static std::unique_ptr<class AssetManager> assetmanager;//自身の実態
+
+        std::unique_ptr<class ImageJson> imagejson;//ImgJsonの実態
+    }
 }
