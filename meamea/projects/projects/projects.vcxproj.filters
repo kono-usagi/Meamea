@@ -94,9 +94,6 @@
     <Filter Include="ソース ファイル\Asset\AssetManager">
       <UniqueIdentifier>{60d20e56-bce6-4535-a777-b7e92c09f2fa}</UniqueIdentifier>
     </Filter>
-    <Filter Include="ソース ファイル\Asset\Img">
-      <UniqueIdentifier>{930b832c-4e6a-487d-a9e0-54b0ab9784a5}</UniqueIdentifier>
-    </Filter>
     <Filter Include="ソース ファイル\Asset\Sound">
       <UniqueIdentifier>{a3aa6df6-7aeb-459a-8eea-26304eeca3cd}</UniqueIdentifier>
     </Filter>
@@ -111,6 +108,9 @@
     </Filter>
     <Filter Include="ソース ファイル\Object\Story\BackGround">
       <UniqueIdentifier>{cd13c92a-1206-4b6c-b63b-d3e94a1d7345}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ソース ファイル\Asset\ImgJson">
+      <UniqueIdentifier>{930b832c-4e6a-487d-a9e0-54b0ab9784a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
   <ItemGroup>
@@ -177,9 +177,6 @@
     <ClCompile Include="..\..\code\Asset\AssetManager\AssetManager.cpp">
       <Filter>ソース ファイル\Asset\AssetManager</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\Asset\Img\Img.cpp">
-      <Filter>ソース ファイル\Asset\Img</Filter>
-    </ClCompile>
     <ClCompile Include="Sound.cpp">
       <Filter>ソース ファイル\Asset\Sound</Filter>
     </ClCompile>
@@ -191,6 +188,9 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Object\Story\BackGround\BackGround.cpp">
       <Filter>ソース ファイル\Object\Story\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Asset\Img\ImageJson.cpp">
+      <Filter>ソース ファイル\Asset\ImgJson</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -265,9 +265,6 @@
     <ClInclude Include="..\..\code\Asset\AssetManager\AssetManager.h">
       <Filter>ソース ファイル\Asset\AssetManager</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\Asset\Img\Img.h">
-      <Filter>ソース ファイル\Asset\Img</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\Asset\Sound\Sound.h">
       <Filter>ソース ファイル\Asset\Sound</Filter>
     </ClInclude>
@@ -282,6 +279,9 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Object\Story\BackGround\BackGround.h">
       <Filter>ソース ファイル\Object\Story\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Asset\Img\ImageJson.h">
+      <Filter>ソース ファイル\Asset\ImgJson</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
