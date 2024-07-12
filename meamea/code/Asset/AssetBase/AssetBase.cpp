@@ -1,13 +1,10 @@
-#include "AssetBase.h"
-
 #include<DxLib.h>
+#include "AssetBase.h"
 
 namespace mea
 {
 	AssetBase::AssetBase()
-		:mHoldHandle(-1)
-		,mDupHandle(-1)
-		,mAssetType("")
+		:mJsondata("")
 		,mJsonFile("")
 	{
 		//処理なし
@@ -18,31 +15,20 @@ namespace mea
 		//処理なし
 	}
 
-	void AssetBase::LoadJsonFile(std::string fileName)
+	Json AssetBase::LoadJsonFile(const std::string fileName)
 	{
+		Json result;
 		//ファイル読み込み
 		std::ifstream ifs(fileName.c_str());
 
 		//ファイルが存在したら解析
-		if (ifs.good())
-		{
-			rapidjson::IStreamWrapper isw(ifs);
-			mDoc.ParseStream(isw);
-		}
+		//if (ifs.good())
+		//{
+		result = json::parse(ifs);
+		//}
 
 		ifs.close();
-	}
 
-	const int AssetBase::GetHandle(std::string handleName)
-	{
-		//取得したいハンドルをデータ内から検索
-		auto iter = mHandledata.find(handleName);
-
-		if (iter != mHandledata.end())
-		{
-			//見つかったらハンドルを返却
-			return  mHandledata[handleName];
-		}
-		return -1;
+		return result;
 	}
 }
