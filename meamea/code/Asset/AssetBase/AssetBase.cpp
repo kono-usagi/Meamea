@@ -4,7 +4,7 @@
 namespace mea
 {
 	AssetBase::AssetBase()
-		:mJsondata("")
+		:mJsonData("")
 		,mJsonFile("")
 	{
 		//ˆ—‚È‚µ
@@ -24,7 +24,7 @@ namespace mea
 		//ƒtƒ@ƒCƒ‹‚ª‘¶İ‚µ‚½‚ç‰ğÍ
 		//if (ifs.good())
 		//{
-		result = json::parse(ifs);
+		result = Json::parse(ifs);
 		//}
 
 		ifs.close();

@@ -42,7 +42,7 @@ namespace mea
         /// </summary>
         virtual void DeleteHandle() = 0;
 
-        Json mJsondata;            //jsonデータ
+        Json mJsonData;            //jsonデータ
         std::string mJsonFile;     //jsonファイル
     };
 }

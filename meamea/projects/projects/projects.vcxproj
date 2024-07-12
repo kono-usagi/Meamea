@@ -140,7 +140,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\Asset\AssetManager\AssetManager.cpp" />
-    <ClCompile Include="..\..\code\Asset\Img\Img.cpp" />
+    <ClCompile Include="..\..\code\Asset\Img\ImageJson.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
     <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
     <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp" />
@@ -170,7 +170,7 @@
     <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h" />
     <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h" />
     <ClInclude Include="..\..\code\Asset\AssetManager\AssetManager.h" />
-    <ClInclude Include="..\..\code\Asset\Img\Img.h" />
+    <ClInclude Include="..\..\code\Asset\Img\ImageJson.h" />
     <ClInclude Include="..\..\code\Asset\Sound\Sound.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.h" />
