@@ -112,6 +112,9 @@
     <Filter Include="ソース ファイル\Asset\ImgJson">
       <UniqueIdentifier>{930b832c-4e6a-487d-a9e0-54b0ab9784a5}</UniqueIdentifier>
     </Filter>
+    <Filter Include="ソース ファイル\Asset\ImgJson\TitleData">
+      <UniqueIdentifier>{cb7fa546-730c-4c6f-81fd-b55fb9d75496}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\main.cpp">
@@ -191,6 +194,9 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Asset\Img\ImageJson.cpp">
       <Filter>ソース ファイル\Asset\ImgJson</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Asset\Img\TitleData\TitleData.cpp">
+      <Filter>ソース ファイル\Asset\ImgJson\TitleData</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -282,6 +288,9 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Asset\Img\ImageJson.h">
       <Filter>ソース ファイル\Asset\ImgJson</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Asset\Img\TitleData\TitleData.h">
+      <Filter>ソース ファイル\Asset\ImgJson\TitleData</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
