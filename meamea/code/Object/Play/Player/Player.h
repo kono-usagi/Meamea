@@ -38,11 +38,15 @@ namespace mea
         /// <summary>
         /// 更新
         /// </summary>
-        virtual void Update();
+        void Update(float deltaTime)override;
         /// <summary>
         /// 描画
         /// </summary>
-        virtual void Draw();
+        void Draw()override;
+        /// <summary>
+        /// 入力
+        /// </summary>
+        void Input()override;
         /// <summary>
         /// アニメーション処理
         /// </summary>
