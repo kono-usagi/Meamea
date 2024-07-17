@@ -22,14 +22,13 @@ namespace mea
         }
     }
 
-    void Player::Update()//更新
+    void Player::Update(float deltaTime)//更新
     {
         Animation(1.0f / 60.0f);
         Draw();
     }
     void Player::Draw()//描画
     {
-        //DrawGraph(static_cast<int>(px) + drawOffsetX, static_cast<int>(py) + drawOffsetY, playerImg[animNowIndex], TRUE);
         DrawGraph(mPos.x, mPos.y, mPlayerHandle[animNowIndex], TRUE);
     }
 
@@ -44,25 +43,43 @@ namespace mea
         }
         animNowIndex = animNowPattern + animNowType * ANIM_PATTERN_NUM;
     }
+
+    void Player::Input()
+    {
+        if (CheckHitKey(KEY_INPUT_UP) == 1)//上
+        {
+            
+        }
+        if (CheckHitKey(KEY_INPUT_DOWN) == 1)//下
+        {
+            
+        }
+        if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//右+X
+        {
+            
+        }
+        if (CheckHitKey(KEY_INPUT_LEFT) == 1)//左-X
+        {
+            
+        }
+    }
     
     void Player::Move(int keyType)//動けるかどうか
     {
-        if (keyType == 0)//上-Y
+        if (CheckHitKey(KEY_INPUT_UP)==1)//上-Y
         {
             mPos.y -= PLY_DISTANCE;
         }
-        
-        if (keyType == 1)//下+Y
+        if (CheckHitKey(KEY_INPUT_DOWN) == 1)//下+Y
         {
             mPos.y += PLY_DISTANCE;
         }
-        
-        if (keyType == 2)//右+X
+        if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//右+X
         {
             animNowType = ANIM_LEFT;//プレイヤー画像を右向きに変更
             mPos.x += PLY_DISTANCE;
         }
-        if (keyType == 3)//左-X
+        if (CheckHitKey(KEY_INPUT_LEFT) == 1)//左-X
         {
             animNowType = ANIM_RIGHT;//プレイヤー画像を左向きに変更
             mPos.x -= PLY_DISTANCE;

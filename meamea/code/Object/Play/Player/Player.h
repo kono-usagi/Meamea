@@ -37,20 +37,24 @@ namespace mea
         /// <summary>
         /// 更新
         /// </summary>
-        virtual void Update();
+        void Update(float deltaTime)override;
         /// <summary>
         /// 描画
         /// </summary>
-        virtual void Draw();
+        void Draw()override;
+        /// <summary>
+        /// 入力
+        /// </summary>
+        void Input()override;
         /// <summary>
         /// アニメーション処理
         /// </summary>
         /// <param name="deltaTime"></param>
-        virtual void Animation(float deltaTime);
+        void Animation(float deltaTime);
         /// <summary>
         /// 移動
         /// </summary>
         /// <param name="keyType"></param>
-        virtual void Move(int keyType);
+        void Move(int keyType);
     };
 }
