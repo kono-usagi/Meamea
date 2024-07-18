@@ -50,38 +50,72 @@ namespace mea
     {
         if (CheckHitKey(KEY_INPUT_UP) == 1)//上
         {
-            
+            isMove(KEY_UP);
         }
         if (CheckHitKey(KEY_INPUT_DOWN) == 1)//下
         {
-            
+            isMove(KEY_DOWN);
         }
-        if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//右+X
+        if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//右
         {
-            
+            isMove(KEY_RIGHT);
         }
-        if (CheckHitKey(KEY_INPUT_LEFT) == 1)//左-X
+        if (CheckHitKey(KEY_INPUT_LEFT) == 1)//左
         {
-            
+            isMove(KEY_LEFT);
         }
     }
-    
-    void Player::Move(int keyType)//動けるかどうか
+
+    bool Player::isMove(int keyType)
     {
-        if (CheckHitKey(KEY_INPUT_UP)==1)//上-Y
+        //現在地の配列取得
+
+        //入力方向の配列内情報の取得
+        if (keyType == KEY_UP)//上
+        {
+            mMapInfo=mMapInfoArray[mArrayFirst][mArraySecond - 1];
+        }
+        if (keyType == KEY_DOWN)//下
+        {
+            mMapInfo = mMapInfoArray[mArrayFirst][mArraySecond + 1];
+        }
+        if (keyType == KEY_RIGHT)//右
+        {
+            mMapInfo = mMapInfoArray[mArrayFirst + 1][mArraySecond];
+        }
+        if (keyType == KEY_LEFT)//左
+        {
+            mMapInfo = mMapInfoArray[mArrayFirst - 1][mArraySecond];
+        }
+
+        
+        if (mMapInfo%2==0)//情報が偶数のとき動かす　床0　罠2
+        {
+            Move(keyType);
+        }
+        if (mMapInfo == MAP_OBJECT_ROCK)//動く岩ならMapObjectの関数に行く
+        {
+
+        }
+
+    }
+    
+    void Player::Move(int keyType)
+    {
+        if (keyType==KEY_UP)//上-Y
         {
             mPos.y -= PLY_DISTANCE;
         }
-        if (CheckHitKey(KEY_INPUT_DOWN) == 1)//下+Y
+        if (keyType == KEY_DOWN)//下+Y
         {
             mPos.y += PLY_DISTANCE;
         }
-        if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//右+X
+        if (keyType == KEY_RIGHT)//右+X
         {
             animNowType = ANIM_LEFT;//プレイヤー画像を右向きに変更
             mPos.x += PLY_DISTANCE;
         }
-        if (CheckHitKey(KEY_INPUT_LEFT) == 1)//左-X
+        if (keyType == KEY_LEFT)//左-X
         {
             animNowType = ANIM_RIGHT;//プレイヤー画像を左向きに変更
             mPos.x -= PLY_DISTANCE;
