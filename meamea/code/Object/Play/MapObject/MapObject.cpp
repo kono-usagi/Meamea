@@ -3,12 +3,13 @@
 namespace mea
 {
     MapObject::MapObject()
+        :GameObject(PlayObjTag.MAPOBJECT)
     {
-
+        mMapObjectHandle = LoadGraph("");
     }
     MapObject::~MapObject()
     {
-
+        DeleteGraph(mMapObjectHandle);
     }
     void MapObject::Update()//更新
     {
@@ -16,21 +17,28 @@ namespace mea
     }
     void MapObject::Draw()//描画
     {
-
+        DrawGraph(mPos.x, mPos.y, mMapObjectHandle,FALSE);
     }
 
-    bool MapObject::IsMove(int keytype)//動けるかどうか
+    void MapObject::Move(int keyType)//動かす
     {
-        //入力された方向のマップチップを見る
-        //上
-        //下
-        //右
-        //左
+        if (keyType == 0)//上-Y
+        {
+            mPos.y -= MAPOBJECT_DISTANCE;
+        }
 
-        //床または罠のとき移動
+        if (keyType == 1)//下+Y
+        {
+            mPos.y += MAPOBJECT_DISTANCE;
+        }
 
-        return true;
+        if (keyType == 2)//右+X
+        {
+            mPos.x += MAPOBJECT_DISTANCE;
+        }
+        if (keyType == 3)//左-X
+        {
+            mPos.x -= MAPOBJECT_DISTANCE;
+        }
     }
-
-    //trueのとき動かす
 }

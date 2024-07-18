@@ -1,80 +1,84 @@
 #include"DxLib.h"
 #include"../../GameObject/GameObject.h"
+
 #include"../Stage/Stage.h"
 
-//ƒAƒjƒ[ƒVƒ‡ƒ“’è”
-const int ANIM_PATTERN_NUM = 2;//ƒAƒjƒ[ƒVƒ‡ƒ“ƒpƒ^[ƒ“”@‰EŒü‚«‚Æ¶Œü‚«
-const int ANIM_LEFT = 0;//¶
-const int ANIM_RIGHT = 1;//‰E
-const int ANIM_TYPE_NUM = 5;//ƒAƒjƒ[ƒVƒ‡ƒ“‚Ìí—Ş
-
-const float ANIM_FPS = 6.0f;//•bŠÔ6ƒRƒ}‚ÌƒAƒjƒ[ƒVƒ‡ƒ“
-const int IMAGE_SIZE_X = 50;//‰æ‘œ‚½‚ÄƒTƒCƒY
-const int IMAGE_SIZE_Y = 50;//‰æ‘œ‚æ‚±ƒTƒCƒY
-
-const int PLY_DISTANCE = 50;//ƒvƒŒƒCƒ„[ˆÚ“®‹——£@50
-//const int CHIP_SIZE = 50;//ƒ`ƒbƒvƒTƒCƒY@50
+#include"../../GameObject/PlayObjectTag.h"
 
 
+//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³å®šæ•°
+const int ANIM_PATTERN_NUM = 2;//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ãƒ‘ã‚¿ãƒ¼ãƒ³æ•°ã€€å³å‘ãã¨å·¦å‘ã
+const int ANIM_LEFT = 0;//å·¦
+const int ANIM_RIGHT = 1;//å³
+const int ANIM_TYPE_NUM = 5;//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã®ç¨®é¡
+
+const float ANIM_FPS = 6.0f;//ç§’é–“6ã‚³ãƒã®ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³
+const int IMAGE_SIZE_X = 50;//ç”»åƒãŸã¦ã‚µã‚¤ã‚º
+const int IMAGE_SIZE_Y = 50;//ç”»åƒã‚ˆã“ã‚µã‚¤ã‚º
+
+const int PLY_DISTANCE = 50;//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ç§»å‹•è·é›¢ã€€50
+//const int CHIP_SIZE = 50;//ãƒãƒƒãƒ—ã‚µã‚¤ã‚ºã€€50
 
 
-//ƒL[“ü—Í’è”
+
+
+//ã‚­ãƒ¼å…¥åŠ›å®šæ•°
 const int KEY_UP = 0;
 const int KEY_DOWN = 1;
 const int KEY_RIGHT = 2;
 const int KEY_LEFT = 3;
 
-//‚»‚Ì‘¼’è”
+//ãã®ä»–å®šæ•°
 
 
-//ƒAƒjƒ[ƒVƒ‡ƒ“•Ï”@ƒƒ“ƒo•Ï”H
-float animTimer;//ƒAƒjƒ[ƒVƒ‡ƒ“ƒ^ƒCƒ}[
-int animNowPattern;//Œ»İ‚ÌƒAƒjƒƒpƒ^[ƒ“
-int animNowType;//Œ»İ‚ÌƒAƒjƒí—Ş
-int animNowIndex;//ƒAƒjƒ[ƒVƒ‡ƒ“‰æ‘œ”z—ñ‚Ì“Y‚¦š
+//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³å¤‰æ•°ã€€ãƒ¡ãƒ³ãƒå¤‰æ•°ï¼Ÿ
+float animTimer;//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ã‚¿ã‚¤ãƒãƒ¼
+int animNowPattern;//ç¾åœ¨ã®ã‚¢ãƒ‹ãƒ¡ãƒ‘ã‚¿ãƒ¼ãƒ³
+int animNowType;//ç¾åœ¨ã®ã‚¢ãƒ‹ãƒ¡ç¨®é¡
+int animNowIndex;//ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³ç”»åƒé…åˆ—ã®æ·»ãˆå­—
 
 namespace mea
 {
-    class Player:GameObject
+    class Player:public GameObject
     {
     public:
-        int mPlayerHandle[ANIM_PATTERN_NUM * ANIM_TYPE_NUM];//ƒvƒŒƒCƒ„[‚Ì‰æ‘œƒnƒ“ƒhƒ‹
+        int mPlayerHandle[ANIM_PATTERN_NUM * ANIM_TYPE_NUM];//ãƒ—ãƒ¬ã‚¤ãƒ¤ãƒ¼ã®ç”»åƒãƒãƒ³ãƒ‰ãƒ«
 
         /// <summary>
-        /// ƒRƒ“ƒXƒgƒ‰ƒNƒ^
+        /// ã‚³ãƒ³ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
         /// </summary>
         Player();
         /// <summary>
-        /// ƒfƒXƒgƒ‰ƒNƒ^
+        /// ãƒ‡ã‚¹ãƒˆãƒ©ã‚¯ã‚¿
         /// </summary>
         ~Player();
 
         /// <summary>
-        /// XV
+        /// æ›´æ–°
         /// </summary>
         void Update(float deltaTime)override;
         /// <summary>
-        /// •`‰æ
+        /// æç”»
         /// </summary>
         void Draw()override;
         /// <summary>
-        /// “ü—Í
+        /// å…¥åŠ›
         /// </summary>
         void Input()override;
         /// <summary>
-        /// “®‚¯‚é‚©‚Ç‚¤‚©
+        /// å‹•ã‘ã‚‹ã‹ã©ã†ã‹
         /// </summary>
         /// <returns></returns>
         bool isMove(int keyType)override;
 
 
         /// <summary>
-        /// ƒAƒjƒ[ƒVƒ‡ƒ“ˆ—
+        /// ã‚¢ãƒ‹ãƒ¡ãƒ¼ã‚·ãƒ§ãƒ³å‡¦ç†
         /// </summary>
         /// <param name="deltaTime"></param>
         void Animation(float deltaTime);
         /// <summary>
-        /// ˆÚ“®
+        /// ç§»å‹•
         /// </summary>
         /// <param name="keyType"></param>
         void Move(int keyType)override;

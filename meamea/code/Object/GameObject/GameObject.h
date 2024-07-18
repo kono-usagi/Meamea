@@ -39,7 +39,7 @@ namespace mea
         /// <summary>
         /// ‘€ìˆ—
         /// </summary>
-        virtual void Input() = 0;
+        virtual void Input();
 
         /// <summary>
         /// ƒ^ƒO–¼æ“¾
