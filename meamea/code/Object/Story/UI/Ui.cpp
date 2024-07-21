@@ -48,9 +48,7 @@ namespace mea
         {
             if (KeyFlag == 0)
             {
-                FileRead_gets(TextFlag, 256, FileHandle);//一行読み込み
-
-
+                FileRead_gets(TextFlag, 256, FileHandle);//一行読み込み ここでテキストの種類が入る
 
                 if (strcmp(TextFlag, TFlag) == 0)
                 {
@@ -121,7 +119,7 @@ namespace mea
                 Q = false;
                 if (ChoiceDecisionY == 750)
                 {
-                    FileRead_gets(NextFile, 256, FileHandle);//一行読み込み
+                    FileRead_gets(NextFile, 256, FileHandle);
                     for (int i = 0; i < 3; i++)
                     {
                         if (strcmp(NextFile, FileName[i]) == 0)
