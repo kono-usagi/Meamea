@@ -46,59 +46,59 @@ namespace mea
         animNowIndex = animNowPattern + animNowType * ANIM_PATTERN_NUM;
     }
 
-    void Player::Input()
-    {
-        if (CheckHitKey(KEY_INPUT_UP) == 1)//上
-        {
-            isMove(KEY_UP);
-        }
-        if (CheckHitKey(KEY_INPUT_DOWN) == 1)//下
-        {
-            isMove(KEY_DOWN);
-        }
-        if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//右
-        {
-            isMove(KEY_RIGHT);
-        }
-        if (CheckHitKey(KEY_INPUT_LEFT) == 1)//左
-        {
-            isMove(KEY_LEFT);
-        }
-    }
+    //void Player::Input()
+    //{
+    //    if (CheckHitKey(KEY_INPUT_UP) == 1)//上
+    //    {
+    //        isMove(KEY_UP);
+    //    }
+    //    if (CheckHitKey(KEY_INPUT_DOWN) == 1)//下
+    //    {
+    //        isMove(KEY_DOWN);
+    //    }
+    //    if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//右
+    //    {
+    //        isMove(KEY_RIGHT);
+    //    }
+    //    if (CheckHitKey(KEY_INPUT_LEFT) == 1)//左
+    //    {
+    //        isMove(KEY_LEFT);
+    //    }
+    //}
 
-    bool Player::isMove(int keyType)
-    {
-        //現在地の配列取得
+    //bool Player::isMove(int keyType)
+    //{
+    //    //現在地の配列取得
 
-        //入力方向の配列内情報の取得
-        if (keyType == KEY_UP)//上
-        {
-            mMapInfo=mMapInfoArray[mArrayFirst][mArraySecond - 1];
-        }
-        if (keyType == KEY_DOWN)//下
-        {
-            mMapInfo = mMapInfoArray[mArrayFirst][mArraySecond + 1];
-        }
-        if (keyType == KEY_RIGHT)//右
-        {
-            mMapInfo = mMapInfoArray[mArrayFirst + 1][mArraySecond];
-        }
-        if (keyType == KEY_LEFT)//左
-        {
-            mMapInfo = mMapInfoArray[mArrayFirst - 1][mArraySecond];
-        }
+    //    //入力方向の配列内情報の取得
+    //    if (keyType == KEY_UP)//上
+    //    {
+    //        mMapInfo=mMapInfoArray[mArrayFirst][mArraySecond - 1];
+    //    }
+    //    if (keyType == KEY_DOWN)//下
+    //    {
+    //        mMapInfo = mMapInfoArray[mArrayFirst][mArraySecond + 1];
+    //    }
+    //    if (keyType == KEY_RIGHT)//右
+    //    {
+    //        mMapInfo = mMapInfoArray[mArrayFirst + 1][mArraySecond];
+    //    }
+    //    if (keyType == KEY_LEFT)//左
+    //    {
+    //        mMapInfo = mMapInfoArray[mArrayFirst - 1][mArraySecond];
+    //    }
 
-        
-        if (mMapInfo%2==0)//情報が偶数のとき動かす　床0　罠2
-        {
-            Move(keyType);
-        }
-        if (mMapInfo == MAP_OBJECT_ROCK)//動く岩ならMapObjectの関数に行く
-        {
+    //    
+    //    if (mMapInfo%2==0)//情報が偶数のとき動かす　床0　罠2
+    //    {
+    //        Move(keyType);
+    //    }
+    //    if (mMapInfo == MAP_OBJECT_ROCK)//動く岩ならMapObjectの関数に行く
+    //    {
 
-        }
+    //    }
 
-    }
+    //}
     
     void Player::Move(int keyType)
     {
