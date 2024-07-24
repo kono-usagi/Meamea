@@ -4,6 +4,9 @@
 
 namespace mea
 {
+	/// <summary>
+	/// シーン管理
+	/// </summary>
 	class SceneManager final
 	{
 	public:
@@ -39,7 +42,7 @@ namespace mea
 
 	private:
 
-		std::shared_ptr<class FPS> mFps;							//タイムマネージャー
+		std::shared_ptr<class FPS> mFps;						//タイムマネージャー
 
 		std::stack<std::shared_ptr<class SceneBase>> mNowScene;	//現在のシーン
 		SceneBase* mHoldScene;									//次のシーン
