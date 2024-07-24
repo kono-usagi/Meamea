@@ -139,9 +139,7 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\code\Asset\Img\ImageJson.cpp" />
-    <ClCompile Include="..\..\code\Asset\Img\PlayData\PlayData.cpp" />
-    <ClCompile Include="..\..\code\Asset\Img\TitleData\TitleData.cpp" />
+    <ClCompile Include="..\..\code\Fps\Fps.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
     <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
@@ -152,8 +150,6 @@
     <ClCompile Include="..\..\code\JsonMaster\IOUtility\IOUtility.cpp" />
     <ClCompile Include="..\..\code\JsonMaster\JsonManager\JsonManager.cpp" />
     <ClCompile Include="..\..\code\main.cpp" />
-    <ClCompile Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.cpp" />
-    <ClCompile Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.cpp" />
     <ClCompile Include="..\..\code\Object\GameObject\GameObject.cpp" />
     <ClCompile Include="..\..\code\Object\Play\MapObject\MapObject.cpp" />
     <ClCompile Include="..\..\code\Object\Play\Player\Player.cpp" />
@@ -169,24 +165,16 @@
     <ClCompile Include="..\..\code\Scene\Story\Story.cpp" />
     <ClCompile Include="..\..\code\Scene\Title\Title.cpp" />
     <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
-    <ClCompile Include="Fps.cpp" />
-    <ClCompile Include="Sound.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h" />
-    <ClInclude Include="..\..\code\Asset\Img\ImageJson.h" />
-    <ClInclude Include="..\..\code\Asset\Img\PlayData\PlayData.h" />
-    <ClInclude Include="..\..\code\Asset\Img\TitleData\TitleData.h" />
-    <ClInclude Include="..\..\code\Asset\Sound\Sound.h" />
+    <ClInclude Include="..\..\code\Fps\Fps.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\EndingData\EndingData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\PlayData\PlayData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\TitleData\TitleData.h" />
     <ClInclude Include="..\..\code\JsonMaster\IOUtility\IOUtility.h" />
     <ClInclude Include="..\..\code\JsonMaster\JsonManager\JsonManager.h" />
-    <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h" />
-    <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.h" />
-    <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.h" />
     <ClInclude Include="..\..\code\Object\GameObject\GameObject.h" />
     <ClInclude Include="..\..\code\Object\GameObject\PlayObjectTag.h" />
     <ClInclude Include="..\..\code\Object\GameObject\StoryObjectTag.h" />
@@ -199,7 +187,6 @@
     <ClInclude Include="..\..\code\Object\Story\Player\StoryPlayer.h" />
     <ClInclude Include="..\..\code\Object\Story\UI\Ui.h" />
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
-    <ClInclude Include="Fps.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
@@ -219,8 +206,6 @@
     <None Include="..\..\code\JsonFile\Image\StoryData.json" />
     <None Include="..\..\code\JsonFile\Image\TitleData.json" />
     <None Include="..\..\code\JsonFile\StageData.json" />
-    <None Include="..\..\code\Json\ImgData.json" />
-    <None Include="..\..\code\Json\StageData.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
