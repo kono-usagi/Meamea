@@ -1,0 +1,26 @@
+{
+  "play": {
+    "global": {
+      "leftside": "",
+      "player": "",
+      "moverock": ""
+    },
+    "stage": {
+      "one": {
+        "background": "",
+        "rightside": "",
+        "character": ""
+      },
+      "two": {
+        "background": "",
+        "rightside": "",
+        "character": ""
+      },
+      "three": {
+        "background": "",
+        "rightside": "",
+        "character": ""
+      }
+    }
+  }
+}

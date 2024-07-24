@@ -1,0 +1,16 @@
+{
+  "ending": {
+    "global": {
+      "background": [ "", "" ],
+      "Lilian": [ "", "" ],
+      "Laurence": [ "", "" ],
+      "Layla": [ "", "" ]
+    },
+    "happyend": {
+      "steel": [ "", "" ,""]
+    },
+    "badend": {
+      "steel": [ "", "" ,""]
+    }
+  }
+}

@@ -1,0 +1,33 @@
+{
+  "story": {
+    "global": {
+      "background": "",
+      "select": "",
+      "noselect": ""
+    },
+    "character": {
+      "mea": {
+        "normal": "",
+        "puzzled": ""
+      },
+      "Lilian": {
+        "normal": "",
+        "puzzled": "",
+        "like": "",
+        "impatience": ""
+      },
+      "Laurence": {
+        "normal": "",
+        "puzzled": "",
+        "like": "",
+        "impatience": ""
+      },
+      "Layla": {
+        "normal": "",
+        "puzzled": "",
+        "like": "",
+        "impatience": ""
+      }
+    }
+  }
+}
