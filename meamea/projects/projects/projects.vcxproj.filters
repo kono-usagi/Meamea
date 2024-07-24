@@ -26,9 +26,6 @@
     <ClCompile Include="..\..\code\Object\Story\Character\Character.cpp">
       <Filter>Object\Story\Character</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\Scene\End\End.cpp">
-      <Filter>Scene\End</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp">
       <Filter>GameSystem\GameSetting</Filter>
     </ClCompile>
@@ -77,6 +74,9 @@
     <ClCompile Include="..\..\code\Scene\Story\Story.cpp">
       <Filter>Scene\Story</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\Scene\End\End.cpp">
+      <Filter>Scene\End</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.h">
@@ -102,9 +102,6 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Object\Story\Character\Character.h">
       <Filter>Object\Story\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Scene\End\End.h">
-      <Filter>Scene\End</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h">
       <Filter>GameSystem\GameSetting</Filter>
@@ -162,6 +159,9 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Scene\Story\Story.h">
       <Filter>Scene\Story</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\End\End.h">
+      <Filter>Scene\End</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
