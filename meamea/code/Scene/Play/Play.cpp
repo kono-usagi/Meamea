@@ -1,6 +1,6 @@
-#include"DxLib.h"
 #include"Play.h"
-#include"../../Object/GameObjectManager/PlayObjectManager/PlayObjectManager.h"
+#include"../../Scene/Title/Title.h"
+#include"../../Object/GameObjectManager/GemeObjectManager.h"
 
 namespace mea
 {
@@ -11,7 +11,6 @@ namespace mea
         //ステージ生成
 
         //UI生成
-
     }
     Play::~Play()//コンストラクタ
     {
@@ -21,15 +20,23 @@ namespace mea
     SceneBase* Play::Update(float deltaTime)
     {
         // すべてのゲームオブジェクトの更新
-        PlayObjectManager::Update(deltaTime);
+        GameObjectManager::Update(deltaTime);
+
+        //以下プレイ中タイトルに戻る処理　メニュー実装時検討
+        /*if ()
+        {
+            GameObjectManager::ReleaseAllObj();
+            return new Title;
+        }*/
+
         return this;
     }
 
     void Play::Draw()
     {
         //すべてのゲームオブジェクトの描画
-        PlayObjectManager::Draw();
-        DrawGrid(3000, 30);
-       
+        GameObjectManager::Draw();
+        DrawFormatString(0, 0, GetColor(255, 255, 255), "play");
+        //DrawGrid(3000, 30);
     }
 }
