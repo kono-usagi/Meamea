@@ -44,9 +44,6 @@
     <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp">
       <Filter>Scene\SceneManager</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\Scene\Story\Story.cpp">
-      <Filter>Scene\Story</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\Object\Play\Ui\PlayUi.cpp">
       <Filter>Object\Play\Ui</Filter>
     </ClCompile>
@@ -76,6 +73,9 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Scene\Title\Title.cpp">
       <Filter>Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\Story\Story.cpp">
+      <Filter>Scene\Story</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -124,9 +124,6 @@
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h">
       <Filter>Scene\SceneManager</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\Scene\Story\Story.h">
-      <Filter>Scene\Story</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\Object\Play\Ui\PlayUi.h">
       <Filter>Object\Play\Ui</Filter>
     </ClInclude>
@@ -162,6 +159,9 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Scene\Title\Title.h">
       <Filter>Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\Story\Story.h">
+      <Filter>Scene\Story</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
