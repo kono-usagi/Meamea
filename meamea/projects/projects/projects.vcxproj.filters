@@ -4,63 +4,303 @@
     <ClCompile Include="..\..\code\Asset\Img\ImageJson.cpp" />
     <ClCompile Include="..\..\code\Asset\Img\PlayData\PlayData.cpp" />
     <ClCompile Include="..\..\code\Asset\Img\TitleData\TitleData.cpp" />
-    <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
-    <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
-    <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
     <ClCompile Include="..\..\code\main.cpp" />
     <ClCompile Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.cpp" />
-    <ClCompile Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.cpp" />
-    <ClCompile Include="..\..\code\Object\GameObject\GameObject.cpp" />
-    <ClCompile Include="..\..\code\Object\Play\MapObject\MapObject.cpp" />
-    <ClCompile Include="..\..\code\Object\Play\Player\Player.cpp" />
-    <ClCompile Include="..\..\code\Object\Play\Stage\Stage.cpp" />
-    <ClCompile Include="..\..\code\Object\Play\Ui\PlayUi.cpp" />
-    <ClCompile Include="..\..\code\Object\Story\BackGround\BackGround.cpp" />
-    <ClCompile Include="..\..\code\Object\Story\Character\Character.cpp" />
-    <ClCompile Include="..\..\code\Object\Story\Player\StoryPlayer.cpp" />
-    <ClCompile Include="..\..\code\Object\Story\UI\Ui.cpp" />
-    <ClCompile Include="..\..\code\Scene\End\End.cpp" />
-    <ClCompile Include="..\..\code\Scene\Play\Play.cpp" />
-    <ClCompile Include="..\..\code\Scene\SceneBase\SceneBase.cpp" />
-    <ClCompile Include="..\..\code\Scene\Story\Story.cpp" />
-    <ClCompile Include="..\..\code\Scene\Title\Title.cpp" />
-    <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
-    <ClCompile Include="Fps.cpp" />
     <ClCompile Include="Sound.cpp" />
+    <ClCompile Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.cpp">
+      <Filter>Jsonmaster\Image\MasterImgData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\JsonMaster\Image\EndingData\EndingData.cpp">
+      <Filter>Jsonmaster\Image\EndingData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\JsonMaster\Image\TitleData\TitleData.cpp">
+      <Filter>Jsonmaster\Image\TitleData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\JsonMaster\Image\PlayData\PlayData.cpp">
+      <Filter>Jsonmaster\Image\PlayData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\JsonMaster\IOUtility\IOUtility.cpp">
+      <Filter>Jsonmaster\IOUtility</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\JsonMaster\JsonManager\JsonManager.cpp">
+      <Filter>Jsonmaster\JsonManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\Story\BackGround\BackGround.cpp">
+      <Filter>Object\Story\BackGround</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\Story\Character\Character.cpp">
+      <Filter>Object\Story\Character</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\End\End.cpp">
+      <Filter>Scene\End</Filter>
+    </ClCompile>
+    <ClCompile Include="Fps.cpp">
+      <Filter>Fps</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp">
+      <Filter>GameSystem\GameManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\GameObject\GameObject.cpp">
+      <Filter>Object\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp">
+      <Filter>GameSystem\GameSetting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp">
+      <Filter>GameSystem\Window</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\Play\Play.cpp">
+      <Filter>Scene\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\Story\UI\Ui.cpp">
+      <Filter>Object\Story\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\Title\Title.cpp">
+      <Filter>Scene\Title</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\Play\Stage\Stage.cpp">
+      <Filter>Object\Play\Stage</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp">
+      <Filter>Scene\SceneManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.cpp" />
+    <ClCompile Include="..\..\code\Scene\Story\Story.cpp">
+      <Filter>Scene\Story</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\Play\Ui\PlayUi.cpp">
+      <Filter>Object\Play\Ui</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\Play\Player\Player.cpp">
+      <Filter>Object\Play\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\SceneBase\SceneBase.cpp">
+      <Filter>Scene\SceneBase</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\Story\Player\StoryPlayer.cpp">
+      <Filter>Object\Story\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\Play\MapObject\MapObject.cpp">
+      <Filter>Object\Play\MapObject</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h" />
     <ClInclude Include="..\..\code\Asset\Img\ImageJson.h" />
     <ClInclude Include="..\..\code\Asset\Img\PlayData\PlayData.h" />
     <ClInclude Include="..\..\code\Asset\Img\TitleData\TitleData.h" />
     <ClInclude Include="..\..\code\Asset\Sound\Sound.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.h" />
+    <ClInclude Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.h">
+      <Filter>Jsonmaster\Image\MasterImgData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\JsonMaster\Image\EndingData\EndingData.h">
+      <Filter>Jsonmaster\Image\EndingData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\JsonMaster\Image\TitleData\TitleData.h">
+      <Filter>Jsonmaster\Image\TitleData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\JsonMaster\Image\PlayData\PlayData.h">
+      <Filter>Jsonmaster\Image\PlayData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\JsonMaster\IOUtility\IOUtility.h">
+      <Filter>Jsonmaster\IOUtility</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\JsonMaster\JsonManager\JsonManager.h">
+      <Filter>Jsonmaster\JsonManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\Story\BackGround\BackGround.h">
+      <Filter>Object\Story\BackGround</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\Story\Character\Character.h">
+      <Filter>Object\Story\Character</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\End\End.h">
+      <Filter>Scene\End</Filter>
+    </ClInclude>
+    <ClInclude Include="Fps.h">
+      <Filter>Fps</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h">
+      <Filter>GameSystem\GameManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\GameObject\GameObject.h">
+      <Filter>Object\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h">
+      <Filter>GameSystem\GameSetting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h">
+      <Filter>Jsonmaster\JsonManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\GameSystem\Window\Window.h">
+      <Filter>GameSystem\Window</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\Play\Play.h">
+      <Filter>Scene\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\Story\UI\Ui.h">
+      <Filter>Object\Story\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\Title\Title.h">
+      <Filter>Scene\Title</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\Play\Stage\Stage.h">
+      <Filter>Object\Play\Stage</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h">
+      <Filter>Scene\SceneManager</Filter>
+    </ClInclude>
     <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.h" />
-    <ClInclude Include="..\..\code\Object\GameObject\GameObject.h" />
-    <ClInclude Include="..\..\code\Object\GameObject\PlayObjectTag.h" />
-    <ClInclude Include="..\..\code\Object\GameObject\StoryObjectTag.h" />
-    <ClInclude Include="..\..\code\Object\Play\MapObject\MapObject.h" />
-    <ClInclude Include="..\..\code\Object\Play\Player\Player.h" />
-    <ClInclude Include="..\..\code\Object\Play\Stage\Stage.h" />
-    <ClInclude Include="..\..\code\Object\Play\Ui\PlayUi.h" />
-    <ClInclude Include="..\..\code\Object\Story\BackGround\BackGround.h" />
-    <ClInclude Include="..\..\code\Object\Story\Character\Character.h" />
-    <ClInclude Include="..\..\code\Object\Story\Player\StoryPlayer.h" />
-    <ClInclude Include="..\..\code\Object\Story\UI\Ui.h" />
-    <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
-    <ClInclude Include="Fps.h" />
-    <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
-    <ClInclude Include="..\..\code\Scene\End\End.h" />
-    <ClInclude Include="..\..\code\Scene\Play\Play.h" />
-    <ClInclude Include="..\..\code\Scene\SceneBase\SceneBase.h" />
-    <ClInclude Include="..\..\code\Scene\Story\Story.h" />
-    <ClInclude Include="..\..\code\Scene\Title\Title.h" />
-    <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h" />
-    <ClInclude Include="..\..\code\GameSystem\Window\Window.h" />
+    <ClInclude Include="..\..\code\Scene\Story\Story.h">
+      <Filter>Scene\Story</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\Play\Ui\PlayUi.h">
+      <Filter>Object\Play\Ui</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\Play\Player\Player.h">
+      <Filter>Object\Play\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\SceneBase\SceneBase.h">
+      <Filter>Scene\SceneBase</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\Story\Player\StoryPlayer.h">
+      <Filter>Object\Story\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\GameObject\StoryObjectTag.h">
+      <Filter>Object\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\GameObject\PlayObjectTag.h">
+      <Filter>Object\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\Play\MapObject\MapObject.h">
+      <Filter>Object\Play\MapObject</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\..\code\Json\ImgData.json" />
     <None Include="..\..\code\Json\StageData.json" />
+    <None Include="..\..\code\JsonFile\Image\EndingData.json">
+      <Filter>JsonFile\Image</Filter>
+    </None>
+    <None Include="..\..\code\JsonFile\Image\PlayData.json">
+      <Filter>JsonFile\Image</Filter>
+    </None>
+    <None Include="..\..\code\JsonFile\Image\StoryData.json">
+      <Filter>JsonFile\Image</Filter>
+    </None>
+    <None Include="..\..\code\JsonFile\Image\TitleData.json">
+      <Filter>JsonFile\Image</Filter>
+    </None>
+    <None Include="..\..\code\JsonFile\StageData.json">
+      <Filter>JsonFile\Stage</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Jsonmaster">
+      <UniqueIdentifier>{a3d9d47b-88fd-4888-95b1-8f50d229d94a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jsonmaster\Image">
+      <UniqueIdentifier>{60a1ced0-d0a8-47e5-8ea8-2fde54b08982}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jsonmaster\IOUtility">
+      <UniqueIdentifier>{2775f609-3a7e-4443-8b36-58286f4f93e4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jsonmaster\JsonManager">
+      <UniqueIdentifier>{e8d446d5-791f-43f5-aef4-5e6e8225489c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jsonmaster\Image\MasterImgData">
+      <UniqueIdentifier>{3a2c2b9d-fa08-4d76-8d62-30651484613d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jsonmaster\Image\PlayData">
+      <UniqueIdentifier>{85087646-05b5-43f3-ae50-cf7b33e2f5c0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jsonmaster\Image\TitleData">
+      <UniqueIdentifier>{0206d365-27d4-4d59-ab48-dbe209a4788d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jsonmaster\Image\EndingData">
+      <UniqueIdentifier>{a67ad9a1-1c02-42e0-b246-a3383c12dd0c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem">
+      <UniqueIdentifier>{3a8d0725-699b-498d-9bc8-5d1123b7ba83}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JsonFile">
+      <UniqueIdentifier>{c8ea3d48-150c-422e-acc7-b3b07de6bd57}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{fae5c4f8-cf54-439f-acae-e4720ce63603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Fps">
+      <UniqueIdentifier>{d0d6288f-4db8-4fbe-b272-dff8c215cca3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene">
+      <UniqueIdentifier>{5d4a4309-79b3-49db-b402-c4b5f14d9c17}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\End">
+      <UniqueIdentifier>{8748ecf2-8a8a-48e2-8192-a2468a3604f8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Play">
+      <UniqueIdentifier>{eaf5a74c-fedd-45d7-8b80-778eff0dce94}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneBase">
+      <UniqueIdentifier>{7ea64bc8-450a-4796-974e-e1693365ed41}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\SceneManager">
+      <UniqueIdentifier>{0163a5d9-d724-4769-b784-d8c1a212c870}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Story">
+      <UniqueIdentifier>{56be36ae-b501-4b87-8757-be1531c2d551}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Scene\Title">
+      <UniqueIdentifier>{27b108e2-ac2c-407e-a059-d4c6ea880efb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameObject">
+      <UniqueIdentifier>{c7c6c068-580a-4654-a619-67ab8e5823cc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Play">
+      <UniqueIdentifier>{ecac6442-fedf-4b96-85c8-1d354178ed77}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Story">
+      <UniqueIdentifier>{5aaca1b3-6855-47df-942b-d3b79458be86}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Play\MapObject">
+      <UniqueIdentifier>{d0cf2594-ad4b-48e9-bebe-a405bfe6a1ff}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Play\Player">
+      <UniqueIdentifier>{da46cbb2-6d03-42b5-acde-289eeb0263fe}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Play\Stage">
+      <UniqueIdentifier>{a97a609b-3021-4f99-9602-0e132c882214}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Play\Ui">
+      <UniqueIdentifier>{7b25f0d4-a153-44d9-aae7-d72e0085e62a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Story\BackGround">
+      <UniqueIdentifier>{6239206b-8979-44af-9565-a72302fe317e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Story\Character">
+      <UniqueIdentifier>{a1a11875-d518-479b-ae9c-20ceaf3065dc}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Story\Player">
+      <UniqueIdentifier>{bd9c0d0e-5f83-4f82-bcd2-e6646a5985d8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\Story\Ui">
+      <UniqueIdentifier>{f1271fc3-8f3b-46e6-a655-9bf9bbd2d424}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\GameManager">
+      <UniqueIdentifier>{2b5cecff-daee-4908-8aeb-c5f640183897}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\GameSetting">
+      <UniqueIdentifier>{8c00f977-6ca5-48d9-bdb5-36f6c005c2b0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GameSystem\Window">
+      <UniqueIdentifier>{338cd8f4-5941-41b1-9b94-f3dcf7ceeb18}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JsonFile\Image">
+      <UniqueIdentifier>{57da454c-3236-4f30-8dcd-9892963fca8a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JsonFile\Stage">
+      <UniqueIdentifier>{9e61633a-9949-40f5-af9f-4754826e037c}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
 </Project>
