@@ -1,12 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <ClCompile Include="..\..\code\Asset\Img\ImageJson.cpp" />
-    <ClCompile Include="..\..\code\Asset\Img\PlayData\PlayData.cpp" />
-    <ClCompile Include="..\..\code\Asset\Img\TitleData\TitleData.cpp" />
     <ClCompile Include="..\..\code\main.cpp" />
-    <ClCompile Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.cpp" />
-    <ClCompile Include="Sound.cpp" />
     <ClCompile Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.cpp">
       <Filter>Jsonmaster\Image\MasterImgData</Filter>
     </ClCompile>
@@ -33,9 +28,6 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Scene\End\End.cpp">
       <Filter>Scene\End</Filter>
-    </ClCompile>
-    <ClCompile Include="Fps.cpp">
-      <Filter>Fps</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp">
       <Filter>GameSystem\GameManager</Filter>
@@ -64,7 +56,6 @@
     <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp">
       <Filter>Scene\SceneManager</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.cpp" />
     <ClCompile Include="..\..\code\Scene\Story\Story.cpp">
       <Filter>Scene\Story</Filter>
     </ClCompile>
@@ -83,14 +74,11 @@
     <ClCompile Include="..\..\code\Object\Play\MapObject\MapObject.cpp">
       <Filter>Object\Play\MapObject</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\Fps\Fps.cpp">
+      <Filter>Fps</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\code\Asset\Img\ImageJson.h" />
-    <ClInclude Include="..\..\code\Asset\Img\PlayData\PlayData.h" />
-    <ClInclude Include="..\..\code\Asset\Img\TitleData\TitleData.h" />
-    <ClInclude Include="..\..\code\Asset\Sound\Sound.h" />
-    <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h" />
-    <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.h">
       <Filter>Jsonmaster\Image\MasterImgData</Filter>
     </ClInclude>
@@ -117,9 +105,6 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Scene\End\End.h">
       <Filter>Scene\End</Filter>
-    </ClInclude>
-    <ClInclude Include="Fps.h">
-      <Filter>Fps</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h">
       <Filter>GameSystem\GameManager</Filter>
@@ -151,7 +136,6 @@
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h">
       <Filter>Scene\SceneManager</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.h" />
     <ClInclude Include="..\..\code\Scene\Story\Story.h">
       <Filter>Scene\Story</Filter>
     </ClInclude>
@@ -176,10 +160,11 @@
     <ClInclude Include="..\..\code\Object\Play\MapObject\MapObject.h">
       <Filter>Object\Play\MapObject</Filter>
     </ClInclude>
+    <ClInclude Include="..\..\code\Fps\Fps.h">
+      <Filter>Fps</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\code\Json\ImgData.json" />
-    <None Include="..\..\code\Json\StageData.json" />
     <None Include="..\..\code\JsonFile\Image\EndingData.json">
       <Filter>JsonFile\Image</Filter>
     </None>
