@@ -164,8 +164,8 @@
     <ClCompile Include="..\..\code\Scene\Play\Play.cpp" />
     <ClCompile Include="..\..\code\Scene\SceneBase\SceneBase.cpp" />
     <ClCompile Include="..\..\code\Scene\Story\Story.cpp" />
-    <ClCompile Include="..\..\code\Scene\Title\Title.cpp" />
     <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="..\..\code\Scene\Title\Title.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h" />
@@ -190,13 +190,13 @@
     <ClInclude Include="..\..\code\Object\Story\Player\StoryPlayer.h" />
     <ClInclude Include="..\..\code\Object\Story\UI\Ui.h" />
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
+    <ClInclude Include="..\..\code\Scene\Title\Title.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Scene\End\End.h" />
     <ClInclude Include="..\..\code\Scene\Play\Play.h" />
     <ClInclude Include="..\..\code\Scene\SceneBase\SceneBase.h" />
     <ClInclude Include="..\..\code\Scene\Story\Story.h" />
-    <ClInclude Include="..\..\code\Scene\Title\Title.h" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h" />

@@ -41,9 +41,6 @@
     <ClCompile Include="..\..\code\Object\Story\UI\Ui.cpp">
       <Filter>Object\Story\Ui</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\Scene\Title\Title.cpp">
-      <Filter>Scene\Title</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\Object\Play\Stage\Stage.cpp">
       <Filter>Object\Play\Stage</Filter>
     </ClCompile>
@@ -76,6 +73,12 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Object\GameObject\GameObject.cpp">
       <Filter>Object\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Object\GameObjectManager\GameObjectManager.cpp">
+      <Filter>Object\GameObjectManager</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\Title\Title.cpp">
+      <Filter>Scene\Title</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -121,9 +124,6 @@
     <ClInclude Include="..\..\code\Object\Story\UI\Ui.h">
       <Filter>Object\Story\Ui</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\Scene\Title\Title.h">
-      <Filter>Scene\Title</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\Object\Play\Stage\Stage.h">
       <Filter>Object\Play\Stage</Filter>
     </ClInclude>
@@ -162,6 +162,12 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Object\GameObject\GameObject.h">
       <Filter>Object\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\GameObjectManager\GameObjectManager.h">
+      <Filter>Object\GameObjectManager</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\Title\Title.h">
+      <Filter>Scene\Title</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -286,6 +292,9 @@
     </Filter>
     <Filter Include="JsonFile\Stage">
       <UniqueIdentifier>{9e61633a-9949-40f5-af9f-4754826e037c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameObjectManager">
+      <UniqueIdentifier>{bc6b13d3-c715-4a7a-8582-82b18c15df1e}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
