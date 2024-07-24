@@ -12,10 +12,21 @@ namespace mea
     class GameManager
     {
     public:
-        GameManager();//コンストラクタ
-        ~GameManager();//デストラクタ
 
-        static void Finalize();
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        GameManager();
+
+        /// <summary>
+        /// デストラクタ
+        /// </summary>
+        ~GameManager();
+
+        /// <summary>
+        /// 後処理
+        /// </summary>
+        void Finalize();
 
     private:
 
