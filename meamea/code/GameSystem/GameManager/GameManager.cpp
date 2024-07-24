@@ -1,21 +1,25 @@
 #include"GameManager.h"
 
-
 namespace mea
 {
-    GameManager::GameManager()//コンストラクタ
+    GameManager::GameManager()
     {
+        //Log.txtを生成しないように設定
+        SetOutApplicationLogValidFlag(false);
+
         //Window初期化
         Window::Init();
         //GameSetting初期化
         GameSetting::Init();
     }
-    GameManager::~GameManager()//デストラクタ
+
+    GameManager::~GameManager()
     {
         //処理なし
     }
-    static void Finalize()//後処理
+
+    void GameManager::Finalize()
     {
         SceneManager->GameLoop();
-   }
+    }
 }
