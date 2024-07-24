@@ -1,322 +1,66 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <ItemGroup>
-    <Filter Include="ソース ファイル">
-      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
-      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
-    </Filter>
-    <Filter Include="ヘッダー ファイル">
-      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
-      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
-    </Filter>
-    <Filter Include="リソース ファイル">
-      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
-      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
-    </Filter>
-    <Filter Include="ソース ファイル\GameSystem">
-      <UniqueIdentifier>{435f95d3-2440-4006-8025-734d7939dd3a}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\GameSystem\GameManager">
-      <UniqueIdentifier>{a0f6a68f-e6da-4721-aa95-beed4e0c100d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene">
-      <UniqueIdentifier>{f5575a69-395d-4ac8-b7bd-1000f33be32d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene\SceneBase">
-      <UniqueIdentifier>{e0079082-025c-4c1f-beb1-ab6bda285430}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene\Title">
-      <UniqueIdentifier>{1c459cf9-d224-4d7c-a1f4-77a692990b67}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene\Play">
-      <UniqueIdentifier>{46b6fb40-a551-475f-acb7-ee4023e6c28b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene\Story">
-      <UniqueIdentifier>{7f4c2db3-f401-4cd9-9c24-d72dc99757d5}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene\End">
-      <UniqueIdentifier>{a8f8d383-a15c-4dd4-9ea9-b288979e13de}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\GameSystem\GameSetting">
-      <UniqueIdentifier>{4c0c3a45-c22c-4efc-8976-32340ceb6b3c}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\GameSystem\Window">
-      <UniqueIdentifier>{887e7f7a-94d9-4334-a693-ce1a5071e43f}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Asset">
-      <UniqueIdentifier>{da3191c9-0b37-410f-be23-1d78229fd9ce}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Asset\AssetBase">
-      <UniqueIdentifier>{76fe21fb-a63a-4510-8d09-5eecb52882c6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Scene\SceneManager">
-      <UniqueIdentifier>{bd90ae80-5c95-44c3-a7b1-50c08363c03b}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object">
-      <UniqueIdentifier>{94b1fca0-0911-46bd-a9bf-1d05533e80eb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\GameObject">
-      <UniqueIdentifier>{92721057-a833-4c5e-8265-e914eb3fb251}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\GameObjectManager">
-      <UniqueIdentifier>{b7ec1c81-7dfc-4fcd-8848-1aeb5d6ccffd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Play">
-      <UniqueIdentifier>{81a617c7-3597-411f-8ba8-7c9711981b00}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Story">
-      <UniqueIdentifier>{bb72eee3-6f97-4700-91f3-917ca2232a9d}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Story\Character">
-      <UniqueIdentifier>{47aea687-6934-4d9c-874c-c43ff2b82e06}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Play\MapObject">
-      <UniqueIdentifier>{1305753e-3fa7-4e14-ba47-148fd5e572ef}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Play\Player">
-      <UniqueIdentifier>{78e00ce7-fed6-4f92-9773-9f35629f03cb}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Play\Stage">
-      <UniqueIdentifier>{decdf299-d5a5-4e7e-96ff-e943d1165967}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Play\Ui">
-      <UniqueIdentifier>{a45b255a-6fcf-46af-85c5-40ec534c0957}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Story\Ui">
-      <UniqueIdentifier>{54f711f9-2f55-4a01-9186-1b1fa5754102}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Story\Player">
-      <UniqueIdentifier>{480a3dce-bd6d-4b41-a42e-2086f0b786b6}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\FPS">
-      <UniqueIdentifier>{1bbfc5b0-b81a-4382-b1cd-ecc23699e91e}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Asset\AssetManager">
-      <UniqueIdentifier>{60d20e56-bce6-4535-a777-b7e92c09f2fa}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Asset\Sound">
-      <UniqueIdentifier>{a3aa6df6-7aeb-459a-8eea-26304eeca3cd}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Json">
-      <UniqueIdentifier>{0ade23e4-b298-4b7c-83cb-1deb2c2e79f8}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\GameObjectManager\PlayObjectManager">
-      <UniqueIdentifier>{fcc0c6bc-2f16-452f-8815-e5c909d8db50}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\GameObjectManager\StoryObjectManager">
-      <UniqueIdentifier>{19b87ba7-09d8-4be3-a2b6-8e05cf498bc7}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Object\Story\BackGround">
-      <UniqueIdentifier>{cd13c92a-1206-4b6c-b63b-d3e94a1d7345}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="ソース ファイル\Asset\ImgJson">
-      <UniqueIdentifier>{930b832c-4e6a-487d-a9e0-54b0ab9784a5}</UniqueIdentifier>
-    </Filter>
-
-    <Filter Include="ソース ファイル\Asset\ImgJson\PlayData">
-      <UniqueIdentifier>{7346d21f-4d3d-4b5c-a2e9-bc0ed4a9700c}</UniqueIdentifier>
-
-    <Filter Include="ソース ファイル\Asset\ImgJson\TitleData">
-      <UniqueIdentifier>{cb7fa546-730c-4c6f-81fd-b55fb9d75496}</UniqueIdentifier>
-
-    </Filter>
-  </ItemGroup>
-  <ItemGroup>
-    <ClCompile Include="..\..\code\main.cpp">
-      <Filter>ソース ファイル</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp">
-      <Filter>ソース ファイル\GameSystem\GameManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Scene\SceneBase\SceneBase.cpp">
-      <Filter>ソース ファイル\Scene\SceneBase</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Scene\Title\Title.cpp">
-      <Filter>ソース ファイル\Scene\Title</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Scene\Play\Play.cpp">
-      <Filter>ソース ファイル\Scene\Play</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Scene\Story\Story.cpp">
-      <Filter>ソース ファイル\Scene\Story</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Scene\End\End.cpp">
-      <Filter>ソース ファイル\Scene\End</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp">
-      <Filter>ソース ファイル\GameSystem\GameSetting</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp">
-      <Filter>ソース ファイル\GameSystem\Window</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp">
-      <Filter>ソース ファイル\Asset\AssetBase</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp">
-      <Filter>ソース ファイル\Scene\SceneManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\GameObject\GameObject.cpp">
-      <Filter>ソース ファイル\Object\GameObject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\Story\Character\Character.cpp">
-      <Filter>ソース ファイル\Object\Story\Character</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\Story\Player\StoryPlayer.cpp">
-      <Filter>ソース ファイル\Object\Story\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\Play\Ui\PlayUi.cpp">
-      <Filter>ソース ファイル\Object\Play\Ui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\Play\Player\Player.cpp">
-      <Filter>ソース ファイル\Object\Play\Player</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\Play\Stage\Stage.cpp">
-      <Filter>ソース ファイル\Object\Play\Stage</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\Play\MapObject\MapObject.cpp">
-      <Filter>ソース ファイル\Object\Play\MapObject</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\Story\UI\Ui.cpp">
-      <Filter>ソース ファイル\Object\Story\Ui</Filter>
-    </ClCompile>
-    <ClCompile Include="Fps.cpp">
-      <Filter>ソース ファイル\FPS</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Asset\AssetManager\AssetManager.cpp">
-      <Filter>ソース ファイル\Asset\AssetManager</Filter>
-    </ClCompile>
-    <ClCompile Include="Sound.cpp">
-      <Filter>ソース ファイル\Asset\Sound</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.cpp">
-      <Filter>ソース ファイル\Object\GameObjectManager\PlayObjectManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.cpp">
-      <Filter>ソース ファイル\Object\GameObjectManager\StoryObjectManager</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Object\Story\BackGround\BackGround.cpp">
-      <Filter>ソース ファイル\Object\Story\BackGround</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Asset\Img\ImageJson.cpp">
-      <Filter>ソース ファイル\Asset\ImgJson</Filter>
-    </ClCompile>
-
-    <ClCompile Include="..\..\code\Asset\Img\PlayData\PlayData.cpp">
-      <Filter>ソース ファイル</Filter>
-
-    <ClCompile Include="..\..\code\Asset\Img\TitleData\TitleData.cpp">
-      <Filter>ソース ファイル\Asset\ImgJson\TitleData</Filter>
-
-    </ClCompile>
-  </ItemGroup>
-  <ItemGroup>
-    <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h">
-      <Filter>ソース ファイル\GameSystem\GameManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Scene\SceneBase\SceneBase.h">
-      <Filter>ソース ファイル\Scene\SceneBase</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Scene\Title\Title.h">
-      <Filter>ソース ファイル\Scene\Title</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Scene\Play\Play.h">
-      <Filter>ソース ファイル\Scene\Play</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Scene\Story\Story.h">
-      <Filter>ソース ファイル\Scene\Story</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Scene\End\End.h">
-      <Filter>ソース ファイル\Scene\End</Filter>
-    </ClInclude>
+    <ClCompile Include="..\..\code\Asset\Img\ImageJson.cpp" />
+    <ClCompile Include="..\..\code\Asset\Img\PlayData\PlayData.cpp" />
+    <ClCompile Include="..\..\code\Asset\Img\TitleData\TitleData.cpp" />
+    <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
+    <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
     <ClCompile Include="..\..\code\main.cpp" />
-    <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h">
-      <Filter>ソース ファイル\GameSystem\GameSetting</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\GameSystem\Window\Window.h">
-      <Filter>ソース ファイル\GameSystem\Window</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h">
-      <Filter>ソース ファイル\Asset\AssetBase</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h">
-      <Filter>ソース ファイル\Scene\SceneManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\GameObject\GameObject.h">
-      <Filter>ソース ファイル\Object\GameObject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\GameObject\PlayObjectTag.h">
-      <Filter>ソース ファイル\Object\GameObject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\GameObject\StoryObjectTag.h">
-      <Filter>ソース ファイル\Object\GameObject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\Story\Character\Character.h">
-      <Filter>ソース ファイル\Object\Story\Character</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\Story\Player\StoryPlayer.h">
-      <Filter>ソース ファイル\Object\Story\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\Play\Ui\PlayUi.h">
-      <Filter>ソース ファイル\Object\Play\Ui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\Play\Player\Player.h">
-      <Filter>ソース ファイル\Object\Play\Player</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\Play\Stage\Stage.h">
-      <Filter>ソース ファイル\Object\Play\Stage</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\Play\MapObject\MapObject.h">
-      <Filter>ソース ファイル\Object\Play\MapObject</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\Story\UI\Ui.h">
-      <Filter>ソース ファイル\Object\Story\Ui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h">
-      <Filter>ソース ファイル\Object\GameObjectManager</Filter>
-    </ClInclude>
-    <ClInclude Include="Fps.h">
-      <Filter>ソース ファイル\FPS</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Asset\AssetManager\AssetManager.h">
-      <Filter>ソース ファイル\Asset\AssetManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Asset\Sound\Sound.h">
-      <Filter>ソース ファイル\Asset\Sound</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h">
-      <Filter>ソース ファイル\Asset\AssetBase</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.h">
-      <Filter>ソース ファイル\Object\GameObjectManager\PlayObjectManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.h">
-      <Filter>ソース ファイル\Object\GameObjectManager\StoryObjectManager</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\Story\BackGround\BackGround.h">
-      <Filter>ソース ファイル\Object\Story\BackGround</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Asset\Img\ImageJson.h">
-      <Filter>ソース ファイル\Asset\ImgJson</Filter>
-    </ClInclude>
-
-    <ClInclude Include="..\..\code\Asset\Img\PlayData\PlayData.h">
-      <Filter>ヘッダー ファイル</Filter>
-
-    <ClInclude Include="..\..\code\Asset\Img\TitleData\TitleData.h">
-      <Filter>ソース ファイル\Asset\ImgJson\TitleData</Filter>
-
-    </ClInclude>
+    <ClCompile Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.cpp" />
+    <ClCompile Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.cpp" />
+    <ClCompile Include="..\..\code\Object\GameObject\GameObject.cpp" />
+    <ClCompile Include="..\..\code\Object\Play\MapObject\MapObject.cpp" />
+    <ClCompile Include="..\..\code\Object\Play\Player\Player.cpp" />
+    <ClCompile Include="..\..\code\Object\Play\Stage\Stage.cpp" />
+    <ClCompile Include="..\..\code\Object\Play\Ui\PlayUi.cpp" />
+    <ClCompile Include="..\..\code\Object\Story\BackGround\BackGround.cpp" />
+    <ClCompile Include="..\..\code\Object\Story\Character\Character.cpp" />
+    <ClCompile Include="..\..\code\Object\Story\Player\StoryPlayer.cpp" />
+    <ClCompile Include="..\..\code\Object\Story\UI\Ui.cpp" />
+    <ClCompile Include="..\..\code\Scene\End\End.cpp" />
+    <ClCompile Include="..\..\code\Scene\Play\Play.cpp" />
+    <ClCompile Include="..\..\code\Scene\SceneBase\SceneBase.cpp" />
+    <ClCompile Include="..\..\code\Scene\Story\Story.cpp" />
+    <ClCompile Include="..\..\code\Scene\Title\Title.cpp" />
+    <ClCompile Include="..\..\code\Scene\SceneManager\SceneManager.cpp" />
+    <ClCompile Include="Fps.cpp" />
+    <ClCompile Include="Sound.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h" />
+    <ClInclude Include="..\..\code\Asset\Img\ImageJson.h" />
+    <ClInclude Include="..\..\code\Asset\Img\PlayData\PlayData.h" />
+    <ClInclude Include="..\..\code\Asset\Img\TitleData\TitleData.h" />
+    <ClInclude Include="..\..\code\Asset\Sound\Sound.h" />
+    <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h" />
+    <ClInclude Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.h" />
+    <ClInclude Include="..\..\code\Object\GameObjectManager\StoryObjectManager\StoryObjectManager.h" />
+    <ClInclude Include="..\..\code\Object\GameObject\GameObject.h" />
+    <ClInclude Include="..\..\code\Object\GameObject\PlayObjectTag.h" />
+    <ClInclude Include="..\..\code\Object\GameObject\StoryObjectTag.h" />
+    <ClInclude Include="..\..\code\Object\Play\MapObject\MapObject.h" />
+    <ClInclude Include="..\..\code\Object\Play\Player\Player.h" />
+    <ClInclude Include="..\..\code\Object\Play\Stage\Stage.h" />
+    <ClInclude Include="..\..\code\Object\Play\Ui\PlayUi.h" />
+    <ClInclude Include="..\..\code\Object\Story\BackGround\BackGround.h" />
+    <ClInclude Include="..\..\code\Object\Story\Character\Character.h" />
+    <ClInclude Include="..\..\code\Object\Story\Player\StoryPlayer.h" />
+    <ClInclude Include="..\..\code\Object\Story\UI\Ui.h" />
+    <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
+    <ClInclude Include="Fps.h" />
     <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
+    <ClInclude Include="..\..\code\Scene\End\End.h" />
+    <ClInclude Include="..\..\code\Scene\Play\Play.h" />
+    <ClInclude Include="..\..\code\Scene\SceneBase\SceneBase.h" />
+    <ClInclude Include="..\..\code\Scene\Story\Story.h" />
+    <ClInclude Include="..\..\code\Scene\Title\Title.h" />
+    <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h" />
+    <ClInclude Include="..\..\code\GameSystem\Window\Window.h" />
   </ItemGroup>
   <ItemGroup>
-    <None Include="..\..\code\Json\ImgData.json">
-      <Filter>ソース ファイル\Json</Filter>
-    </None>
-    <None Include="..\..\code\Json\StageData.json">
-      <Filter>ソース ファイル\Json</Filter>
-    </None>
+    <None Include="..\..\code\Json\ImgData.json" />
+    <None Include="..\..\code\Json\StageData.json" />
   </ItemGroup>
 </Project>

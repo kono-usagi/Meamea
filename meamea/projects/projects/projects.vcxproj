@@ -139,16 +139,11 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="..\..\code\Asset\AssetManager\AssetManager.cpp" />
     <ClCompile Include="..\..\code\Asset\Img\ImageJson.cpp" />
-
     <ClCompile Include="..\..\code\Asset\Img\PlayData\PlayData.cpp" />
-
     <ClCompile Include="..\..\code\Asset\Img\TitleData\TitleData.cpp" />
-
     <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
     <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
-    <ClCompile Include="..\..\code\Asset\AssetBase\AssetBase.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
     <ClCompile Include="..\..\code\main.cpp" />
     <ClCompile Include="..\..\code\Object\GameObjectManager\PlayObjectManager\PlayObjectManager.cpp" />
@@ -172,13 +167,9 @@
     <ClCompile Include="Sound.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\code\Asset\AssetBase\AssetBase.h" />
     <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h" />
-    <ClInclude Include="..\..\code\Asset\AssetManager\AssetManager.h" />
     <ClInclude Include="..\..\code\Asset\Img\ImageJson.h" />
-
     <ClInclude Include="..\..\code\Asset\Img\PlayData\PlayData.h" />
-
     <ClInclude Include="..\..\code\Asset\Img\TitleData\TitleData.h" />
     <ClInclude Include="..\..\code\Asset\Sound\Sound.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\IfObjectManager.h" />
