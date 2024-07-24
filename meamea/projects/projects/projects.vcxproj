@@ -140,9 +140,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\..\code\Fps\Fps.cpp" />
+    <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
     <ClCompile Include="..\..\code\GameSystem\GamseSetting\GameSetting.cpp" />
     <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp" />
-    <ClCompile Include="..\..\code\GameSystem\GameManager\GameManager.cpp" />
     <ClCompile Include="..\..\code\JsonMaster\Image\EndingData\EndingData.cpp" />
     <ClCompile Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.cpp" />
     <ClCompile Include="..\..\code\JsonMaster\Image\PlayData\PlayData.cpp" />
@@ -169,6 +169,7 @@
   <ItemGroup>
     <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h" />
     <ClInclude Include="..\..\code\Fps\Fps.h" />
+    <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\EndingData\EndingData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\PlayData\PlayData.h" />
@@ -189,7 +190,6 @@
     <ClInclude Include="..\..\code\Scene\SceneManager\SceneManager.h" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\code\GameSystem\GameManager\GameManager.h" />
     <ClInclude Include="..\..\code\Scene\End\End.h" />
     <ClInclude Include="..\..\code\Scene\Play\Play.h" />
     <ClInclude Include="..\..\code\Scene\SceneBase\SceneBase.h" />

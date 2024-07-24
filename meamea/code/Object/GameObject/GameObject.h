@@ -1,13 +1,13 @@
-#include"DxLib.h"
-#include"PlayObjectTag.h"
-#include"../GameObjectManager/PlayObjectManager/PlayObjectManager.h"
+#include<DxLib.h>
 #include<vector>
 
+#include"../GameObjectManager/PlayObjectManager/PlayObjectManager.h"
+#include"PlayObjectTag.h"
 
 namespace mea
 {
     /// <summary>
-    /// オブジェクトの親クラス
+    /// ゲームオブジェクトの基底
     /// </summary>
     class GameObject
     {
@@ -16,10 +16,8 @@ namespace mea
         /// <summary>
         /// コンストラクタ
         /// </summary>
-        /// <param name="tagNasme"></param>
+        /// <param name="tagNasme">オブジェクト名</param>
         GameObject(std::string tagNasme);
-
-        //GameObject(PlayObjectTag tag, VECTOR pos);//コンストラクタ
 
         /// <summary>
         /// デストラクタ
@@ -39,28 +37,46 @@ namespace mea
         /// <summary>
         /// 操作処理
         /// </summary>
-        virtual void Input();
+        virtual void Input() {};
 
         /// <summary>
         /// タグ名取得
         /// </summary>
-        /// <returns></returns>
-        std::string GetTagName() { return tagName; }
-
-        /// <summary>
-        /// 渡したオブジェクトのタグを返す
-        /// </summary>
-        /// <returns></returns>
-        std::string GetTag();
+        /// <returns>タグ名</returns>
+        std::string GetTagName()const { return mTag; }
 
         /// <summary>
         /// 座標取得
         /// </summary>
-        /// <returns></returns>
-        const VECTOR& GetPos() const { return mPos; }
+        /// <returns>オブジェクトの位置</returns>
+        const VECTOR& GetObjPos() const { return mPos; }
+
+        /// <summary>
+        /// 指定した場所のマップ情報取得
+        /// </summary>
+        /// <param name="x">x情報</param>
+        /// <param name="y">y情報</param>
+        /// <returns>マップ情報</returns>
+        const int GetMapInfo(int x, int y) const { return mMapInfo[x][y]; }
+
+        /// <summary>
+        /// マップ内の位置情報
+        /// </summary>
+        /// <returns>x位置</returns>
+        const int GetMapX() const { return mMapx; }
+
+        /// <summary>
+        /// マップ内の位置情報
+        /// </summary>
+        /// <returns>y位置</returns>
+        const int GetMapY() const { return mMapy; }
 
     protected:
-        std::string tagName;
-        VECTOR mPos;    //  オブジェクトの座標
+
+        int mMapInfo[20][20];   //マップ情報
+        int mMapx;
+        int mMapy;
+        VECTOR mPos;            //オブジェクト位置
+        std::string mTag;       //オブジェクト種類
     };
 }
