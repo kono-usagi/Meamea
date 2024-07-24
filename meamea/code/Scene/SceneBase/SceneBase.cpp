@@ -2,13 +2,12 @@
 
 namespace mea
 {
-    SceneBase::SceneBase()//コンストラクタ
+    SceneBase::SceneBase()
     {
-
+        //処理なし
     }
-    SceneBase::~SceneBase()//デストラクタ
+    SceneBase::~SceneBase()
     {
-
+        //処理なし
     }
-    
 }

@@ -1,4 +1,5 @@
-#include"DxLib.h"
+#pragma once
+#include<DxLib.h>
 
 namespace mea
 {
@@ -8,22 +9,27 @@ namespace mea
     class SceneBase
     {
     public:
-        SceneBase();//コンストラクタ
-        ~SceneBase();//デストラクタ
+
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        SceneBase();
+
+        /// <summary>
+        /// デストラクタ
+        /// </summary>
+        ~SceneBase();
 
         /// <summary>
         /// シーン更新処理
         /// </summary>
-        /// <param name="deltaTime">:デルタタイム</param>
-        virtual SceneBase* Update(float deltaTime) = 0;
+        /// <param name="deltaTime">デルタタイム</param>
+        /// <returns>次のフレームシーン</returns>
+        virtual SceneBase* Update(const float deltaTime) = 0;
 
         /// <summary>
         /// シーン描画処理
         /// </summary>
         virtual void Draw() = 0;
-
-    private:
-
-
     };
 }
