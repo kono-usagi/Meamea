@@ -35,14 +35,8 @@
     <ClCompile Include="..\..\code\GameSystem\Window\Window.cpp">
       <Filter>GameSystem\Window</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\Scene\Play\Play.cpp">
-      <Filter>Scene\Play</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\Object\Story\UI\Ui.cpp">
       <Filter>Object\Story\Ui</Filter>
-    </ClCompile>
-    <ClCompile Include="..\..\code\Scene\Title\Title.cpp">
-      <Filter>Scene\Title</Filter>
     </ClCompile>
     <ClCompile Include="..\..\code\Object\Play\Stage\Stage.cpp">
       <Filter>Object\Play\Stage</Filter>
@@ -76,6 +70,12 @@
     </ClCompile>
     <ClCompile Include="..\..\code\Object\GameObject\GameObject.cpp">
       <Filter>Object\GameObject</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\Play\Play.cpp">
+      <Filter>Scene\Play</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\Scene\Title\Title.cpp">
+      <Filter>Scene\Title</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -115,14 +115,8 @@
     <ClInclude Include="..\..\code\GameSystem\Window\Window.h">
       <Filter>GameSystem\Window</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\Scene\Play\Play.h">
-      <Filter>Scene\Play</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\Object\Story\UI\Ui.h">
       <Filter>Object\Story\Ui</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Scene\Title\Title.h">
-      <Filter>Scene\Title</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\Object\Play\Stage\Stage.h">
       <Filter>Object\Play\Stage</Filter>
@@ -162,6 +156,12 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Object\GameObject\GameObject.h">
       <Filter>Object\GameObject</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\Play\Play.h">
+      <Filter>Scene\Play</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Scene\Title\Title.h">
+      <Filter>Scene\Title</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
