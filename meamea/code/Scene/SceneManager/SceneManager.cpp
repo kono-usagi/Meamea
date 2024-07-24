@@ -11,7 +11,7 @@ namespace mea
     {
         //初期化処理
         GameObjectManager::Initialize();
-        AssetManager::InitAssetManager();
+        //AssetManager::InitAssetManager(); インスタンス生成
 
         //現在のシーンをタイトルに設定
         mNowScene.emplace(new Title);
