@@ -1,0 +1,115 @@
+#include "GameObjectManager.h"
+
+namespace mea
+{
+    //実体の中身を空に
+    std::unique_ptr<GameObjectManager>GameObjectManager::mInstance = nullptr;
+
+    GameObjectManager::GameObjectManager()
+        :mObjects()
+    {
+        mInstance = nullptr;
+    }
+
+    void GameObjectManager::Initialize()
+    {
+        //自身の中身が空ならインスタンス生成
+        if (!mInstance)
+        {
+            mInstance.reset(new GameObjectManager);
+        }
+    }
+
+    void GameObjectManager::Entry(GameObject* newObj)
+    {
+        //タグの検索をしてオブジェクト登録
+        std::string tag = newObj->GetTagName();
+        mInstance->mObjects[tag].emplace_back(newObj);
+    }
+
+    void GameObjectManager::ReleaseAllObj()
+    {
+        for (std::string& tag : PlayObjectTagAll)
+        {
+            //末尾からアクティブオブジェクトの削除
+            while (!mInstance->mObjects[tag].empty())
+            {
+                //要素を参照して削除
+                delete mInstance->mObjects[tag].back().get();
+                mInstance->mObjects[tag].pop_back();
+            }
+        }
+    }
+
+    void GameObjectManager::Update(float deltaTime)
+    {
+        for (std::string& tag : PlayObjectTagAll)
+        {
+            // 該当タグにあるすべてのオブジェクトを更新
+            for (auto& obj : mInstance->mObjects[tag])
+            {
+                //更新
+                obj->Update(deltaTime);
+            }
+        }
+    }
+
+    void GameObjectManager::Draw()
+    {
+        for (std::string& tag : PlayObjectTagAll)
+        {
+            for (auto& obj : mInstance->mObjects[tag])
+            {
+                obj->Draw();
+            }
+        }
+    }
+
+    //次回実装検討
+    //void GameObjectManager::MoveByKey()
+    //{
+    //    if (!CheckHitKeyAll) return;
+    //        
+    //    //auto stageInfos = mInstance->mObjects[PlayObjTag.STAGE];
+    //    //auto playerInfos = mInstance->mObjects[PlayObjTag.PLAYER];
+
+    //    //for (auto playerInfo : playerInfos)
+    //    //{
+    //    //    for (auto stageInfo : stageInfos)
+    //    //    { 
+    //    //        if (stageInfo->GetMapInfo(playerInfo->GetMapX(), playerInfo->GetMapY())==0)
+    //    //        {
+    //    //            //マップに何もなかったらplayerの動き処理
+    //    //            playerInfo->Input();
+    //    //        }
+    //    //        else
+    //    //        {
+    //    //            //動くオブジェクトだったら
+    //    //            if (stageInfo->GetMapInfo(playerInfo->GetMapX(), playerInfo->GetMapY()) == 1)
+    //    //            {
+    //    //                //動ける状態だったら移動処理
+    //    //				if (stageInfo->GetMapInfo(playerInfo->GetMapX(), playerInfo->GetMapY()) == 0)
+    //    //				{
+    //    //					GameObject* mapobjnum = GetFirstGameObj(PlayObjTag.MAPOBJECT);
+    //    //					mapobjnum->
+    //    //			    }
+    //    //            }
+    //    //        }
+    //    //    }
+    //    //}
+    //}
+
+    GameObject* GameObjectManager::GetFirstGameObj(std::string tag)
+    {
+        //アクティブリストに何も入ってなかったら
+        if (mInstance->mObjects[tag].size() == 0)
+        {
+            //nullptr 空 何もない
+            return nullptr;
+        }
+
+        //もし入っていたらアクティブリストのオブジェクトの一番目(個数)を返す
+        return mInstance->mObjects[tag][0].get();
+    }
+}
+
