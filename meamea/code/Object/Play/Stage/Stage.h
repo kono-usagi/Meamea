@@ -41,6 +41,11 @@ namespace mea
         void Draw()override;
 
         /// <summary>
+        /// 入力処理
+        /// </summary>
+        void Input()override;
+
+        /// <summary>
         /// マップ情報を返す
         /// </summary>
         /// <param name="x">x値</param>
