@@ -5,11 +5,29 @@ namespace mea
 {
     PlayUi::PlayUi()
     {
+        //画像の読み込み
+        //BackGround = LoadGraph("");
+        //Stage = LoadGraph("");
 
+        //フォントのロード
+        LPCSTR  fontPath = "test";　　//読み込むフォントファイルのパス
+        if (AddFontResourceEx(fontPath, FR_PRIVATE, NULL) > 0) {}
+        else
+        {
+            //フォント読み込みエラー表示
+            MessegeBox(NULL, "フォント読み込み失敗", "", MB_OK);
+        }
+
+        //文字サイズ変更
+        SetFontSize(36);
     }
 
     PlayUi::~PlayUi()
     {
+        //画像の削除
+        //DeleteGraph(BackGround);
+        //DeleteGraph(Stage);
+
         //フォントのアンロード
         if(RemoveFontResourceEx(fontPath, FR_PRIVATE, NULL)) { }
         else
@@ -28,22 +46,13 @@ namespace mea
 
     void PlayUi::Draw()
     {
+        //背景画像の表示
+        //DrawGraph(0, 0, BackGround, TRUE);
+        //DrawGraph(0, 0, Stage, TRUE);
+        // 
         //歩数の表示
         DrawString(0,0,step,GetColor(255,255,255));
     }
 
-    void PlayUi::LoadFont()
-    {
-        //フォントのロード
-        LPCSTR  fontPath = "test";　　//読み込むフォントファイルのパス
-        if (AddFontResourceEx(fontPath, FR_PRIVATE, NULL) > 0) { }
-        else
-        {
-            //フォント読み込みエラー表示
-            MessegeBox(NULL, "フォント読み込み失敗", "", MB_OK);
-        }
 
-        //文字サイズ変更
-        SetFontSize(36);
-    }
 }

@@ -26,12 +26,11 @@ namespace mea
         /// </summary>
         void Draw();
 
-        /// <summary>
-        /// ƒtƒHƒ“ƒg‚Ìİ’è
-        /// </summary>
-        void LoadFont();
 
     private:
         int step;
+
+        int BackGround;   //ˆê”Ô‰œ‚Ì”wŒi‰æ‘œ
+        int Stage;        //map‚Ì‰æ‘œ
     };
 }
