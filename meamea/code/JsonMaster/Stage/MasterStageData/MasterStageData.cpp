@@ -6,7 +6,7 @@ namespace mea
 	{
 		//ファイルを読み込みインスタンス生成
 
-		Json stagejson= ioutility.Analysis("データパス記入");
+		Json stagejson= ioutility.Analysis("../../../JsonFile/StageData");
 		stageone.reset(new StageOneData(stagejson["stagedata"]["1"]));
 		//stagetwo.reset(new StageTwo(stagejson["stagedata"]["2"]));
 		//stagethree.reset(new StageThree(stagejson["stagedata"]["3"]));

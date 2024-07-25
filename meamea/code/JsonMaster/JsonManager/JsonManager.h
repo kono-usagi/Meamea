@@ -1,7 +1,7 @@
 #pragma once
 #include<memory>
 
-#include "../MasterImgData/MasterImgData.h"
+#include "../Image/MasterImgData/MasterImgData.h"
 
 namespace mea
 {
