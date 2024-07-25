@@ -2,7 +2,7 @@
 #include <memory>
 #include"../../IOUtility/IOUtility.h"
 
-#include"../StageOne/StageOneData.h"
+#include"../StageOneData/StageOneData.h"
 //#include"../StageTwo/StageTwoData.h"
 //#include"../StageThree/StageThreeData.h"
 
@@ -29,7 +29,7 @@ namespace mea
 		/// StageOneインスタンス
 		/// </summary>
 		/// <returns>StageOneデータ</returns>
-		class StageOne* StageOneInstance() { stageone.get(); }
+		class StageOneData* StageOneInstance() { stageone.get(); }
 
 		/// <summary>
 		/// StageTwoインスタンス
@@ -47,7 +47,7 @@ namespace mea
 
 		IOUtility ioutility;							//IOUtilityインスタンス
 
-		std::unique_ptr<class StageOne> stageone;		  //stageone
+		std::unique_ptr<class StageOneData> stageone;		  //stageone
 		//std::unique_ptr<class StageTwo> stagetwo;		  //stagetwo
 		//std::unique_ptr<class StageThree> stagethree;     //stagethree
 	};
