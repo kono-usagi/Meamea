@@ -11,19 +11,19 @@ namespace mea
 	/// <summary>
 	/// JsonStageデータ管理クラス
 	/// </summary>
-	class StageMaster final
+	class MasterStageData final
 	{
 	public:
 
 		/// <summary>
 		/// コンストラクタ
 		/// </summary>
-		StageMaster();
+		MasterStageData();
 
 		/// <summary>
 		/// デストラクタ
 		/// </summary>
-		~StageMaster();
+		~MasterStageData();
 
 		/// <summary>
 		/// StageOneインスタンス
