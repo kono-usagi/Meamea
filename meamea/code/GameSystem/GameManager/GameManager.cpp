@@ -20,6 +20,6 @@ namespace mea
 
     void GameManager::Finalize()
     {
-        SceneManager->GameLoop();
+        sceneManager->GameLoop();
     }
 }

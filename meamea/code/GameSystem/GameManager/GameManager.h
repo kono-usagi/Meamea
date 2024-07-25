@@ -10,7 +10,7 @@ namespace mea
     /// <summary>
     /// ゲーム全体の進行管理クラス
     /// </summary>
-    class GameManager
+    class GameManager final
     {
     public:
 
