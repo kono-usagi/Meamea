@@ -1,23 +1,24 @@
 {
   "play": {
     "global": {
+      "background": "../../../asset/Play/BackGround/BackGround",
       "leftside": "",
-      "player": "",
-      "moverock": ""
+      "player": "../../../asset/Play/Character/Mea",
+      "moverock": "../../../asset/Play/Map/MoveRock"
     },
     "stage": {
       "one": {
-        "background": "",
+        "map": "../../../asset/Play/Map/stage_one/Map",
         "rightside": "",
-        "character": ""
+        "character": "../../../asset/Play/Character/Lilian"
       },
       "two": {
-        "background": "",
+        "map": "",
         "rightside": "",
         "character": ""
       },
       "three": {
-        "background": "",
+        "map": "",
         "rightside": "",
         "character": ""
       }

@@ -1,20 +1,20 @@
 {
   "story": {
     "global": {
-      "background": "",
-      "select": "",
-      "noselect": ""
+      "background": "../../../asset/Story/BackGround/BackGround",
+      "select": "../../../asset/Story/Ui/Select",
+      "noselect": "../../../asset/Story/Ui/NoSelect"
     },
     "character": {
       "mea": {
-        "normal": "",
-        "puzzled": ""
+        "normal": "../../../asset/Story/Character/Mea/Normal",
+        "puzzled": "../../../asset/Story/Character/Mea/Puzzled"
       },
       "Lilian": {
-        "normal": "",
-        "puzzled": "",
-        "like": "",
-        "impatience": ""
+        "normal": "../../../asset/Story/Character/Lilian/Normal",
+        "puzzled": "../../../asset/Story/Character/Lilian/Puzzled",
+        "like": "../../../asset/Story/Character/Lilian/Like",
+        "impatience": "../../../asset/Story/Character/Lilian/Impatience"
       },
       "Laurence": {
         "normal": "",

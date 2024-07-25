@@ -10,19 +10,20 @@ namespace mea
         ~PlayData();
         Json GetAllData() const { return mAllData; }
 
+        std::string GetBackGround() const { return globaldata.mBackGround; }
         std::string GetLeftSide() const { return globaldata.mLeftSide; }
         std::string GetPlayer() const { return globaldata.mPlayer; }
         std::string GetMoveRock() const { return globaldata.mMoveRock; }
 
-        std::string GetStage_One_BackGround() const { return one.mBackGround; }
+        std::string GetStage_One_BackGround() const { return one.mMap; }
         std::string GetStage_One_RightSide() const { return one.mRightSide; }
         std::string GetStage_One_Character() const { return one.mCharacter; }
 
-        std::string GetStage_Two_BackGround() const { return two.mBackGround; }
+        std::string GetStage_Two_BackGround() const { return two.mMap; }
         std::string GetStage_Two_RightSide() const { return two.mRightSide; }
         std::string GetStage_Two_Character() const { return two.mCharacter; }
 
-        std::string GetStage_Three_BackGround() const { return three.mBackGround; }
+        std::string GetStage_Three_BackGround() const { return three.mMap; }
         std::string GetStage_Three_RightSide() const { return three.mRightSide; }
         std::string GetStage_Three_Character() const { return three.mCharacter; }
 
@@ -31,6 +32,7 @@ namespace mea
 
         struct GlobalData
         {
+            std::string mBackGround;
             std::string mLeftSide;
             std::string mPlayer;
             std::string mMoveRock;
@@ -38,7 +40,7 @@ namespace mea
 
         struct StageData
         {
-            std::string mBackGround;
+            std::string mMap;
             std::string mRightSide;
             std::string mCharacter;
         };

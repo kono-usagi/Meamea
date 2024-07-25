@@ -5,6 +5,7 @@ namespace mea
 
     PlayData::PlayData(Json json)
     {
+        globaldata.mBackGround = json["global"]["backGround"];
         globaldata.mLeftSide = json["global"]["leftside"];
         globaldata.mMoveRock = json["global"]["moverock"];
         globaldata.mPlayer = json["global"]["player"];
@@ -21,7 +22,7 @@ namespace mea
 
     void PlayData::SetStageData(StageData& dataname,Json json)
     {
-        dataname.mBackGround = json["background"];
+        dataname.mMap = json["map"];
         dataname.mRightSide = json["rightside"];
         dataname.mCharacter = json["character"];
     }
