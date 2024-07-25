@@ -80,8 +80,8 @@
     <ClCompile Include="..\..\code\JsonMaster\Image\StoryData\StoryData.cpp">
       <Filter>Jsonmaster\Image\StoryData</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\JsonMaster\Stage\StageMaster\StageMaster.cpp">
-      <Filter>Jsonmaster\Stage\StageMaster</Filter>
+    <ClCompile Include="..\..\code\JsonMaster\Stage\MasterStageData\MasterStageData.cpp">
+      <Filter>Jsonmaster\Stage\MasterStageData</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -172,8 +172,8 @@
     <ClInclude Include="..\..\code\JsonMaster\Image\StoryData\StoryData.h">
       <Filter>Jsonmaster\Image\StoryData</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\JsonMaster\Stage\StageMaster\StageMaster.h">
-      <Filter>Jsonmaster\Stage\StageMaster</Filter>
+    <ClInclude Include="..\..\code\JsonMaster\Stage\MasterStageData\MasterStageData.h">
+      <Filter>Jsonmaster\Stage\MasterStageData</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -305,7 +305,7 @@
     <Filter Include="Jsonmaster\Stage">
       <UniqueIdentifier>{304bccef-c219-4c1c-af2b-1709b87d80a7}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Jsonmaster\Stage\StageMaster">
+    <Filter Include="Jsonmaster\Stage\MasterStageData">
       <UniqueIdentifier>{752fb2be-d91e-41f1-8738-3ce057722f42}</UniqueIdentifier>
     </Filter>
   </ItemGroup>

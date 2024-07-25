@@ -1,8 +1,8 @@
-#include "StageMaster.h"
+#include "MasterStageData.h"
 
 namespace mea
 {
-	StageMaster::StageMaster()
+	MasterStageData::MasterStageData()
 	{
 		//ファイルを読み込みインスタンス生成
 
@@ -12,7 +12,7 @@ namespace mea
 		//stagethree.reset(new StageThree(stagejson["stagedata"]["3"]));
 	}
 
-	StageMaster::~StageMaster()
+	MasterStageData::~MasterStageData()
 	{
 		//処理なし
 	}
