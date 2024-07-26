@@ -11,7 +11,6 @@ namespace mea
 
         //ƒ}ƒbƒvî•ñ‚Ì“Ç‚İ‚İ
         //mMapnumber=
-
     }
 
     Stage::~Stage()

@@ -1,5 +1,14 @@
 #include"../../Scene/SceneBase/SceneBase.h"
+#include"../../Scene/Title/Title.h"
 #include"../../GameSystem/GameManager/GameManager.h"
+
+#include"../../Object/GameObjectManager/GameObjectManager.h"
+#include"../../Object/GameObject/PlayObjectTag.h"
+
+#include "../../Object/Play/Player/Player.h"
+#include"../../Object/Play/Stage/Stage.h"
+#include"../../Object/Play/Ui/PlayUi.h"
+#include"../../Object/Play/MapObject/MapObject.h"
 
 namespace mea
 {

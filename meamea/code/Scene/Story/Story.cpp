@@ -2,11 +2,20 @@
 
 namespace mea
 {
-    Story::Story()//コンストラクタ
+    Story::Story()
     {
+        //現在のシーン
+        GameObjectManager::NowSceneSet(StoryObjectTagAll);
         //全オブジェクト生成
+        GameObjectManager::Entry(new BackGround);
+        //キャラクター生成
+        GameObjectManager::Entry(new Character);
+        //プレイヤー生成
+        GameObjectManager::Entry(new StoryPlayer);
+        //Ui生成
+        GameObjectManager::Entry(new Ui);
     }
-    Story::~Story()//デストラクタ
+    Story::~Story()
     {
         //処理なし
     }

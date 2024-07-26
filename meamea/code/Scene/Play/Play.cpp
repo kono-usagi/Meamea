@@ -1,20 +1,22 @@
 #include"Play.h"
-#include"../../Scene/Title/Title.h"
-#include"../../Object/GameObjectManager/GemeObjectManager.h"
 
 namespace mea
 {
     Play::Play()
     {
+        //現在のシーン
+        GameObjectManager::NowSceneSet(PlayObjectTagAll);
         //プレイヤー生成
-
+        GameObjectManager::Entry(new Player);
         //ステージ生成
-
+        GameObjectManager::Entry(new Stage);
+        //マップオブジェクト生成
+        GameObjectManager::Entry(new MapObject);
         //UI生成
+        GameObjectManager::Entry(new PlayUi);
     }
-    Play::~Play()//コンストラクタ
+    Play::~Play()
     {
-
     }
 
     SceneBase* Play::Update(float deltaTime)
@@ -22,8 +24,8 @@ namespace mea
         // すべてのゲームオブジェクトの更新
         GameObjectManager::Update(deltaTime);
 
-        //以下プレイ中タイトルに戻る処理　メニュー実装時検討
-        /*if ()
+        //エンターキーでゲーム終了
+        /*if (KEY_INPUT_RETURN)
         {
             GameObjectManager::ReleaseAllObj();
             return new Title;

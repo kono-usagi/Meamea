@@ -9,7 +9,7 @@ namespace mea
     /// <summary>
     /// マップオブジェクトクラス
     /// </summary>
-    class MapObject:public GameObject
+    class MapObject final:public GameObject
     {
     public:
         int mMapObjectHandle;//画像ハンドル
