@@ -5,7 +5,8 @@ namespace mea
 	std::unique_ptr<JsonManager>JsonManager::jsonmanager = nullptr;
 
 	JsonManager::JsonManager()
-		:masterimgdata(new MasterImgData)
+		:masterimgdata(new MasterImgData),
+		masterstagedata(new MasterStageData)
 	{
 		//ˆ—‚È‚µ
 	}
