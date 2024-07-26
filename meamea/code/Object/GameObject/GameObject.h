@@ -1,8 +1,9 @@
 #include<DxLib.h>
 #include<vector>
 
-#include"../GameObjectManager/PlayObjectManager/PlayObjectManager.h"
+#include"../GameObjectManager/GameObjectManager/GameObjectManager.h"
 #include"PlayObjectTag.h"
+#include"../../JsonMaster/IOUtility/IOUtility.h"
 
 namespace mea
 {
@@ -63,19 +64,19 @@ namespace mea
         /// マップ内の位置情報
         /// </summary>
         /// <returns>x位置</returns>
-        const int GetMapX() const { return mMapx; }
+        const int GetMapX() const { return mMapX; }
 
         /// <summary>
         /// マップ内の位置情報
         /// </summary>
         /// <returns>y位置</returns>
-        const int GetMapY() const { return mMapy; }
+        const int GetMapY() const { return mMapY; }
 
     protected:
 
         int mMapInfo[20][20];   //マップ情報
-        int mMapx;
-        int mMapy;
+        int mMapX;
+        int mMapY;
         VECTOR mPos;            //オブジェクト位置
         std::string mTag;       //オブジェクト種類
     };

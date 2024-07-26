@@ -38,7 +38,7 @@ namespace mea
         /// 動けるかどうか
         /// </summary>
         /// <returns></returns>
-        bool isMove(int keyType)override;
+        //bool isMove(int keyType)override;
 
 
         /// <summary>

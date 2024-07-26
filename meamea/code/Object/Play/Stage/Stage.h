@@ -1,22 +1,16 @@
 #pragma once
 #include<Dxlib.h>
 #include"../../GameObject/GameObject.h"
+#include""
 
 
 
-//配列サイズ定数
-const int X_SIZE = 30;//マップ情報配列の最初の要素数
-const int Y_SIZE = 10;//マップ情報配列の二番目の要素数
 
-int mMapInfoArray[X_SIZE][Y_SIZE];//マップ情報配列
-int mArrayFirst;//マップ情報配列の最初
-int mArraySecond;//マップ情報配列の二番目
-int mMapInfo;//マップ情報種類
 
 
 namespace mea
 {
-    class Stage final
+    class Stage:public GameObject
     {
     public:
 
@@ -33,7 +27,7 @@ namespace mea
         /// <summary>
         /// 更新処理
         /// </summary>
-        void Update()override;
+        void Update(float deltaTime)override;
 
         /// <summary>
         /// 描画処理
@@ -87,14 +81,23 @@ namespace mea
         const int KEY_RIGHT = 2;
         const int KEY_LEFT = 3;
 
-        int mMapNumber[1][1];    //マップ情報
+        //配列サイズ定数
+        const int X_SIZE = 30;//マップ情報配列の最初の要素数
+        const int Y_SIZE = 10;//マップ情報配列の二番目の要素数
 
-        int mMapNumber1[8][8];    //マップ情報
+        int mMapInfoArray[X_SIZE][Y_SIZE];//マップ情報配列
+        int mArrayFirst;//マップ情報配列の最初
+        int mArraySecond;//マップ情報配列の二番目
+        int mMapInfo;//マップ情報種類
+
+        int mMapNumber1[10][10];    //マップ情報
 
         int mMapImage;              //マップ画像
         int mMapBackGround;         //マップ背景画像
 
-        int mMoveDistance = 1;   //
+        int mRockImage;
+
+        int mMoveDistance = 1;      //
     };
 
 
