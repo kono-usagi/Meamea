@@ -4,20 +4,24 @@ namespace mea
 {
     Stage::Stage()
     {
-        //ƒ}ƒbƒv‰æ‘œ‚Ì“Ç‚İ‚İ
+        //ãƒãƒƒãƒ—ç”»åƒã®èª­ã¿è¾¼ã¿
         
 
-        //“®‚­Šâ‚Ì•`‰æ
+        //å‹•ãå²©ã®æç”»
 
 
-        //ƒ}ƒbƒvî•ñ‚Ì“Ç‚İ‚İ
+        //ãƒãƒƒãƒ—æƒ…å ±ã®èª­ã¿è¾¼ã¿
+
         mMapX=IOUtility::imgU
+
+
+        //mMapnumber=
 
     }
 
     Stage::~Stage()
     {
-        //‰Šú‰»
+        //åˆæœŸåŒ–
     }
 
     void Stage::Update(float deltatime)
@@ -28,13 +32,13 @@ namespace mea
 
     void Stage::Draw()
     {
-        //ƒ}ƒbƒv‰æ‘œ‚Ì•\¦
+        //ãƒãƒƒãƒ—ç”»åƒã®è¡¨ç¤º
         DrawGraph(0, 0, mMapImage, FALSE);
         
     }
     void Stage::DrawMapObject()
     {
-        //“®‚­Šâ‚ªˆÚ“®‚µ‚½‚ç
+        //å‹•ãå²©ãŒç§»å‹•ã—ãŸã‚‰
 
 
     }
@@ -45,19 +49,19 @@ namespace mea
         if (CheckHitKey(KEY_INPUT_UP) == 1|| CheckHitKey(KEY_INPUT_DOWN) == 1|| CheckHitKey(KEY_INPUT_RIGHT) == 1|| CheckHitKey(KEY_INPUT_LEFT) == 1)
         {
             keyFlg = 1;
-            if (CheckHitKey(KEY_INPUT_UP) == 1)//ã
+            if (CheckHitKey(KEY_INPUT_UP) == 1)//ä¸Š
             {
                 isPlayerMove(KEY_UP);
             }
-            if (CheckHitKey(KEY_INPUT_DOWN) == 1)//‰º
+            if (CheckHitKey(KEY_INPUT_DOWN) == 1)//ä¸‹
             {
                 isPlayerMove(KEY_DOWN);
             }
-            if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//‰E
+            if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//å³
             {
                 isPlayerMove(KEY_RIGHT);
             }
-            if (CheckHitKey(KEY_INPUT_LEFT) == 1)//¶
+            if (CheckHitKey(KEY_INPUT_LEFT) == 1)//å·¦
             {
                 isPlayerMove(KEY_LEFT);
             }
@@ -71,31 +75,31 @@ namespace mea
 
     void Stage::isPlayerMove(int keyType)
     {
-        //Œ»İ’n‚Ì”z—ñæ“¾
+        //ç¾åœ¨åœ°ã®é…åˆ—å–å¾—
 
-        //“ü—Í•ûŒü‚Ì”z—ñ“àî•ñ‚Ìæ“¾
-        if (keyType == KEY_UP)//ã
+        //å…¥åŠ›æ–¹å‘ã®é…åˆ—å†…æƒ…å ±ã®å–å¾—
+        if (keyType == KEY_UP)//ä¸Š
         {
             mMapInfo=mMapInfoArray[mArrayFirst][mArraySecond - mMoveDistance];
         }
-        if (keyType == KEY_DOWN)//‰º
+        if (keyType == KEY_DOWN)//ä¸‹
         {
             mMapInfo = mMapInfoArray[mArrayFirst][mArraySecond + mMoveDistance];
         }
-        if (keyType == KEY_RIGHT)//‰E
+        if (keyType == KEY_RIGHT)//å³
         {
             mMapInfo = mMapInfoArray[mArrayFirst + mMoveDistance][mArraySecond];
         }
-        if (keyType == KEY_LEFT)//¶
+        if (keyType == KEY_LEFT)//å·¦
         {
             mMapInfo = mMapInfoArray[mArrayFirst - mMoveDistance][mArraySecond];
         }
 
-        if (mMapInfo == MAP_OBJECT_ROCK)//“®‚­Šâ‚Ì‚Æ‚«
+        if (mMapInfo == MAP_OBJECT_ROCK)//å‹•ãå²©ã®ã¨ã
         {
             isMapObjectMove(keyType);
         }
-        if (mMapInfo % 2 == 0)//î•ñ‚ª‹ô”‚Ì‚Æ‚«“®‚©‚·@°0@ã©2
+        if (mMapInfo % 2 == 0)//æƒ…å ±ãŒå¶æ•°ã®ã¨ãå‹•ã‹ã™ã€€åºŠ0ã€€ç½ 2
         {
             Player::Move(keyType);
         }
@@ -103,25 +107,25 @@ namespace mea
 
     void Stage::isMapObjectMove(int keyType)
     {
-        //“ü—Í•ûŒü‚Ì”z—ñ“àî•ñ‚Ìæ“¾
-        if (keyType == KEY_UP)//ã
+        //å…¥åŠ›æ–¹å‘ã®é…åˆ—å†…æƒ…å ±ã®å–å¾—
+        if (keyType == KEY_UP)//ä¸Š
         {
             mMapInfo = mMapInfoArray[mArrayFirst][mArraySecond - mMoveDistance-mMoveDistance];
         }
-        if (keyType == KEY_DOWN)//‰º
+        if (keyType == KEY_DOWN)//ä¸‹
         {
             mMapInfo = mMapInfoArray[mArrayFirst][mArraySecond + mMoveDistance]+ mMoveDistance;
         }
-        if (keyType == KEY_RIGHT)//‰E
+        if (keyType == KEY_RIGHT)//å³
         {
             mMapInfo = mMapInfoArray[mArrayFirst + mMoveDistance+ mMoveDistance][mArraySecond];
         }
-        if (keyType == KEY_LEFT)//¶
+        if (keyType == KEY_LEFT)//å·¦
         {
             mMapInfo = mMapInfoArray[mArrayFirst - mMoveDistance- mMoveDistance][mArraySecond];
         }
 
-        if (mMapInfo % 2 == 0)//î•ñ‚ª‹ô”‚Ì‚Æ‚«“®‚©‚·@°0@ã©2
+        if (mMapInfo % 2 == 0)//æƒ…å ±ãŒå¶æ•°ã®ã¨ãå‹•ã‹ã™ã€€åºŠ0ã€€ç½ 2
         {
             MapObject::Move(keyType);
         }

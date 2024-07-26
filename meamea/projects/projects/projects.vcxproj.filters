@@ -86,6 +86,9 @@
     <ClCompile Include="..\..\code\JsonMaster\Stage\StageOneData\StageOneData.cpp">
       <Filter>Jsonmaster\Stage\StageOneData</Filter>
     </ClCompile>
+    <ClCompile Include="..\..\code\Object\GameObjectManager\GameObjectManager.cpp">
+      <Filter>Object\GameObjectManager</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.h">
@@ -183,6 +186,9 @@
     </ClInclude>
     <ClInclude Include="..\..\code\JsonFile\Image\ヘッダー.h">
       <Filter>JsonFile\Image</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\Object\GameObjectManager\GameObjectManager.h">
+      <Filter>Object\GameObjectManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -319,6 +325,9 @@
     </Filter>
     <Filter Include="Jsonmaster\Stage\StageOneData">
       <UniqueIdentifier>{531508ae-3f66-400c-9577-550e909b4510}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object\GameObjectManager">
+      <UniqueIdentifier>{5f7a4945-2a61-4f8a-89ea-0c978828b3fd}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

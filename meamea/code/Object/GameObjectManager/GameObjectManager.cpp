@@ -20,6 +20,11 @@ namespace mea
         }
     }
 
+    void GameObjectManager::NowSceneSet(std::vector<std::string> NowObjTag)
+    {
+        mInstance->NowScene_ObjTag = NowObjTag;
+    }
+
     void GameObjectManager::Entry(GameObject* newObj)
     {
         //タグの検索をしてオブジェクト登録
@@ -29,7 +34,7 @@ namespace mea
 
     void GameObjectManager::ReleaseAllObj()
     {
-        for (std::string& tag : PlayObjectTagAll)
+        for (std::string& tag : mInstance->NowScene_ObjTag)
         {
             //末尾からアクティブオブジェクトの削除
             while (!mInstance->mObjects[tag].empty())
@@ -43,7 +48,7 @@ namespace mea
 
     void GameObjectManager::Update(float deltaTime)
     {
-        for (std::string& tag : PlayObjectTagAll)
+        for (std::string& tag : mInstance->NowScene_ObjTag)
         {
             // 該当タグにあるすべてのオブジェクトを更新
             for (auto& obj : mInstance->mObjects[tag])
@@ -56,7 +61,7 @@ namespace mea
 
     void GameObjectManager::Draw()
     {
-        for (std::string& tag : PlayObjectTagAll)
+        for (std::string& tag : mInstance->NowScene_ObjTag)
         {
             for (auto& obj : mInstance->mObjects[tag])
             {
