@@ -5,12 +5,13 @@ namespace mea
     Stage::Stage()
     {
         //マップ画像の読み込み
-        //mMapImage=
+        
 
         //動く岩の描画
 
+
         //マップ情報の読み込み
-        //mMapnumber=
+        mMapX=IOUtility::imgU
 
     }
 
@@ -19,7 +20,7 @@ namespace mea
         //初期化
     }
 
-    void Stage::Update()
+    void Stage::Update(float deltatime)
     {
         Draw();
         Input();
