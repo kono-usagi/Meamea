@@ -5,15 +5,16 @@ namespace mea
     Stage::Stage()
     {
         //マップ画像の読み込み
+        mMapBackGround =
+        mMapImage = LoadGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetStage_One_BackGround().c_str());
         
 
         //動く岩の描画
-
+        mRockImage = LoadGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetMoveRock().c_str());
 
         //マップ情報の読み込み
-
-        mMapX=IOUtility::imgU
-
+        mMapX = JsonManager::StageDataInstance()->StageOneInstance()->Getx();
+        mMapY = JsonManager::StageDataInstance()->StageOneInstance()->Gety();
 
         //mMapnumber=
 
@@ -21,7 +22,7 @@ namespace mea
 
     Stage::~Stage()
     {
-        //初期化
+       
     }
 
     void Stage::Update(float deltatime)
