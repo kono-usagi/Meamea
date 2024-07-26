@@ -15,36 +15,36 @@ namespace mea
 	public:
 
 		/// <summary>
-		/// 初期化
+		/// マネージャーインスタンス生成
 		/// </summary>
-		void Initialize();
+		static void Initialize();
+
+		/// <summary>
+		/// 現在のシーンタグをセット
+		/// </summary>
+		static void NowSceneSet(std::vector<std::string> NowObjTag);
 
 		/// <summary>
 		/// オブジェクト登録
 		/// </summary>
 		/// <param name="newObj">登録するオブジェクト</param>
-		void Entry(GameObject* newObj);
+		static void Entry(GameObject* newObj);
 
 		/// <summary>
 		/// 全オブジェクトの削除
 		/// </summary>
-		void ReleaseAllObj();
+		static void ReleaseAllObj();
 
 		/// <summary>
 		/// 全オブジェクトの更新処理
 		/// </summary>
 		/// <param name="deltaTime">デルタタイム</param>
-		void Update(float deltaTime);
+		static void Update(float deltaTime);
 
 		/// <summary>
 		/// すべてのオブジェクトの描画
 		/// </summary>
-		void Draw();
-
-		/// <summary>
-		/// キー入力があったら
-		/// </summary>
-		//void MoveByKey();
+		static void Draw();
 
 		/// <summary>
 		/// タグ種類の初めのオブジェクトを返す
@@ -61,6 +61,7 @@ namespace mea
 		GameObjectManager();
 
 		static std::unique_ptr<GameObjectManager> mInstance;							    // playマネージャの実体
+		std::vector<std::string> NowScene_ObjTag;											//現在のシーンのオブジェクトタグ
 		std::unordered_map<std::string, std::vector<std::shared_ptr<GameObject>>> mObjects;	//オブジェクトリスト
 	};
 }
