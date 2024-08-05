@@ -3,6 +3,7 @@
 
 #include "../Image/MasterImgData/MasterImgData.h"
 #include"../Stage/MasterStageData/MasterStageData.h"
+#include "../Text/MasterTextData/MasterTextData.h"
 
 namespace mea
 {
@@ -31,6 +32,13 @@ namespace mea
 		static class MasterStageData* StageDataInstance() { return jsonmanager->masterstagedata.get(); }
 
 		/// <summary>
+		/// テキストインスタンス
+		/// </summary>
+		/// <returns>テキストデータ</returns>
+		static class MasterTextData* TextDataInstance() { return jsonmanager->mastertextdata.get(); }
+		
+
+		/// <summary>
 		/// デストラクタ
 		/// </summary>
 		~JsonManager();
@@ -46,5 +54,6 @@ namespace mea
 
 		std::unique_ptr<class MasterImgData> masterimgdata;//ImgJsonの実態
 		std::unique_ptr<class MasterStageData> masterstagedata;//StageJsonの実態
+		std::unique_ptr<class MasterTextData> mastertextdata;//TextJsonの実態
 	};
 }
