@@ -6,7 +6,8 @@ namespace mea
 
 	JsonManager::JsonManager()
 		:masterimgdata(new MasterImgData),
-		masterstagedata(new MasterStageData)
+		masterstagedata(new MasterStageData),
+		mastertextdata(new MasterTextData)
 	{
 		//ˆ—‚È‚µ
 	}
