@@ -207,6 +207,9 @@
     <None Include="..\..\code\JsonFile\StageData.json">
       <Filter>JsonFile\Stage</Filter>
     </None>
+    <None Include="..\..\code\JsonFile\StoryText.json">
+      <Filter>JsonFile\Text</Filter>
+    </None>
   </ItemGroup>
   <ItemGroup>
     <Filter Include="Jsonmaster">
@@ -328,6 +331,9 @@
     </Filter>
     <Filter Include="Object\GameObjectManager">
       <UniqueIdentifier>{5f7a4945-2a61-4f8a-89ea-0c978828b3fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="JsonFile\Text">
+      <UniqueIdentifier>{a5592d62-207e-4984-8229-7e3ff1b6d0e7}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>

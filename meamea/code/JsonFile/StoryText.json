@@ -1,0 +1,11 @@
+{
+  "text": {
+    "Lilian": {
+      "talk": "../../../asset/Story/Text/Lilian_Talk1.txt",
+      "Choice1A": "../../../asset/Story/Text/Lilian_Choice1A.txt",
+      "Choice1B": "../../../asset/Story/Text/Lilian_Choice1B.txt",
+      "Choice2A": "../../../asset/Story/Text/Lilian_Choice2A.txt",
+      "Choice2B": "../../../asset/Story/Text/Lilian_Choice2B.txt"
+    }
+  }
+}
