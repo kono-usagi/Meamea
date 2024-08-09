@@ -160,6 +160,7 @@
     <ClCompile Include="..\..\code\JsonMaster\JsonManager\JsonManager.cpp" />
     <ClCompile Include="..\..\code\JsonMaster\Stage\MasterStageData\MasterStageData.cpp" />
     <ClCompile Include="..\..\code\JsonMaster\Stage\StageOneData\StageOneData.cpp" />
+    <ClCompile Include="..\..\code\JsonMaster\Text\TextData.cpp" />
     <ClCompile Include="..\..\code\main.cpp" />
     <ClCompile Include="..\..\code\Object\GameObjectManager\GameObjectManager.cpp" />
     <ClCompile Include="..\..\code\Object\GameObject\GameObject.cpp" />
@@ -191,6 +192,7 @@
     <ClInclude Include="..\..\code\JsonMaster\JsonManager\JsonManager.h" />
     <ClInclude Include="..\..\code\JsonMaster\Stage\MasterStageData\MasterStageData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Stage\StageOneData\StageOneData.h" />
+    <ClInclude Include="..\..\code\JsonMaster\Text\TextData.h" />
     <ClInclude Include="..\..\code\Object\GameObjectManager\GameObjectManager.h" />
     <ClInclude Include="..\..\code\Object\GameObject\GameObject.h" />
     <ClInclude Include="..\..\code\Object\GameObject\PlayObjectTag.h" />
