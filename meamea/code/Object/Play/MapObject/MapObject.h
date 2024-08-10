@@ -16,8 +16,8 @@ namespace mea
         
         MapObject();//コンストラクタ
         ~MapObject();//デストラクタ
-        virtual void Update();//更新
-        virtual void Draw();//描画
+        void Update();//更新
+        void Draw();//描画
         void Move(int keyType);//動かす
     };
 
