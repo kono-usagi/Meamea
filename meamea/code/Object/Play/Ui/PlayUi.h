@@ -28,9 +28,8 @@ namespace mea
 
 
     private:
-        int step;
+        int step=0;   //•à”
 
-        int BackGround;   //ˆê”Ô‰œ‚Ì”wŒi‰æ‘œ
-        int Stage;        //map‚Ì‰æ‘œ
+        LPCSTR  mFontPath;
     };
 }
