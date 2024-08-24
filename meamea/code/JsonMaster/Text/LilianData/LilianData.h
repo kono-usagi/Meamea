@@ -1,13 +1,13 @@
 #pragma once
-#include"../IOUtility/IOUtility.h"
+#include "../MasterTextData/MasterTextData.h"
 
 namespace mea
 {
-	class TextData final
+	class LilianData final
 	{
 	public:
-		TextData(Json json);
-		~TextData();
+		LilianData(Json json);
+		~LilianData();
 
 		std::string GetTalk() const { return mTalk; }
 		std::string GetChoice1A() const { return mChoice1A; }
