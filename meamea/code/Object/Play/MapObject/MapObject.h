@@ -14,11 +14,30 @@ namespace mea
     public:
         int mMapObjectHandle;//画像ハンドル
         
-        MapObject();//コンストラクタ
-        ~MapObject();//デストラクタ
-        void Update();//更新
-        void Draw();//描画
-        void Move(int keyType);//動かす
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        MapObject();
+        /// <summary>
+        /// デストラクタ
+        /// </summary>
+        ~MapObject();
+        /// <summary>
+        /// 更新
+        /// </summary>
+        void Update();
+        /// <summary>
+        /// 描画
+        /// </summary>
+        void Draw();
+        /// <summary>
+        /// 動かす
+        /// </summary>
+        void Move(int keyType);
+
+    private:
+        const int FIRST_POS_X = 200;//初期X座標
+        const int FIRST_POS_Y = 600;//初期Y座標
     };
 
 }
