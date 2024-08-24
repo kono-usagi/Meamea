@@ -2,7 +2,7 @@
 
 namespace mea
 {
-	TextData::TextData(Json json)
+	LilianData::LilianData(Json json)
 	{
 		mTalk = json["Lilian"]["talk"];
 		mChoice1A = json["Lilian"]["Choice1A"];
