@@ -9,7 +9,7 @@ namespace mea
         ChoiceDecisionImg = LoadGraph("img/Choice_decision.PNG");
 
         //フォントのロード
-        if (AddFontResourceEx(fontPath, FR_PRIVATE, NULL) > 0) {}
+        if (AddFontResourceEx(mFontPath, FR_PRIVATE, NULL) > 0) {}
         else
         {
             //フォント読み込みエラー
@@ -31,7 +31,7 @@ namespace mea
         DeleteGraph(ChoiceDecisionImg);
 
         //フォントのアンロード
-        if (RemoveFontResourceEx(fontPath, FR_PRIVATE, NULL)) {
+        if (RemoveFontResourceEx(mFontPath, FR_PRIVATE, NULL)) {
         }
         else {
             MessageBox(NULL, "フォントのアンロードに失敗", "", MB_OK);

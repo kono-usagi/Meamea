@@ -49,14 +49,13 @@ namespace mea
         int NameWidth;//名前の幅
 
         char TextFlag[2] = "t";//テキストの種類判別用
-
         char TFlag[2] = "t";//"t"保存
         char QFlag[2] = "q";//"q"保存
         bool Q = false;
 
         int ChoiceImg;//選択をしていないほうの画像
         int ChoiceDecisionImg;//選択をしている方の画像
-        int ChoiceButton;//今どちらを選択しているかを画像の位置保存
+        int ChoiceButton;//選択している方の画像位置保存
         int ChoiceY = 900;//選択をしていないほうの画像位置
         int ChoiceDecisionY = 750;//選択をしている方の画像位置
 
