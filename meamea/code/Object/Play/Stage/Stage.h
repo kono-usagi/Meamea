@@ -76,8 +76,8 @@ namespace mea
         const int KEY_LEFT = 3;
 
         //配列サイズ定数
-        const int X_SIZE = 30;//マップ情報配列の最初の要素数
-        const int Y_SIZE = 10;//マップ情報配列の二番目の要素数
+        static const int X_SIZE = 30;//マップ情報配列の最初の要素数
+        static const int Y_SIZE = 10;//マップ情報配列の二番目の要素数
 
         int mMapInfoArray[X_SIZE][Y_SIZE];//マップ情報配列
         int mArrayFirst;//マップ情報配列の最初
