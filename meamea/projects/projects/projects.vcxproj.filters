@@ -89,8 +89,11 @@
     <ClCompile Include="..\..\code\Object\GameObjectManager\GameObjectManager.cpp">
       <Filter>Object\GameObjectManager</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\JsonMaster\Text\LilianData.cpp">
-      <Filter>Jsonmaster\Text</Filter>
+    <ClCompile Include="..\..\code\JsonMaster\Text\MasterTextData\MasterTextData.cpp">
+      <Filter>Jsonmaster\Text\MasterTextData</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\code\JsonMaster\Text\LilianData\LilianData.cpp">
+      <Filter>Jsonmaster\Text\LilianData</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -193,8 +196,11 @@
     <ClInclude Include="..\..\code\Object\GameObjectManager\GameObjectManager.h">
       <Filter>Object\GameObjectManager</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\JsonMaster\Text\LilianData.h">
-      <Filter>Jsonmaster\Text</Filter>
+    <ClInclude Include="..\..\code\JsonMaster\Text\MasterTextData\MasterTextData.h">
+      <Filter>Jsonmaster\Text\MasterTextData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\JsonMaster\Text\LilianData\LilianData.h">
+      <Filter>Jsonmaster\Text\LilianData</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
@@ -343,6 +349,12 @@
     </Filter>
     <Filter Include="Jsonmaster\Text">
       <UniqueIdentifier>{0ae08665-6d20-410e-a130-1126103a59ee}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jsonmaster\Text\LilianData">
+      <UniqueIdentifier>{410d8ead-3636-478c-8cd4-8119adca741b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Jsonmaster\Text\MasterTextData">
+      <UniqueIdentifier>{93ed371c-8c4c-4665-be30-72db2be680a5}</UniqueIdentifier>
     </Filter>
   </ItemGroup>
 </Project>
