@@ -89,7 +89,7 @@
     <ClCompile Include="..\..\code\Object\GameObjectManager\GameObjectManager.cpp">
       <Filter>Object\GameObjectManager</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\JsonMaster\Text\TextData.cpp">
+    <ClCompile Include="..\..\code\JsonMaster\Text\LilianData.cpp">
       <Filter>Jsonmaster\Text</Filter>
     </ClCompile>
   </ItemGroup>
@@ -193,7 +193,7 @@
     <ClInclude Include="..\..\code\Object\GameObjectManager\GameObjectManager.h">
       <Filter>Object\GameObjectManager</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\JsonMaster\Text\TextData.h">
+    <ClInclude Include="..\..\code\JsonMaster\Text\LilianData.h">
       <Filter>Jsonmaster\Text</Filter>
     </ClInclude>
   </ItemGroup>
