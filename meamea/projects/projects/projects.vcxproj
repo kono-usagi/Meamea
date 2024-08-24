@@ -227,7 +227,7 @@
     <None Include="..\..\code\JsonFile\Image\StoryData.json" />
     <None Include="..\..\code\JsonFile\Image\TitleData.json" />
     <None Include="..\..\code\JsonFile\StageData.json" />
-    <None Include="..\..\code\JsonFile\StoryText.json" />
+    <None Include="..\..\code\JsonFile\StoryTextData.json" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

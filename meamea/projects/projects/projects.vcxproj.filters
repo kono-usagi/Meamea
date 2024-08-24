@@ -219,7 +219,7 @@
     <None Include="..\..\code\JsonFile\StageData.json">
       <Filter>JsonFile\Stage</Filter>
     </None>
-    <None Include="..\..\code\JsonFile\StoryText.json">
+    <None Include="..\..\code\JsonFile\StoryTextData.json">
       <Filter>JsonFile\Text</Filter>
     </None>
   </ItemGroup>
