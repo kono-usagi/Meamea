@@ -5,7 +5,9 @@ namespace mea
     MapObject::MapObject()
         :GameObject(PlayObjTag.MAPOBJECT)
     {
-        mMapObjectHandle = LoadGraph("");
+        mPos.x = FIRST_POS_X;
+        mPos.y = FIRST_POS_Y;
+        mMapObjectHandle = LoadGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetMoveRock().c_str());
     }
     MapObject::~MapObject()
     {
@@ -13,7 +15,7 @@ namespace mea
     }
     void MapObject::Update()//XV
     {
-
+        Draw();
     }
     void MapObject::Draw()//•`‰æ
     {
