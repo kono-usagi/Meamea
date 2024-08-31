@@ -131,6 +131,11 @@ namespace mea
             MapObject::Move(keyType);
         }
     }
+
+    int Stage::GetSteps()
+    {
+        return mPlayerSteps;
+    }
 }
 
 
