@@ -35,29 +35,29 @@ namespace mea
 
         LPCSTR  mFontPath;
 
-        int FileHandle;//現在のファイル入れるとこ
-        char FileName[3][20] = { "Lilian_Talk1.txt","Lilian_Choice1A.txt","Lilian_Choice1B.txt" };//すべてのファイル名をここに保存
-        char NextFile[20];//次読み込むファイル
-        int KeyFlag = 0;//入力したら
-        int flg = 0;//最初の文字表示]
+        int mFileHandle;//現在のファイル入れるとこ
+        char mFileName[3][40] = { "Lilian_Talk1.txt","Lilian_Choice1A.txt","Lilian_Choice1B.txt" };//すべてのファイル名をここに保存
+        char mNextFile[20];//次読み込むファイル
+        int mKeyFlag = 0;//入力したら
+        int mflg = 0;//最初の文字表示]
 
-        char TextString1[256];//テキスト保存
-        char TextString2[256];//テキスト保存
-        char NameString[256];//名前保存
-        int TextWidth1;//テキストの幅
-        int TextWidth2;//テキストの幅
-        int NameWidth;//名前の幅
+        char mTextStringFirst[256];//テキスト保存
+        char mTextStringSecond[256];//テキスト保存
+        char mNameString[256];//名前保存
+        int mTextWidthFirst;//テキストの幅
+        int mTextWidthSecond;//テキストの幅
+        int mNameWidth;//名前の幅
 
-        char TextFlag[2] = "t";//テキストの種類判別用
-        char TFlag[2] = "t";//"t"保存
-        char QFlag[2] = "q";//"q"保存
-        bool Q = false;
+        char mTextType[2] = "t";//テキストの種類判別用
+        char mTType[2] = "t";//"t"保存
+        char mQType[2] = "q";//"q"保存
+        short Q = 0;//false = 0  true = 1
 
-        int ChoiceImg;//選択をしていないほうの画像
-        int ChoiceDecisionImg;//選択をしている方の画像
-        int ChoiceButton;//選択している方の画像位置保存
-        int ChoiceY = 900;//選択をしていないほうの画像位置
-        int ChoiceDecisionY = 750;//選択をしている方の画像位置
+        int mChoiceImg;//選択をしていないほうの画像
+        int mChoiceDecisionImg;//選択をしている方の画像
+        int mChoiceButton;//選択している方の画像位置保存
+        int mChoiceY = 900;//選択をしていないほうの画像位置
+        int mChoiceDecisionY = 750;//選択をしている方の画像位置
 
 
     };

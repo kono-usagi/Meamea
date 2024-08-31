@@ -5,8 +5,8 @@ namespace mea
     void Ui::Init()
     {
         //画像読み込み
-        ChoiceImg = LoadGraph("img/Choice.PNG");
-        ChoiceDecisionImg = LoadGraph("img/Choice_decision.PNG");
+        mChoiceImg = LoadGraph("img/Choice.PNG");
+        mChoiceDecisionImg = LoadGraph("img/Choice_decision.PNG");
 
         //フォントのロード
         if (AddFontResourceEx(mFontPath, FR_PRIVATE, NULL) > 0) {}
@@ -18,7 +18,7 @@ namespace mea
         ChangeFont("BIZ UDPMincho", DX_CHARSET_DEFAULT);
 
         //ファイル読み込み
-        FileHandle = FileRead_open(FileName[0]);
+        mFileHandle = FileRead_open(mFileName[0]);
 
         //フォントサイズ設定
         SetFontSize(46);
@@ -27,8 +27,8 @@ namespace mea
     Ui::~Ui()
     {
         //画像の削除
-        DeleteGraph(ChoiceImg);
-        DeleteGraph(ChoiceDecisionImg);
+        DeleteGraph(mChoiceImg);
+        DeleteGraph(mChoiceDecisionImg);
 
         //フォントのアンロード
         if (RemoveFontResourceEx(mFontPath, FR_PRIVATE, NULL)) {
@@ -38,7 +38,7 @@ namespace mea
         }
 
         //ファイルを閉じる
-        FileRead_close(FileHandle);
+        FileRead_close(mFileHandle);
     }
 
     void Ui::Input()
@@ -46,106 +46,106 @@ namespace mea
         //テキストを送る入力
         if (CheckHitKey(KEY_INPUT_SPACE))
         {
-            if (KeyFlag == 0)
+            if (mKeyFlag == 0)
             {
-                FileRead_gets(TextFlag, 256, FileHandle);//一行読み込み ここでテキストの種類が入る
+                FileRead_gets(mTextType, 256, mFileHandle);//一行読み込み ここでテキストの種類が入る
 
-                if (strcmp(TextFlag, TFlag) == 0)
+                if (strcmp(mTextType, mTType) == 0)
                 {
-                    Q = false;
-                    FileRead_gets(NameString, 256, FileHandle);//一行読み込み
-                    NameWidth = GetDrawStringWidth(NameString, -1);//文字列の幅を取得
-                    if (ChoiceDecisionY == 750)
+                    Q = 0;
+                    FileRead_gets(mNameString, 256, mFileHandle);//一行読み込み
+                    mNameWidth = GetDrawStringWidth(mNameString, -1);//文字列の幅を取得
+                    if (mChoiceDecisionY == 750)
                     {
-                        FileRead_gets(TextString1, 256, FileHandle);//一行読み込み
-                        TextWidth1 = GetDrawStringWidth(TextString1, -1);//文字列の幅を取得
+                        FileRead_gets(mTextStringFirst, 256, mFileHandle);//一行読み込み
+                        mTextWidthFirst = GetDrawStringWidth(mTextStringFirst, -1);//文字列の幅を取得
                     }
-                    else if (ChoiceDecisionY == 900)
+                    else if (mChoiceDecisionY == 900)
                     {
-                        FileRead_gets(TextString2, 256, FileHandle);//一行読み込み
-                        TextWidth2 = GetDrawStringWidth(TextString2, -1);//文字列の幅を取得
+                        FileRead_gets(mTextStringSecond, 256, mFileHandle);//一行読み込み
+                        mTextWidthSecond = GetDrawStringWidth(mTextStringSecond, -1);//文字列の幅を取得
                     }
                 }
-                else if (strcmp(TextFlag, QFlag) == 0)
+                else if (strcmp(mTextType, mQType) == 0)
                 {
-                    Q = true;
-                    FileRead_gets(NameString, 256, FileHandle);//一行読み込み
-                    NameWidth = GetDrawStringWidth(NameString, -1);//文字列の幅を取得
-                    FileRead_gets(TextString1, 256, FileHandle);//一行読み込み
-                    TextWidth1 = GetDrawStringWidth(TextString1, -1);//文字列の幅を取得
-                    FileRead_gets(TextString2, 256, FileHandle);//一行読み込み
-                    TextWidth2 = GetDrawStringWidth(TextString2, -1);//文字列の幅を取得
+                    Q = 1;
+                    FileRead_gets(mNameString, 256, mFileHandle);//一行読み込み
+                    mNameWidth = GetDrawStringWidth(mNameString, -1);//文字列の幅を取得
+                    FileRead_gets(mTextStringFirst, 256, mFileHandle);//一行読み込み
+                    mTextWidthFirst = GetDrawStringWidth(mTextStringFirst, -1);//文字列の幅を取得
+                    FileRead_gets(mTextStringSecond, 256, mFileHandle);//一行読み込み
+                    mTextWidthSecond = GetDrawStringWidth(mTextStringSecond, -1);//文字列の幅を取得
                 }
-                KeyFlag = 1;
+                mKeyFlag = 1;
             }
         }
         else
         {
-            KeyFlag = 0;
+            mKeyFlag = 0;
         }
 
-        if (Q == true)
+        if (Q == 1)
         {
             if (CheckHitKey(KEY_INPUT_UP))
             {
-                if (ChoiceButton == 0)
+                if (mChoiceButton == 0)
                 {
-                    ChoiceButton = 1;
-                    ChoiceY = 900;
-                    ChoiceDecisionY = 750;
+                    mChoiceButton = 1;
+                    mChoiceY = 900;
+                    mChoiceDecisionY = 750;
                 }
             }
             else
             {
-                ChoiceButton = 0;
+                mChoiceButton = 0;
             }
 
             if (CheckHitKey(KEY_INPUT_DOWN))
             {
-                if (ChoiceButton == 0)
+                if (mChoiceButton == 0)
                 {
-                    ChoiceButton = 1;
-                    ChoiceY = 750;
-                    ChoiceDecisionY = 900;
+                    mChoiceButton = 1;
+                    mChoiceY = 750;
+                    mChoiceDecisionY = 900;
                 }
             }
             else
             {
-                ChoiceButton = 0;
+                mChoiceButton = 0;
             }
 
             if (CheckHitKey(KEY_INPUT_RETURN))
             {
-                Q = false;
-                if (ChoiceDecisionY == 750)
+                Q = 0;
+                if (mChoiceDecisionY == 750)
                 {
-                    FileRead_gets(NextFile, 256, FileHandle);
+                    FileRead_gets(mNextFile, 256, mFileHandle);
                     for (int i = 0; i < 3; i++)
                     {
-                        if (strcmp(NextFile, FileName[i]) == 0)
+                        if (strcmp(mNextFile, mFileName[i]) == 0)
                         {
-                            FileRead_close(FileHandle);
-                            FileHandle = FileRead_open(FileName[i]);
+                            FileRead_close(mFileHandle);
+                            mFileHandle = FileRead_open(mFileName[i]);
                         }
                     }
                 }
-                else if (ChoiceDecisionY == 900)
+                else if (mChoiceDecisionY == 900)
                 {
-                    FileRead_gets(NextFile, 256, FileHandle);
-                    FileRead_gets(NextFile, 256, FileHandle);
+                    FileRead_gets(mNextFile, 256, mFileHandle);
+                    FileRead_gets(mNextFile, 256, mFileHandle);
                     for (int i = 0; i < 3; i++)
                     {
-                        if (strcmp(NextFile, FileName[i]) == 0)
+                        if (strcmp(mNextFile, mFileName[i]) == 0)
                         {
-                            FileRead_close(FileHandle);
-                            FileHandle = FileRead_open(FileName[i]);
+                            FileRead_close(mFileHandle);
+                            mFileHandle = FileRead_open(mFileName[i]);
                         }
                     }
                 }
             }
             else
             {
-                ChoiceButton = 0;
+                mChoiceButton = 0;
             }
         }
 
@@ -153,57 +153,57 @@ namespace mea
 
     void Ui::Draw()
     {
-        if (Q == true)
+        if (Q == 1)
         {
-            DrawGraph((1920 - 1013) / 2, ChoiceY, ChoiceImg, TRUE);
-            DrawGraph((1920 - 1013) / 2, ChoiceDecisionY, ChoiceDecisionImg, TRUE);
+            DrawGraph((1920 - 1013) / 2, mChoiceY, mChoiceImg, TRUE);
+            DrawGraph((1920 - 1013) / 2, mChoiceDecisionY, mChoiceDecisionImg, TRUE);
         }
 
-        if (flg == 0)
+        if (mflg == 0)
         {
-            flg = 1;
+            mflg = 1;
         }
         else
         {
-            if (Q == false)//前表示した名前を黒で塗りつぶす
+            if (Q == 0)//前表示した名前を黒で塗りつぶす
             {
-                if (ChoiceDecisionY == 750)
+                if (mChoiceDecisionY == 750)
                 {
-                    DrawString(0, 0, TextFlag, GetColor(0, 0, 0));
-                    DrawString((342 - NameWidth) / 2, 660, NameString, GetColor(0, 0, 0));//前表示した名前を黒で塗りつぶす
-                    DrawString((1920 - TextWidth1) / 2, 900, TextString1, GetColor(0, 0, 0));//前表示した文字を黒で塗りつぶす
+                    DrawString(0, 0, mTextType, GetColor(0, 0, 0));
+                    DrawString((342 - mNameWidth) / 2, 660, mNameString, GetColor(0, 0, 0));//前表示した名前を黒で塗りつぶす
+                    DrawString((1920 - mTextWidthFirst) / 2, 900, mTextStringFirst, GetColor(0, 0, 0));//前表示した文字を黒で塗りつぶす
                 }
             }
             else
             {
-                if (ChoiceDecisionY == 900)
+                if (mChoiceDecisionY == 900)
                 {
-                    DrawString(0, 0, TextFlag, GetColor(0, 0, 0));
-                    DrawString((342 - NameWidth) / 2, 660, NameString, GetColor(0, 0, 0));
-                    DrawString((1920 - TextWidth1) / 2, 780, TextString1, GetColor(0, 0, 0));
-                    DrawString((1920 - TextWidth2) / 2, 930, TextString2, GetColor(0, 0, 0));
+                    DrawString(0, 0, mTextType, GetColor(0, 0, 0));
+                    DrawString((342 - mNameWidth) / 2, 660, mNameString, GetColor(0, 0, 0));
+                    DrawString((1920 - mTextWidthFirst) / 2, 780, mTextStringFirst, GetColor(0, 0, 0));
+                    DrawString((1920 - mTextWidthSecond) / 2, 930, mTextStringSecond, GetColor(0, 0, 0));
                 }
             }
-            DrawString(0, 0, TextFlag, GetColor(255, 255, 255));//表示
+            DrawString(0, 0, mTextType, GetColor(255, 255, 255));//表示
 
-            if (Q == false)//文字の表示
+            if (Q == 0)//文字の表示
             {
-                DrawString((342 - NameWidth) / 2, 660, NameString, GetColor(255, 255, 255));//名前表示
-                if (ChoiceDecisionY == 750)
+                DrawString((342 - mNameWidth) / 2, 660, mNameString, GetColor(255, 255, 255));//名前表示
+                if (mChoiceDecisionY == 750)
                 {
-                    DrawString((1920 - TextWidth1) / 2, 900, TextString1, GetColor(255, 255, 255));//セリフ表示
+                    DrawString((1920 - mTextWidthFirst) / 2, 900, mTextStringFirst, GetColor(255, 255, 255));//セリフ表示
                 }
-                else if (ChoiceDecisionY == 900)
+                else if (mChoiceDecisionY == 900)
                 {
-                    DrawString((1920 - TextWidth2) / 2, 900, TextString2, GetColor(255, 255, 255));//セリフ表示
+                    DrawString((1920 - mTextWidthSecond) / 2, 900, mTextStringSecond, GetColor(255, 255, 255));//セリフ表示
                 }
                 //ChoiceDecisionY = 750;
             }
             else
             {
-                DrawString((342 - NameWidth) / 2, 660, NameString, GetColor(255, 255, 255));//名前表示
-                DrawString((1920 - TextWidth1) / 2, 780, TextString1, GetColor(255, 255, 255));//セリフ表示
-                DrawString((1920 - TextWidth2) / 2, 930, TextString2, GetColor(255, 255, 255));//セリフ表示
+                DrawString((342 - mNameWidth) / 2, 660, mNameString, GetColor(255, 255, 255));//名前表示
+                DrawString((1920 - mTextWidthFirst) / 2, 780, mTextStringFirst, GetColor(255, 255, 255));//セリフ表示
+                DrawString((1920 - mTextWidthSecond) / 2, 930, mTextStringSecond, GetColor(255, 255, 255));//セリフ表示
             }
         }
     }
