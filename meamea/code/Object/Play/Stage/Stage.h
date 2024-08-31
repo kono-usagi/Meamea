@@ -7,6 +7,7 @@ namespace mea
     class Stage:public GameObject
     {
     public:
+        int mPlayerSteps;
 
         /// <summary>
         /// コンストラクタ
@@ -61,6 +62,9 @@ namespace mea
         /// 動く岩が移動できるか
         /// </summary>
         void isMapObjectMove(int keyType);
+
+
+        int GetSteps();
 
     private:
         //マップ情報定数
