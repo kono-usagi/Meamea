@@ -46,26 +46,6 @@ namespace mea
         animNowIndex = animNowPattern + animNowType * ANIM_PATTERN_NUM;
     }
 
-    //void Player::Input()
-    //{
-    //    if (CheckHitKey(KEY_INPUT_UP) == 1)//上
-    //    {
-    //        isMove(KEY_UP);
-    //    }
-    //    if (CheckHitKey(KEY_INPUT_DOWN) == 1)//下
-    //    {
-    //        isMove(KEY_DOWN);
-    //    }
-    //    if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//右
-    //    {
-    //        isMove(KEY_RIGHT);
-    //    }
-    //    if (CheckHitKey(KEY_INPUT_LEFT) == 1)//左
-    //    {
-    //        isMove(KEY_LEFT);
-    //    }
-    //}
-
     //bool Player::isMove(int keyType)
     //{
     //    //現在地の配列取得
@@ -102,20 +82,21 @@ namespace mea
     
     void Player::Move(int keyType)
     {
-        if (keyType==KEY_UP)//上-Y
+        Stage stage;
+        if (keyType==stage.KEY_UP)//上-Y
         {
             mPos.y -= PLY_DISTANCE;
         }
-        if (keyType == KEY_DOWN)//下+Y
+        if (keyType == stage.KEY_DOWN)//下+Y
         {
             mPos.y += PLY_DISTANCE;
         }
-        if (keyType == KEY_RIGHT)//右+X
+        if (keyType == stage.KEY_RIGHT)//右+X
         {
             animNowType = ANIM_LEFT;//プレイヤー画像を右向きに変更
             mPos.x += PLY_DISTANCE;
         }
-        if (keyType == KEY_LEFT)//左-X
+        if (keyType == stage.KEY_LEFT)//左-X
         {
             animNowType = ANIM_RIGHT;//プレイヤー画像を左向きに変更
             mPos.x -= PLY_DISTANCE;
