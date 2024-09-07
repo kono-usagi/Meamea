@@ -8,8 +8,10 @@ namespace mea
         mMapBackGround =
         mMapImage = LoadGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetStage_One_BackGround().c_str());
         
+        //マップ画像の表示
+        DrawGraph(0, 0, mMapImage, FALSE);
 
-        //動く岩の描画
+        //動く岩の読み込み
         mRockImage = LoadGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetMoveRock().c_str());
 
         //マップ情報の読み込み
@@ -33,8 +35,7 @@ namespace mea
 
     void Stage::Draw()
     {
-        //マップ画像の表示
-        DrawGraph(0, 0, mMapImage, FALSE);
+        
         
     }
     void Stage::DrawMapObject()
