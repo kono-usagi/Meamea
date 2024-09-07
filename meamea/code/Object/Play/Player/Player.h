@@ -9,10 +9,7 @@ namespace mea
 {
     class Player:public GameObject
     {
-    public:
-        const int ANIM_PATTERN_NUM = 2;//アニメーションパターン数　右向きと左向き
-        const int ANIM_TYPE_NUM = 5;//アニメーションの種類
-       
+    public:       
         /// <summary>
         /// コンストラクタ
         /// </summary>
@@ -54,15 +51,16 @@ namespace mea
 
     private:
         //アニメーション定数
-        const int ANIM_LEFT = 0;//左
-        const int ANIM_RIGHT = 1;//右
+        static const int ANIM_PATTERN_NUM = 2;//アニメーションパターン数　右向きと左向き
+        static const int ANIM_TYPE_NUM = 5;//アニメーションの種類
+        static const int ANIM_LEFT = 0;//左
+        static const int ANIM_RIGHT = 1;//右
         
         const float ANIM_FPS = 6.0f;//秒間6コマのアニメーション
-        const int IMAGE_SIZE_X = 50;//画像たてサイズ
-        const int IMAGE_SIZE_Y = 50;//画像よこサイズ
+        static const int IMAGE_SIZE_X = 50;//画像たてサイズ
+        static const int IMAGE_SIZE_Y = 50;//画像よこサイズ
 
         const int PLY_DISTANCE = 50;//プレイヤー移動距離　50
-
 
         //アニメーション変数　メンバ変数？
         float animTimer;//アニメーションタイマー
