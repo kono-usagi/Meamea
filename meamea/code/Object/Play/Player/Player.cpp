@@ -46,26 +46,6 @@ namespace mea
         animNowIndex = animNowPattern + animNowType * ANIM_PATTERN_NUM;
     }
 
-    //void Player::Input()
-    //{
-    //    if (CheckHitKey(KEY_INPUT_UP) == 1)//è„
-    //    {
-    //        isMove(KEY_UP);
-    //    }
-    //    if (CheckHitKey(KEY_INPUT_DOWN) == 1)//â∫
-    //    {
-    //        isMove(KEY_DOWN);
-    //    }
-    //    if (CheckHitKey(KEY_INPUT_RIGHT) == 1)//âE
-    //    {
-    //        isMove(KEY_RIGHT);
-    //    }
-    //    if (CheckHitKey(KEY_INPUT_LEFT) == 1)//ç∂
-    //    {
-    //        isMove(KEY_LEFT);
-    //    }
-    //}
-
     //bool Player::isMove(int keyType)
     //{
     //    //åªç›ínÇÃîzóÒéÊìæ
