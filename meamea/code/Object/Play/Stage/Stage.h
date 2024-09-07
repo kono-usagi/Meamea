@@ -7,7 +7,13 @@ namespace mea
     class Stage:public GameObject
     {
     public:
-        int mPlayerSteps;
+        //キー入力定数
+        const int KEY_UP = 0;
+        const int KEY_DOWN = 1;
+        const int KEY_RIGHT = 2;
+        const int KEY_LEFT = 3;
+
+        int mPlayerSteps;//プレイヤー歩数
 
         /// <summary>
         /// コンストラクタ
@@ -73,11 +79,7 @@ namespace mea
         const int MAP_OBJECT_TRAP = 2;      //罠　通行可ダメ有
         const int MAP_OBJECT_ROCK = 3;      //動く岩　通行不可移動可
 
-        //キー入力定数
-        const int KEY_UP = 0;
-        const int KEY_DOWN = 1;
-        const int KEY_RIGHT = 2;
-        const int KEY_LEFT = 3;
+        
 
         //配列サイズ定数
         static const int X_SIZE = 30;//マップ情報配列の最初の要素数
