@@ -2,6 +2,7 @@
 
 namespace mea
 {
+
     Stage::Stage()
     {
         //マップ画像の読み込み
@@ -103,6 +104,7 @@ namespace mea
         }
         if (mMapInfo % 2 == 0)//情報が偶数のとき動かす　床0　罠2
         {
+
             Player::Move(keyType);
         }
     }

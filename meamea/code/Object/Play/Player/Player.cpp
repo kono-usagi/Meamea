@@ -102,20 +102,21 @@ namespace mea
     
     void Player::Move(int keyType)
     {
-        if (keyType==KEY_UP)//上-Y
+        Stage stage;
+        if (keyType==stage.KEY_UP)//上-Y
         {
             mPos.y -= PLY_DISTANCE;
         }
-        if (keyType == KEY_DOWN)//下+Y
+        if (keyType == stage.KEY_DOWN)//下+Y
         {
             mPos.y += PLY_DISTANCE;
         }
-        if (keyType == KEY_RIGHT)//右+X
+        if (keyType == stage.KEY_RIGHT)//右+X
         {
             animNowType = ANIM_LEFT;//プレイヤー画像を右向きに変更
             mPos.x += PLY_DISTANCE;
         }
-        if (keyType == KEY_LEFT)//左-X
+        if (keyType == stage.KEY_LEFT)//左-X
         {
             animNowType = ANIM_RIGHT;//プレイヤー画像を左向きに変更
             mPos.x -= PLY_DISTANCE;
