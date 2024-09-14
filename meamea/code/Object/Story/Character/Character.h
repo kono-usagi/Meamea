@@ -2,39 +2,37 @@
 #include"../../GameObject/GameObject.h"
 #include<vector>
 
-const int FACE_TYPE = 4;//表情差分数
-const int POS_X = 0;//画像のx座標
-const int POS_Y = 0;//画像のy座標
-
 namespace mea
 {
     class Character
     {
     public:
-        /// <summary>
-        /// コンストラクタ
-        /// </summary>
-        Character();
-        /// <summary>
-        /// デストラクタ
-        /// </summary>
-        ~Character();
 
-        /// <summary>
-        /// 更新
-        /// </summary>
-        void Update();
-        /// <summary>
-        /// 描画
-        /// </summary>
+        void Init();
+
+        void Finalize();
+
+        void Input(int ChoiceDecisionY);
+
         void Draw();
 
+
     private:
-        
-        int mCharacterHandle[FACE_TYPE];//0:Normal,1:Puzzeld,2:Like,3:Impatience
-        
-        int nowType;//現在の表情
-        VECTOR mHandlePos;
+        int mFileHandle;
+        char mFileName[3][20] = { "Lilian_Image1.txt","Lilian_Image1A.txt","Lilian_Image1B.txt" };
+        int mCharaImage[3];//キャラの画像
+        int mMeaImage[2];//メアの画像
+        char mCharaFaceName[3][40] = { "img/Normal.PNG" ,"img/Like.PNG","img/Puzzled.PNG" };//キャラの画像ファイル名
+        char mMeaFaceName[2][40] = { "img/Mea_Normal.PNG","img/Mea_Puzzled.PNG" };
+        char mNowCharaImage[40];//表示するキャラの画像ファイル名が入る
+        char mNowMeaImage[40];//表示するメアの画像ファイル名が入る
+        char mNextText[40];//次のテキストファイル名が入る
+
+        char mTextFlag[2];
+
+        char mTFlag[2] = "t";
+        char mQFlag[2] = "q";
+
 
     };
 
