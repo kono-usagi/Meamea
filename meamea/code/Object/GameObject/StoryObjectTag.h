@@ -16,7 +16,7 @@ namespace mea
         std::string LAYLA = "layla";
         std::string BACKGROUND = "background";
         std::string UI = "ui";
-    }StoryObjectTag;
+    }storyObjectTag;
 
 
     /// <summary>
@@ -24,11 +24,11 @@ namespace mea
     /// </summary>
     static std::vector<std::string>StoryObjectTagAll
     {
-        StoryObjectTag.PLAYER,
-        StoryObjecctTag.LILIAN,
-        StoryObjectTag.LAURENCE,
-        StoryObjectTag.LAYLA,
-        StoryObjectTag.BACKGROUND,
-        StoryObjectTag.UI,
+        storyObjectTag.PLAYER,
+        storyObjectTag.LILIAN,
+        storyObjectTag.LAURENCE,
+        storyObjectTag.LAYLA,
+        storyObjectTag.BACKGROUND,
+        storyObjectTag.UI,
     };
 }
