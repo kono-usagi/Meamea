@@ -29,5 +29,5 @@ q
 ƒƒA
 –J‚ß‚é
 E‚·
-Lilian_Choice2A.txt
-Lilian_Choice2B.txt
+../../../asset/Story/Text/TalkText/Lilian_Choice2A.txt
+../../../asset/Story/Text/TalkText/Lilian_Choice2B.txt

@@ -1,0 +1,15 @@
+t
+../../../asset/Story/Character/Lilian/Normal
+../../../asset/Story/Character/Mea/Normal
+t
+../../../asset/Story/Character/Lilian/Normal
+../../../asset/Story/Character/Mea/Normal
+t
+../../../asset/Story/Character/Lilian/Normal
+../../../asset/Story/Character/Mea/Normal
+t
+../../../asset/Story/Character/Lilian/Normal
+../../../asset/Story/Character/Mea/Normal
+q
+../../../asset/Story/Text/ImageText/Lilian_Image1A.txt
+../../../asset/Story/Text/ImageText/Lilian_Image1B.txt
