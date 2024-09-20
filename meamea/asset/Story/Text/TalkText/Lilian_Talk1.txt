@@ -14,5 +14,5 @@ q
 ƒƒA
 Œ©‚½–Ú‚ğ–J‚ß‚é
 ‹­‚»‚¤‚¾‚ÆŒ¾‚¤
-Lilian_Choice1A.txt
-Lilian_Choice1B.txt
+../../../asset/Story/Text/TalkText/Lilian_Choice1A.txt
+../../../asset/Story/Text/TalkText/Lilian_Choice1B.txt
