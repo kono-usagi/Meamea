@@ -2,37 +2,111 @@
 
 namespace mea
 {
-    Character::Character()
+    void Character::Init()
     {
-        //画像の読み込み　forで回せる？
-        mCharacterHandle[0];//=LoadGrafh("")
-        mCharacterHandle[1];
-        mCharacterHandle[2];
-        mCharacterHandle[3];
+        //画像読み込み
+        mCharaImage[0] = LoadGraph("img/Normal.PNG");
+        mCharaImage[1] = LoadGraph("img/Like.PNG");
+        mCharaImage[2] = LoadGraph("img/Puzzled.PNG");
+        mMeaImage[0] = LoadGraph("img/Mea_Normal.PNG");
+        mMeaImage[1] = LoadGraph("img/Mea_Puzzled.PNG");
 
-        //座標指定
-        mHandlePos.x = POS_X;
-        mHandlePos.y = POS_Y;
+        //ファイル読み込み
+        mFileHandle = FileRead_open(mFileName[0]);
+
     }
-    Character::~Character()
+
+    void Character::Finalize()
     {
         //画像の削除
-        for (int i = 0; i < FACE_TYPE; i++)
+        for (int i = 0; i < 3; i++)
         {
-            DeleteGraph(mCharacterHandle[FACE_TYPE]);
+            DeleteGraph(mCharaImage[i]);
         }
+        for (int i = 0; i < 2; i++)
+        {
+            DeleteGraph(mMeaImage[i]);
+        }
+
+        //ファイルを閉じる
+        FileRead_close(mFileHandle);
     }
 
-    void Character::Update()
+    void Character::Input(int ChoiceDecisionY)
     {
-        Draw();
+        //テキスト読み込み
+        FileRead_gets(mTextFlag, 256, mFileHandle);
+
+        if (strcmp(mTextFlag, mTFlag) == 0)
+        {
+            FileRead_gets(mNowCharaImage, 256, mFileHandle);
+            FileRead_gets(mNowMeaImage, 256, mFileHandle);
+        }
+        //TextFlagがQになっていたら
+        if (strcmp(mTextFlag, mQFlag) == 0)
+        {
+            //Aルート
+            if (ChoiceDecisionY == 750)
+            {
+                FileRead_gets(mNextText, 256, mFileHandle);
+            }
+            //Bルート
+            else /*if (ChoiceDecisionY == 900)*/
+            {
+                FileRead_gets(mNextText, 256, mFileHandle);
+                FileRead_gets(mNextText, 256, mFileHandle);
+            }
+            //現在のファイルを閉じる
+            FileRead_close(mFileHandle);
+            for (int i = 0; i < 3; i++)
+            {
+                //次のファイル名
+                if (strcmp(mNextText, mFileName[i]) == 0)
+                {
+                    //新しいファイルを開く
+                    mFileHandle = FileRead_open(mFileName[i]);
+                    //テキスト読み込み
+                    FileRead_gets(mTextFlag, 256, mFileHandle);
+                    FileRead_gets(mNowCharaImage, 256, mFileHandle);
+                    FileRead_gets(mNowMeaImage, 256, mFileHandle);
+                }
+            }
+
+        }
+
     }
 
     void Character::Draw()
     {
-        DrawGraph(mHandlePos.x, mHandlePos.y, mCharacterHandle[nowType], FALSE);
+        //TextFlagがTのとき
+        if (strcmp(mTextFlag, mTFlag) == 0)
+        {
+            for (int i = 0; i < 3; i++)
+            {
+                //ファイル名が同じイラストを表示
+                if (strcmp(mNowCharaImage, mCharaFaceName[i]) == 0)
+                {
+                    if (i == 1)
+                    {
+                        DrawGraph(1200, 40, mCharaImage[i], TRUE);
+                    }
+                    else
+                    {
+                        DrawGraph(1000, 100, mCharaImage[i], TRUE);
+                    }
+                    break;
+                }
+            }
+            for (int i = 0; i < 2; i++)
+            {
+                //ファイル名が同じイラストを表示
+                if (strcmp(mNowMeaImage, mMeaFaceName[i]) == 0)
+                {
+                    DrawGraph(400, 60, mMeaImage[i], TRUE);
+                    break;
+                }
+            }
+        }
 
-        //表情切り替え
-        //if(flg)nowType=1;
     }
 }
