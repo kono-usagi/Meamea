@@ -4,7 +4,7 @@
 namespace mea
 {
     Player::Player()
-        :GameObject(PlayObjTag.PLAYER)//コンストラクタ
+        :GameObject(playObjectTag.PLAYER)//コンストラクタ
     {
         //アニメーション用数値の初期化
         animTimer = 0.0f;

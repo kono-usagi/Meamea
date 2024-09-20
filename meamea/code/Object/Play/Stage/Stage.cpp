@@ -78,6 +78,7 @@ namespace mea
 
     void Stage::isPlayerMove(int keyType)
     {
+        
         //現在地の配列取得
 
         //入力方向の配列内情報の取得
@@ -104,8 +105,8 @@ namespace mea
         }
         if (mMapInfo % 2 == 0)//情報が偶数のとき動かす　床0　罠2
         {
-
-            Player::Move(keyType);
+            Player player;
+            player.Move(keyType);
         }
     }
 
@@ -131,7 +132,8 @@ namespace mea
 
         if (mMapInfo % 2 == 0)//情報が偶数のとき動かす　床0　罠2
         {
-            MapObject::Move(keyType);
+            MapObject mapobject;
+            mapObject.Move(keyType);
         }
     }
 

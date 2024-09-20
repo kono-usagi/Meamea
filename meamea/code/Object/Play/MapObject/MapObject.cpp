@@ -3,7 +3,7 @@
 namespace mea
 {
     MapObject::MapObject()
-        :GameObject(PlayObjTag.MAPOBJECT)
+        :GameObject(playObjectTag.MAPOBJECT)
     {
         mPos.x = FIRST_POS_X;
         mPos.y = FIRST_POS_Y;
