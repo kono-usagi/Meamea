@@ -1,7 +1,7 @@
 #include<DxLib.h>
 #include<vector>
 
-#include"../GameObjectManager/GameObjectManager/GameObjectManager.h"
+#include"../GameObjectManager/GameObjectManager.h"
 #include"PlayObjectTag.h"
 #include"../../JsonMaster/JsonManager/JsonManager.h"
 
@@ -39,6 +39,7 @@ namespace mea
         /// ‘€ìˆ—
         /// </summary>
         virtual void Input() {};
+
 
         /// <summary>
         /// ƒ^ƒO–¼æ“¾

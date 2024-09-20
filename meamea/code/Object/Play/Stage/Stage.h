@@ -1,6 +1,8 @@
 #pragma once
 #include<Dxlib.h>
 #include"../../GameObject/GameObject.h"
+#include"../Player/Player.h"
+#include"../MapObject/MapObject.h"
 
 namespace mea
 {
