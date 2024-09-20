@@ -30,9 +30,10 @@ namespace mea
 
     void PlayUi::Update()
     {
+        Stage stage;
         //GameObj*player=GameObjectManager::GetFirstGameObj(ObjTag.Player);
         //Œ»Ý‚Ì•à”Žæ“¾
-        //step = player->
+        step = stage.GetSteps();
     }
 
     void PlayUi::Draw()
