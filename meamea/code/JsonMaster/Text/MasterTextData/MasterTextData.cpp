@@ -5,7 +5,7 @@ namespace mea
     MasterTextData::MasterTextData()
     {
         //ファイルを読み込みインスタンス生成
-        Json lilianJson = ioutility.Analysis("../../../JsonFile/StoryTextData");
+        Json lilianJson = ioutility.Analysis("../../../JsonFile/Text/StoryTextData");
         liliandata.reset(new LilianData(lilianJson["lilian"]));
     }
 
