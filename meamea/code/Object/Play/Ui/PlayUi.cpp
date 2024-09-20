@@ -5,7 +5,7 @@ namespace mea
     PlayUi::PlayUi()
     {
         //フォントのロード
-        mFontPath = "test";
+        mFontPath = "../../../../asset/Play/Font/castellar.ttf";
         if (AddFontResourceEx(mFontPath, FR_PRIVATE, NULL) > 0) {}
         else
         {

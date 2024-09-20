@@ -8,6 +8,7 @@ namespace mea
         mChoiceImg = LoadGraph("img/Choice.PNG");
         mChoiceDecisionImg = LoadGraph("img/Choice_decision.PNG");
 
+        mFontPath = "../../../../asset/Story/Font/BIZUDPMincho-Regular.ttf";
         //フォントのロード
         if (AddFontResourceEx(mFontPath, FR_PRIVATE, NULL) > 0) {}
         else
