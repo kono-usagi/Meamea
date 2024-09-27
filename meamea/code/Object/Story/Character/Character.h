@@ -1,6 +1,8 @@
 #pragma once
 #include"../../GameObject/GameObject.h"
+#include "../../../JsonMaster/JsonManager/JsonManager.h"
 #include<vector>
+#include<string>
 
 namespace mea
 {
@@ -19,7 +21,8 @@ namespace mea
 
     private:
         int mFileHandle;
-        char mFileName[3][20] = { "Lilian_Image1.txt","Lilian_Image1A.txt","Lilian_Image1B.txt" };
+        std::string mFileName[5];
+        std::string mImgName[5];
         int mCharaImage[3];//キャラの画像
         int mMeaImage[2];//メアの画像
         char mCharaFaceName[3][40] = { "img/Normal.PNG" ,"img/Like.PNG","img/Puzzled.PNG" };//キャラの画像ファイル名

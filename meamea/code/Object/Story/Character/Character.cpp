@@ -4,15 +4,29 @@ namespace mea
 {
     void Character::Init()
     {
+        //テキストファイル読み込み
+        mFileName[0] = JsonManager::TextDataInstance()->LilianInstance()->GetImage1();
+        mFileName[1] = JsonManager::TextDataInstance()->LilianInstance()->GetImage1A();
+        mFileName[2] = JsonManager::TextDataInstance()->LilianInstance()->GetImage1B();
+        mFileName[3] = JsonManager::TextDataInstance()->LilianInstance()->GetImage2A();
+        mFileName[4] = JsonManager::TextDataInstance()->LilianInstance()->GetImage2B();
+
+        
         //画像読み込み
-        mCharaImage[0] = LoadGraph("img/Normal.PNG");
-        mCharaImage[1] = LoadGraph("img/Like.PNG");
-        mCharaImage[2] = LoadGraph("img/Puzzled.PNG");
-        mMeaImage[0] = LoadGraph("img/Mea_Normal.PNG");
-        mMeaImage[1] = LoadGraph("img/Mea_Puzzled.PNG");
+        mImgName[0] = JsonManager::ImgDataInstance()->StoryDataInstance()->GetLilianData_Normal();
+        mImgName[1] = JsonManager::ImgDataInstance()->StoryDataInstance()->GetLilianData_Like();
+        mImgName[2] = JsonManager::ImgDataInstance()->StoryDataInstance()->GetLilianData_Puzzled();
+        mImgName[3] = JsonManager::ImgDataInstance()->StoryDataInstance()->GetMeaData_Normal();
+        mImgName[4] = JsonManager::ImgDataInstance()->StoryDataInstance()->GetMeaData_Puzzled();
+
+        mCharaImage[0] = LoadGraph(mImgName[0].c_str());
+        mCharaImage[1] = LoadGraph(mImgName[1].c_str());
+        mCharaImage[2] = LoadGraph(mImgName[2].c_str());
+        mMeaImage[0] = LoadGraph(mImgName[3].c_str());
+        mMeaImage[1] = LoadGraph(mImgName[4].c_str());
 
         //ファイル読み込み
-        mFileHandle = FileRead_open(mFileName[0]);
+        mFileHandle = FileRead_open(mFileName[0].c_str());
 
     }
 
@@ -61,10 +75,10 @@ namespace mea
             for (int i = 0; i < 3; i++)
             {
                 //次のファイル名
-                if (strcmp(mNextText, mFileName[i]) == 0)
+                if (strcmp(mNextText, mFileName[i].c_str()) == 0)
                 {
                     //新しいファイルを開く
-                    mFileHandle = FileRead_open(mFileName[i]);
+                    mFileHandle = FileRead_open(mFileName[i].c_str());
                     //テキスト読み込み
                     FileRead_gets(mTextFlag, 256, mFileHandle);
                     FileRead_gets(mNowCharaImage, 256, mFileHandle);

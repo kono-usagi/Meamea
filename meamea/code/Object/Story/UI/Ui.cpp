@@ -1,6 +1,5 @@
 #include"string"
 #include "Ui.h"
-#include "../../../JsonMaster/Text/MasterTextData/MasterTextData.h"
 #include "../../../JsonMaster/JsonManager/JsonManager.h"
 
 namespace mea
