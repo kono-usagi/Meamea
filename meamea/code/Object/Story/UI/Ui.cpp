@@ -1,12 +1,17 @@
+#include"string"
 #include "Ui.h"
+#include "../../../JsonMaster/Text/MasterTextData/MasterTextData.h"
+#include "../../../JsonMaster/JsonManager/JsonManager.h"
 
 namespace mea
 {
     void Ui::Init()
     {
         //画像読み込み
-        mChoiceImg = LoadGraph("img/Choice.PNG");
-        mChoiceDecisionImg = LoadGraph("img/Choice_decision.PNG");
+        ImgDataText[0] = JsonManager::ImgDataInstance()->StoryDataInstance()->GetNoselect();
+        ImgDataText[1] = JsonManager::ImgDataInstance()->StoryDataInstance()->GetSelect();
+        mChoiceImg = LoadGraph(ImgDataText[0].c_str());
+        mChoiceDecisionImg = LoadGraph(ImgDataText[1].c_str());
 
         mFontPath = "../../../../asset/Story/Font/BIZUDPMincho-Regular.ttf";
         //フォントのロード
@@ -19,7 +24,12 @@ namespace mea
         ChangeFont("BIZ UDPMincho", DX_CHARSET_DEFAULT);
 
         //ファイル読み込み
-        mFileHandle = FileRead_open(mFileName[0]);
+        mFileName[0] = JsonManager::TextDataInstance()->LilianInstance()->GetTalk1();
+        mFileName[1] = JsonManager::TextDataInstance()->LilianInstance()->GetTalk1A();
+        mFileName[2] = JsonManager::TextDataInstance()->LilianInstance()->GetTalk1B();
+        mFileName[3] = JsonManager::TextDataInstance()->LilianInstance()->GetTalk2A();
+        mFileName[4] = JsonManager::TextDataInstance()->LilianInstance()->GetTalk2B();
+        mFileHandle = FileRead_open(mFileName[0].c_str());
 
         //フォントサイズ設定
         SetFontSize(46);
@@ -123,10 +133,10 @@ namespace mea
                     FileRead_gets(mNextFile, 256, mFileHandle);
                     for (int i = 0; i < 3; i++)
                     {
-                        if (strcmp(mNextFile, mFileName[i]) == 0)
+                        if (strcmp(mNextFile, mFileName[i].c_str()) == 0)
                         {
                             FileRead_close(mFileHandle);
-                            mFileHandle = FileRead_open(mFileName[i]);
+                            mFileHandle = FileRead_open(mFileName[i].c_str());
                         }
                     }
                 }
@@ -136,10 +146,10 @@ namespace mea
                     FileRead_gets(mNextFile, 256, mFileHandle);
                     for (int i = 0; i < 3; i++)
                     {
-                        if (strcmp(mNextFile, mFileName[i]) == 0)
+                        if (strcmp(mNextFile, mFileName[i].c_str()) == 0)
                         {
                             FileRead_close(mFileHandle);
-                            mFileHandle = FileRead_open(mFileName[i]);
+                            mFileHandle = FileRead_open(mFileName[i].c_str());
                         }
                     }
                 }

@@ -36,7 +36,7 @@ namespace mea
         LPCSTR  mFontPath;
 
         int mFileHandle;//現在のファイル入れるとこ
-        char mFileName[3][40] = { "Lilian_Talk1.txt","Lilian_Choice1A.txt","Lilian_Choice1B.txt" };//すべてのファイル名をここに保存
+        std::string mFileName[5];//すべてのファイル名をここに保存
         char mNextFile[20];//次読み込むファイル
         int mKeyFlag = 0;//入力したら
         int mflg = 0;//最初の文字表示]
@@ -59,6 +59,6 @@ namespace mea
         int mChoiceY = 900;//選択をしていないほうの画像位置
         int mChoiceDecisionY = 750;//選択をしている方の画像位置
 
-
+        std::string ImgDataText[2];//画像ファイル名を入れる
     };
 }
