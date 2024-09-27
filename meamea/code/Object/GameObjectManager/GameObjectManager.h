@@ -47,11 +47,19 @@ namespace mea
 		static void Draw();
 
 		/// <summary>
+		/// オブジェクトを移動する
+		/// </summary>
+		/// <param name="keyType">キーの種類</param>
+		static void Move(int keyType);
+
+		/// <summary>
 		/// タグ種類の初めのオブジェクトを返す
 		/// </summary>
 		/// <param name="tag">オブジェクトの種類</param>
 		/// <returns>最初のオブジェクト</returns>
 		GameObject* GetFirstGameObj(std::string tag);
+
+		
 
 	private:
 

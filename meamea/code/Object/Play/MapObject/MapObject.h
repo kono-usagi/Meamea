@@ -21,19 +21,21 @@ namespace mea
         /// <summary>
         /// デストラクタ
         /// </summary>
-        ~MapObject();
+        ~MapObject()override;
         /// <summary>
         /// 更新
         /// </summary>
-        void Update();
+        void Update(float deltaTime)override;
         /// <summary>
         /// 描画
         /// </summary>
-        void Draw();
+        void Draw()override;
+
         /// <summary>
-        /// 動かす
-        /// </summary>
-        void Move(int keyType);
+       /// 移動処理
+       /// </summary>
+       /// <param name="keyType">入力されたキー</param>
+        void Move(int keyType)override;
 
     private:
         const int FIRST_POS_X = 200;//初期X座標

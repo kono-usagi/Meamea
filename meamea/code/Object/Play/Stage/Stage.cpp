@@ -4,9 +4,10 @@ namespace mea
 {
 
     Stage::Stage()
+        :GameObject(playObjectTag.STAGE)
     {
         //マップ画像の読み込み
-        mMapBackGround =
+        //mMapBackGround =
         mMapImage = LoadGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetStage_One_BackGround().c_str());
         
         //マップ画像の表示
@@ -38,12 +39,6 @@ namespace mea
     {
         
         
-    }
-    void Stage::DrawMapObject()
-    {
-        //動く岩が移動したら
-
-
     }
 
     void Stage::Input()
@@ -107,6 +102,7 @@ namespace mea
         {
             Player player;
             player.Move(keyType);
+            CountSteps();
         }
     }
 
@@ -132,9 +128,14 @@ namespace mea
 
         if (mMapInfo % 2 == 0)//情報が偶数のとき動かす　床0　罠2
         {
-            MapObject mapobject;
-            mapObject.Move(keyType);
+            Move(keyType);
+            CountSteps();
         }
+    }
+
+    void Stage::CountSteps()
+    {
+        mPlayerSteps--;
     }
 
     int Stage::GetSteps()

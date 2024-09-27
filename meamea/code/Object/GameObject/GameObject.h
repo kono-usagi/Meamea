@@ -40,6 +40,12 @@ namespace mea
         /// </summary>
         virtual void Input() {};
 
+        /// <summary>
+        /// 移動処理
+        /// </summary>
+        /// <param name="keyType">入力されたキー</param>
+        virtual void Move(int keyType) {};
+
 
         /// <summary>
         /// タグ名取得

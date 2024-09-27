@@ -15,7 +15,7 @@ namespace mea
         const int KEY_RIGHT = 2;
         const int KEY_LEFT = 3;
 
-        int mPlayerSteps;//プレイヤー歩数
+        int mPlayerSteps=16;//プレイヤー歩数
 
         /// <summary>
         /// コンストラクタ
@@ -71,6 +71,7 @@ namespace mea
         /// </summary>
         void isMapObjectMove(int keyType);
 
+        void CountSteps();
 
         int GetSteps();
 
