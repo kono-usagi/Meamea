@@ -175,7 +175,6 @@
     <ClCompile Include="..\..\code\Object\Play\Ui\PlayUi.cpp" />
     <ClCompile Include="..\..\code\Object\Story\BackGround\BackGround.cpp" />
     <ClCompile Include="..\..\code\Object\Story\Character\Character.cpp" />
-    <ClCompile Include="..\..\code\Object\Story\Player\StoryPlayer.cpp" />
     <ClCompile Include="..\..\code\Object\Story\UI\Ui.cpp" />
     <ClCompile Include="..\..\code\Scene\End\End.cpp" />
     <ClCompile Include="..\..\code\Scene\Play\Play.cpp" />
@@ -209,7 +208,6 @@
     <ClInclude Include="..\..\code\Object\Play\Ui\PlayUi.h" />
     <ClInclude Include="..\..\code\Object\Story\BackGround\BackGround.h" />
     <ClInclude Include="..\..\code\Object\Story\Character\Character.h" />
-    <ClInclude Include="..\..\code\Object\Story\Player\StoryPlayer.h" />
     <ClInclude Include="..\..\code\Object\Story\UI\Ui.h" />
     <ClInclude Include="..\..\code\Scene\End\End.h" />
     <ClInclude Include="..\..\code\Scene\Play\Play.h" />
