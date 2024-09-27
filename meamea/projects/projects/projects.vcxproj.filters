@@ -50,9 +50,6 @@
     <ClCompile Include="..\..\code\Scene\SceneBase\SceneBase.cpp">
       <Filter>Scene\SceneBase</Filter>
     </ClCompile>
-    <ClCompile Include="..\..\code\Object\Story\Player\StoryPlayer.cpp">
-      <Filter>Object\Story\Player</Filter>
-    </ClCompile>
     <ClCompile Include="..\..\code\Object\Play\MapObject\MapObject.cpp">
       <Filter>Object\Play\MapObject</Filter>
     </ClCompile>
@@ -147,9 +144,6 @@
     </ClInclude>
     <ClInclude Include="..\..\code\Scene\SceneBase\SceneBase.h">
       <Filter>Scene\SceneBase</Filter>
-    </ClInclude>
-    <ClInclude Include="..\..\code\Object\Story\Player\StoryPlayer.h">
-      <Filter>Object\Story\Player</Filter>
     </ClInclude>
     <ClInclude Include="..\..\code\Object\GameObject\StoryObjectTag.h">
       <Filter>Object\GameObject</Filter>
@@ -307,9 +301,6 @@
     </Filter>
     <Filter Include="Object\Story\Character">
       <UniqueIdentifier>{a1a11875-d518-479b-ae9c-20ceaf3065dc}</UniqueIdentifier>
-    </Filter>
-    <Filter Include="Object\Story\Player">
-      <UniqueIdentifier>{bd9c0d0e-5f83-4f82-bcd2-e6646a5985d8}</UniqueIdentifier>
     </Filter>
     <Filter Include="Object\Story\Ui">
       <UniqueIdentifier>{f1271fc3-8f3b-46e6-a655-9bf9bbd2d424}</UniqueIdentifier>
