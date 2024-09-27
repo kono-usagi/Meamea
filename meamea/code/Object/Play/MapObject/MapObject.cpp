@@ -13,7 +13,7 @@ namespace mea
     {
         DeleteGraph(mMapObjectHandle);
     }
-    void MapObject::Update()//更新
+    void MapObject::Update(float deltaTime)//更新
     {
         Draw();
     }

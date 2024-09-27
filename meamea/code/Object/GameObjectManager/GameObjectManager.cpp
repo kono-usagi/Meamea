@@ -70,6 +70,14 @@ namespace mea
         }
     }
 
+    void GameObjectManager::Move(int keyType)
+    {
+        for (auto& mmapobj : mInstance->mObjects[playObjectTag.MAPOBJECT])
+        {
+            mmapobj->Move(keyType);
+        }
+    }
+
     //ŽŸ‰ñŽÀ‘•ŒŸ“¢
     //void GameObjectManager::MoveByKey()
     //{
