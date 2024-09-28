@@ -7,6 +7,7 @@ namespace mea
         globaldata.mBackGround = json["global"]["background"];
         globaldata.mNoselect = json["global"]["noselect"];
         globaldata.mSelect = json["global"]["select"];
+        globaldata.mNameFlame = json["global"]["nameflame"];
 
         mea.mNormal = json["character"]["mea"];
         mea.mPuzzled = json["character"]["mea"];

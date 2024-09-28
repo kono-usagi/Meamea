@@ -12,6 +12,7 @@ namespace mea
         std::string GetBackGround() const { return globaldata.mBackGround; }
         std::string GetSelect() const { return globaldata.mSelect; }
         std::string GetNoselect() const { return globaldata.mNoselect; }
+        std::string GetNameFlame() const { return globaldata.mNameFlame; }
 
         std::string GetMeaData_Normal() const { return mea.mNormal; }
         std::string GetMeaData_Puzzled() const { return mea.mPuzzled; }
@@ -37,6 +38,7 @@ namespace mea
             std::string mBackGround;
             std::string mSelect;
             std::string mNoselect;
+            std::string mNameFlame;
         }globaldata;
 
         struct MeaData
