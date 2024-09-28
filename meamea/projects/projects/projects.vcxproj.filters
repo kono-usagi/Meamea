@@ -121,9 +121,6 @@
     <ClInclude Include="..\..\code\GameSystem\GamseSetting\GameSetting.h">
       <Filter>GameSystem\GameSetting</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h">
-      <Filter>Jsonmaster\JsonManager</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\GameSystem\Window\Window.h">
       <Filter>GameSystem\Window</Filter>
     </ClInclude>
@@ -195,6 +192,9 @@
     </ClInclude>
     <ClInclude Include="..\..\code\JsonMaster\Text\LilianData\LilianData.h">
       <Filter>Jsonmaster\Text\LilianData</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\code\JsonMaster\Jsonkey.h">
+      <Filter>Jsonmaster\JsonManager</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>

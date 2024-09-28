@@ -1,6 +1,7 @@
 #pragma once
 #include<memory>
 #include<stack>
+#include"../../Object/GameObjectManager/GameObjectManager.h"
 
 namespace mea
 {
@@ -42,7 +43,7 @@ namespace mea
 
 	private:
 
-		std::shared_ptr<class FPS> mFps;						//タイムマネージャー
+		std::shared_ptr<class Fps> mFps;						//タイムマネージャー
 
 		std::stack<std::shared_ptr<class SceneBase>> mNowScene;	//現在のシーン
 		SceneBase* mHoldScene;									//次のシーン

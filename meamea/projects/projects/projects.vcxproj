@@ -184,7 +184,6 @@
     <ClCompile Include="..\..\code\Scene\Title\Title.cpp" />
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="..\..\code\Asset\AssetBase\Jsonkey.h" />
     <ClInclude Include="..\..\code\Fps\Fps.h" />
     <ClInclude Include="..\..\code\JsonFile\Image\ヘッダー.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\EndingData\EndingData.h" />
@@ -193,6 +192,7 @@
     <ClInclude Include="..\..\code\JsonMaster\Image\StoryData\StoryData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\TitleData\TitleData.h" />
     <ClInclude Include="..\..\code\JsonMaster\IOUtility\IOUtility.h" />
+    <ClInclude Include="..\..\code\JsonMaster\Jsonkey.h" />
     <ClInclude Include="..\..\code\JsonMaster\JsonManager\JsonManager.h" />
     <ClInclude Include="..\..\code\JsonMaster\Stage\MasterStageData\MasterStageData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Stage\StageOneData\StageOneData.h" />
