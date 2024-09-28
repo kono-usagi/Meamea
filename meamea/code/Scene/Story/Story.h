@@ -5,7 +5,6 @@
 
 #include"../../Object/Story/BackGround/BackGround.h"
 #include"../../Object/Story/Character/Character.h"
-#include"../../Object/Story/Player/StoryPlayer.h"
 #include"../../Object/Story/UI/Ui.h"
 
 namespace mea

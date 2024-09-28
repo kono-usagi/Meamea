@@ -2,12 +2,15 @@
 #include<assert.h>
 
 #include "SceneManager.h"
+#include"../../Scene/SceneBase/SceneBase.h"
+#include "../../Scene/Title/Title.h"
+#include"../../Fps/Fps.h"
 
 namespace mea
 {
     SceneManager::SceneManager()
         :mHoldScene(nullptr)
-        , mFps(new FPS)
+        , mFps(new Fps)
     {
         //初期化処理
         GameObjectManager::Initialize();
@@ -38,13 +41,13 @@ namespace mea
     {
         //現在のシーンを更新してmHoldSceneに代入
         mFps->Update();
-        mHoldScene = mNowScene.top()->UpdateScene(mFps->GetDeltaTime());
+        mHoldScene = mNowScene.top()->Update(mFps->GetDeltaTime());
     }
 
     void SceneManager::DrawScene()
     {
         ClearDrawScreen();					// 画面をクリア
-        mNowScene.top()->DrawScene();		// 次のシーンを表示
+        mNowScene.top()->Draw();		// 次のシーンを表示
         ScreenFlip();						// 裏画面の内容を表画面に反映
     }
 

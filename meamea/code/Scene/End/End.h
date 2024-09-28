@@ -1,5 +1,6 @@
 #pragma once
 #include"../../Scene/SceneBase/SceneBase.h"
+#include"../../Object/GameObjectManager/GameObjectManager.h"
 
 namespace mea
 {
