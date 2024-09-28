@@ -21,7 +21,7 @@ namespace mea
         /// <summary>
         /// デストラクタ
         /// </summary>
-        ~MapObject()override;
+        ~MapObject();
         /// <summary>
         /// 更新
         /// </summary>

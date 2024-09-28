@@ -1,8 +1,7 @@
 #pragma once
-#include"../../GameObject/GameObject.h"
-#include "../../../JsonMaster/JsonManager/JsonManager.h"
 #include<vector>
 #include<string>
+#include"../../GameObject/GameObject.h"
 
 namespace mea
 {

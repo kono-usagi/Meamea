@@ -2,7 +2,8 @@
 #include<vector>
 
 #include"../GameObjectManager/GameObjectManager.h"
-#include"PlayObjectTag.h"
+#include"../GameObject/StoryObjectTag.h"
+#include"../GameObject/PlayObjectTag.h"
 #include"../../JsonMaster/JsonManager/JsonManager.h"
 
 namespace mea
