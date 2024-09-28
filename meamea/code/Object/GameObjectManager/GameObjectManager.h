@@ -59,7 +59,17 @@ namespace mea
 		/// <returns>最初のオブジェクト</returns>
 		GameObject* GetFirstGameObj(std::string tag);
 
-		
+		/// <summary>
+		/// ゲームオーバーか
+		/// </summary>
+		/// <returns></returns>
+		static bool GetGameOver(){ return mInstance->mGameOver; }
+
+		/// <summary>
+		/// ゲームオーバー判定セット
+		/// </summary>
+		/// <param name="gameOver"></param>
+		static void SetGameOver(bool gameOver) { mInstance->mGameOver = gameOver; }
 
 	private:
 
@@ -67,6 +77,8 @@ namespace mea
 		/// コンストラクタ
 		/// </summary>
 		GameObjectManager();
+
+		bool mGameOver = false;//ゲームオーバー判定
 
 		static std::unique_ptr<GameObjectManager> mInstance;							    // playマネージャの実体
 		std::vector<std::string> NowScene_ObjTag;											//現在のシーンのオブジェクトタグ

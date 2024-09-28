@@ -79,6 +79,20 @@ namespace mea
         /// <returns>y位置</returns>
         const int GetMapY() const { return mMapY; }
 
+
+        bool mAlive;    // 生死状態
+        /// <summary>
+        /// ゲームオブジェクト生きているか 
+        /// </summary>
+        /// <returns></returns>
+        bool GetAlive() const { return mAlive; }
+        /// <summary>
+        /// ゲームオブジェクト生死セット
+        /// </summary>
+        /// <param name="alive"></param>
+        void SetAlive(bool alive) { mAlive = alive; }
+
+
     protected:
 
         int mMapInfo[20][20];   //マップ情報
