@@ -1,7 +1,5 @@
 #pragma once
-#include "DxLib.h"
 #include"string"
-#include "../../../JsonMaster/JsonManager/JsonManager.h"
 #include"../Character/Character.h"
 #include"../../GameObject/GameObject.h"
 
