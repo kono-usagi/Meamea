@@ -1,9 +1,11 @@
 {
   "story": {
     "global": {
-      "background": "../../../asset/Story/BackGround/BackGround",
-      "select": "../../../asset/Story/Ui/Select",
-      "noselect": "../../../asset/Story/Ui/NoSelect"
+        "background": "../../../asset/Story/BackGround/BackGround",
+        "select": "../../../asset/Story/Ui/Select",
+        "noselect": "../../../asset/Story/Ui/NoSelect",
+        "nameflame": "../../../asset/Story/Ui/Name"
+
     },
     "character": {
       "mea": {

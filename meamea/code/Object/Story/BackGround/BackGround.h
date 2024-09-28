@@ -1,5 +1,6 @@
 #pragma once
 #include"DxLib.h"
+#include"string"
 
 namespace mea
 {
@@ -26,6 +27,9 @@ namespace mea
         /// </summary>
         void Draw();
 
+    private:
+
+        std::string mImgName[5];
         int BackGroundHandle;
         int NameFrameHandle;
     };
