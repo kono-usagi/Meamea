@@ -24,12 +24,12 @@ namespace mea
         // すべてのゲームオブジェクトの更新
         GameObjectManager::Update(deltaTime);
 
-        //エンターキーでゲーム終了
-        /*if (KEY_INPUT_RETURN)
+        //歩数0でゲーム終了
+        if (GameObjectManager::GetGameOver())
         {
             GameObjectManager::ReleaseAllObj();
-            return new Title;
-        }*/
+            return new Play;
+        }
 
         return this;
     }

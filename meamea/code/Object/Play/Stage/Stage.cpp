@@ -136,6 +136,11 @@ namespace mea
     void Stage::CountSteps()
     {
         mPlayerSteps--;
+
+        if (mPlayerSteps <= 0)
+        {
+            SetAlive(false);
+        }
     }
 
     int Stage::GetSteps()

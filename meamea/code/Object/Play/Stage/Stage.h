@@ -71,8 +71,15 @@ namespace mea
         /// </summary>
         void isMapObjectMove(int keyType);
 
+        /// <summary>
+        /// 残り歩数減らす
+        /// </summary>
         void CountSteps();
 
+        /// <summary>
+        /// 歩数返す
+        /// </summary>
+        /// <returns></returns>
         int GetSteps();
 
     private:

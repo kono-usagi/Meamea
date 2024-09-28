@@ -55,6 +55,11 @@ namespace mea
             {
                 //XV
                 obj->Update(deltaTime);
+                
+                if (obj->GetAlive() == false)
+                {
+                    mInstance->SetGameOver(true);
+                }
             }
         }
     }
