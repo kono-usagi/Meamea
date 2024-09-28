@@ -10,6 +10,7 @@ namespace mea
     /// </summary>
     static struct StoryObjectTag
     {
+        std::string CHARACTER = "character";
         std::string PLAYER = "player";
         std::string LILIAN = "lilian";
         std::string LAURENCE = "laurence";
@@ -24,6 +25,7 @@ namespace mea
     /// </summary>
     static std::vector<std::string>StoryObjectTagAll
     {
+        storyObjectTag.CHARACTER,
         storyObjectTag.PLAYER,
         storyObjectTag.LILIAN,
         storyObjectTag.LAURENCE,

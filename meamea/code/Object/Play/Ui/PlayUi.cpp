@@ -3,6 +3,7 @@
 namespace mea
 {
     PlayUi::PlayUi()
+        :GameObject(playObjectTag.UI)
     {
         //フォントのロード
         mFontPath = "../../../../asset/Play/Font/castellar.ttf";
@@ -28,7 +29,7 @@ namespace mea
         }
     }
 
-    void PlayUi::Update()
+    void PlayUi::Update(float deltaTime)
     {
         Stage stage;
         //GameObj*player=GameObjectManager::GetFirstGameObj(ObjTag.Player);

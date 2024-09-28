@@ -4,6 +4,7 @@
 namespace mea
 {
     BackGround::BackGround()
+        :GameObject(storyObjectTag.BACKGROUND)
     {
         //‰æ‘œ“Ç‚Ýž‚Ý
         mImgName[0] = JsonManager::ImgDataInstance()->StoryDataInstance()->GetBackGround();
@@ -19,7 +20,7 @@ namespace mea
         DeleteGraph(NameFrameHandle);
     }
 
-    void BackGround::Update()
+    void BackGround::Update(float deltaTime)
     {
         Draw();
     }

@@ -6,17 +6,21 @@
 
 namespace mea
 {
-    class Character
+    class Character : public GameObject
     {
     public:
 
+        Character();
+        ~Character();
         void Init();
 
         void Finalize();
 
         void Input(int ChoiceDecisionY);
 
-        void Draw();
+        void Draw()override;
+
+        void Update(float deltaTime)override;
 
 
     private:
