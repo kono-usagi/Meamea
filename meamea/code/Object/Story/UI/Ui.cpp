@@ -1,9 +1,15 @@
-#include"string"
 #include "Ui.h"
-#include "../../../JsonMaster/JsonManager/JsonManager.h"
 
 namespace mea
 {
+    Character c;
+
+    Ui::Ui()
+        :GameObject(storyObjectTag.UI)
+    {
+        //処理なし
+    }
+
     void Ui::Init()
     {
         //画像読み込み
@@ -32,6 +38,8 @@ namespace mea
 
         //フォントサイズ設定
         SetFontSize(46);
+
+        c.Init();
     }
 
     Ui::~Ui()
@@ -75,6 +83,7 @@ namespace mea
                         FileRead_gets(mTextStringSecond, 256, mFileHandle);//一行読み込み
                         mTextWidthSecond = GetDrawStringWidth(mTextStringSecond, -1);//文字列の幅を取得
                     }
+                    c.Input(mChoiceDecisionY);
                 }
                 else if (strcmp(mTextType, mQType) == 0)
                 {
@@ -138,6 +147,7 @@ namespace mea
                             mFileHandle = FileRead_open(mFileName[i].c_str());
                         }
                     }
+                    c.Input(mChoiceDecisionY);
                 }
                 else if (mChoiceDecisionY == 900)
                 {
@@ -151,6 +161,7 @@ namespace mea
                             mFileHandle = FileRead_open(mFileName[i].c_str());
                         }
                     }
+                    c.Input(mChoiceDecisionY);
                 }
             }
             else
@@ -216,9 +227,11 @@ namespace mea
                 DrawString((1920 - mTextWidthSecond) / 2, 930, mTextStringSecond, GetColor(255, 255, 255));//セリフ表示
             }
         }
+
+        c.Draw();
     }
 
-    void Ui::Update()
+    void Ui::Update(float deltaTime)
     {
         Input();
         Draw();

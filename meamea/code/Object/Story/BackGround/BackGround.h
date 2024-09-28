@@ -1,10 +1,11 @@
 #pragma once
 #include"DxLib.h"
 #include"string"
+#include"../../GameObject/GameObject.h"
 
 namespace mea
 {
-    class BackGround
+    class BackGround: public GameObject
     {
     public:
         /// <summary>
@@ -20,12 +21,12 @@ namespace mea
         /// <summary>
         /// XVˆ—
         /// </summary>
-        void Update();
+        void Update(float deltaTime)override;
 
         /// <summary>
         /// •`‰æˆ—
         /// </summary>
-        void Draw();
+        void Draw()override;
 
     private:
 

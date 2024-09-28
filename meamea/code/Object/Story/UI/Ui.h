@@ -1,12 +1,21 @@
 #pragma once
 #include "DxLib.h"
 #include"string"
+#include "../../../JsonMaster/JsonManager/JsonManager.h"
+#include"../Character/Character.h"
+#include"../../GameObject/GameObject.h"
+
 
 namespace mea
 {
-    class Ui
+    class Ui:public GameObject
     {
     public:
+        /// <summary>
+        /// コンストラクタ
+        /// </summary>
+        Ui();
+
         /// <summary>
         /// デストラクタ
         /// </summary>
@@ -25,12 +34,12 @@ namespace mea
         /// <summary>
         /// 更新処理
         /// </summary>
-        void Update();
+        void Update(float deltaTime)override;
 
         /// <summary>
         /// 描画処理
         /// </summary>
-        void Draw();
+        void Draw()override;
 
 
         LPCSTR  mFontPath;

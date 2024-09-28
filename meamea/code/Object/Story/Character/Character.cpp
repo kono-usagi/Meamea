@@ -2,6 +2,21 @@
 
 namespace mea
 {
+    Character::Character()
+        :GameObject(storyObjectTag.CHARACTER)
+    {
+        //処理なし
+    }
+    Character::~Character()
+    {
+        //処理なし
+    }
+
+    void Character::Update(float deltaTime)
+    {
+        //処理なし
+    }
+
     void Character::Init()
     {
         //テキストファイル読み込み
