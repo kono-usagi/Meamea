@@ -1,3 +1,8 @@
+#ifndef __PLAYER_H__
+#define __PLAYER_H__
+
+
+
 #include"DxLib.h"
 #include"../../GameObject/GameObject.h"
 
@@ -70,3 +75,5 @@ namespace mea
         int mPlayerHandle[ANIM_PATTERN_NUM * ANIM_TYPE_NUM];//プレイヤーの画像ハンドル
     };
 }
+
+#endif __PLAYER_H__
