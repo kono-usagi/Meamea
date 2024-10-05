@@ -3,7 +3,7 @@
 
 #include "SceneManager.h"
 #include"../../Scene/SceneBase/SceneBase.h"
-#include "../../Scene/Title/Title.h"
+#include "../../Scene/Play/Play.h"
 #include"../../Fps/Fps.h"
 
 namespace mea
@@ -17,7 +17,7 @@ namespace mea
         //AssetManager::InitAssetManager(); インスタンス生成
 
         //現在のシーンをタイトルに設定
-        mNowScene.emplace(new Title);
+        mNowScene.emplace(new Play);
     }
 
     SceneManager::~SceneManager()

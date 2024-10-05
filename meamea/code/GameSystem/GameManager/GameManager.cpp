@@ -11,6 +11,8 @@ namespace mea
         Window::Init();
         //GameSetting‰Šú‰»
         GameSetting::Init();
+        sceneManager.reset(new SceneManager);
+
     }
 
     GameManager::~GameManager()
