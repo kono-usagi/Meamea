@@ -16,4 +16,8 @@ namespace mea
 		mImage2A = json["Lilian"]["Image2A"];
 		mImage2B = json["Lilian"]["Image2B"];
 	}
+	LilianData::~LilianData()
+	{
+		//ˆ—‚È‚µ
+	}
 }

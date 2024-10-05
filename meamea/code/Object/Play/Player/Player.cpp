@@ -33,6 +33,10 @@ namespace mea
     {
         DrawGraph(mPos.x, mPos.y, mPlayerHandle[animNowIndex], TRUE);
     }
+    void Player::Input()
+    {
+        //ˆ—‚È‚µ
+    }
 
     void Player::Animation(float deltaTime)
     {
