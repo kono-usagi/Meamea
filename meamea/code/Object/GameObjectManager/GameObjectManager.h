@@ -8,6 +8,8 @@
 #include"../../Object/GameObject/PlayObjectTag.h"
 #include"../../Object/GameObject/StoryObjectTag.h"
 
+class GameObject;
+
 namespace mea
 {
 	class GameObjectManager final
@@ -72,6 +74,7 @@ namespace mea
 		static void SetGameOver(bool gameOver) { mInstance->mGameOver = gameOver; }
 
 	private:
+		GameObject* gameObject;
 
 		/// <summary>
 		/// コンストラクタ
