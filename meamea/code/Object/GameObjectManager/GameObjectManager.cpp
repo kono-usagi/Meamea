@@ -10,6 +10,11 @@ namespace mea
     {
         mInstance = nullptr;
     }
+    GameObjectManager::~GameObjectManager()
+    {
+        //‘O•ûéŒ¾‰ğ•ú
+        delete gameObject;
+    }
 
     void GameObjectManager::Initialize()
     {

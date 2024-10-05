@@ -15,6 +15,10 @@ namespace mea
 	class GameObjectManager final
 	{
 	public:
+		/// <summary>
+		/// デストラクタ
+		/// </summary>
+		~GameObjectManager();
 
 		/// <summary>
 		/// マネージャーインスタンス生成
@@ -80,6 +84,7 @@ namespace mea
 		/// コンストラクタ
 		/// </summary>
 		GameObjectManager();
+		
 
 		bool mGameOver = false;//ゲームオーバー判定
 
