@@ -1,3 +1,7 @@
+#ifndef __MAPOBJECT_H__
+#define __MAPOBJECT_H__
+
+
 #include"DxLib.h"
 #include"../../GameObject/GameObject.h"
 
@@ -43,3 +47,4 @@ namespace mea
     };
 
 }
+#endif __MAPOBJECT_H__

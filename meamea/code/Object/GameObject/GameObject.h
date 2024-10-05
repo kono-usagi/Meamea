@@ -1,3 +1,6 @@
+#ifndef __GAMEOBJECT_H__
+#define __GAMEOBJECT_H__
+
 #include<DxLib.h>
 #include<vector>
 
@@ -103,3 +106,4 @@ namespace mea
         std::string mTag;       //オブジェクト種類
     };
 }
+#endif __GAMEOBJECT_H__
