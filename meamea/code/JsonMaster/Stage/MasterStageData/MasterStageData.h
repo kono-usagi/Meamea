@@ -29,7 +29,7 @@ namespace mea
 		/// StageOneインスタンス
 		/// </summary>
 		/// <returns>StageOneデータ</returns>
-		class StageOneData* StageOneInstance() { stageone.get(); }
+		class StageOneData* StageOneInstance() { return stageone.get(); }
 
 		/// <summary>
 		/// StageTwoインスタンス
