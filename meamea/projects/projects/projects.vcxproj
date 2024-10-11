@@ -185,7 +185,6 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\code\Fps\Fps.h" />
-    <ClInclude Include="..\..\code\JsonFile\Image\ヘッダー.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\EndingData\EndingData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\MasterImgData\MasterImgData.h" />
     <ClInclude Include="..\..\code\JsonMaster\Image\PlayData\PlayData.h" />

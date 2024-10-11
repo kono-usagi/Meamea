@@ -2,25 +2,25 @@
   "play": {
     "global": {
       "background": "../../../asset/Play/BackGround/BackGround",
-      "leftside": "",
+      "leftside": "null",
       "player": "../../../asset/Play/Character/Mea",
-      "moverock": "../../../asset/Play/Map/MoveRock"
+        "moverock": "../../../asset/Play/Map/MoveRock"
     },
     "stage": {
       "one": {
         "map": "../../../asset/Play/Map/stage_one/Map",
-        "rightside": "",
+        "rightside": "null",
         "character": "../../../asset/Play/Character/Lilian"
       },
       "two": {
-        "map": "",
-        "rightside": "",
-        "character": ""
+        "map": "null",
+        "rightside": "null",
+        "character": "null"
       },
       "three": {
-        "map": "",
-        "rightside": "",
-        "character": ""
+        "map": "null",
+        "rightside": "null",
+        "character": "null"
       }
     }
   }

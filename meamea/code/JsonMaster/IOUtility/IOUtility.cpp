@@ -18,6 +18,7 @@ namespace mea
 		std::ifstream ifs(fileName.c_str());
 		//ƒtƒ@ƒCƒ‹‚Ì‰ğÍ
 		result = Json::parse(ifs);
+		Json j= Json::parse(ifs);
 
 		ifs.close();
 		return result;

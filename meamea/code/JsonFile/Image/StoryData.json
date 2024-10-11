@@ -19,16 +19,16 @@
         "impatience": "../../../asset/Story/Character/Lilian/Impatience"
       },
       "Laurence": {
-        "normal": "",
-        "puzzled": "",
-        "like": "",
-        "impatience": ""
+        "normal": "null",
+        "puzzled": "null",
+        "like": "null",
+        "impatience": "null"
       },
       "Layla": {
-        "normal": "",
-        "puzzled": "",
-        "like": "",
-        "impatience": ""
+        "normal": "null",
+        "puzzled": "null",
+        "like": "null",
+        "impatience": "null"
       }
     }
   }

@@ -11,8 +11,8 @@ namespace mea
         Window::Init();
         //GameSetting‰Šú‰»
         GameSetting::Init();
+        JsonManager::InitJsonManager();
         sceneManager.reset(new SceneManager);
-
     }
 
     GameManager::~GameManager()

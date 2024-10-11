@@ -181,9 +181,6 @@
     <ClInclude Include="..\..\code\JsonMaster\Stage\StageOneData\StageOneData.h">
       <Filter>Jsonmaster\Stage\StageOneData</Filter>
     </ClInclude>
-    <ClInclude Include="..\..\code\JsonFile\Image\ヘッダー.h">
-      <Filter>JsonFile\Image</Filter>
-    </ClInclude>
     <ClInclude Include="..\..\code\Object\GameObjectManager\GameObjectManager.h">
       <Filter>Object\GameObjectManager</Filter>
     </ClInclude>
