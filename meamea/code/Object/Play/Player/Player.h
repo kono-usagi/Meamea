@@ -61,8 +61,8 @@ namespace mea
         static const int ANIM_RIGHT = 1;//右
         
         const float ANIM_FPS = 6.0f;//秒間6コマのアニメーション
-        static const int IMAGE_SIZE_X = 50;//画像たてサイズ
-        static const int IMAGE_SIZE_Y = 50;//画像よこサイズ
+        static const int IMAGE_SIZE_X = 50;//画像よこサイズ
+        static const int IMAGE_SIZE_Y = 50;//画像たてサイズ
 
         const int PLY_DISTANCE = 50;//プレイヤー移動距離　50
 
