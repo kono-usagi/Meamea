@@ -43,11 +43,6 @@ namespace mea
         void Input()override;
 
         /// <summary>
-        /// 動く岩の描画処理
-        /// </summary>
-        void DrawMapObject();
-
-        /// <summary>
         /// マップ情報を返す
         /// </summary>
         /// <param name="x">x値</param>
@@ -104,8 +99,6 @@ namespace mea
 
         int mMapImage;              //マップ画像
         int mMapBackGround;         //マップ背景画像
-
-        int mRockImage;
 
         int mMoveDistance = 1;      //
     };

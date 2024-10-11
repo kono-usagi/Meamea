@@ -13,9 +13,6 @@ namespace mea
         //マップ画像の表示
         DrawGraph(0, 0, mMapImage, FALSE);
 
-        //動く岩の読み込み
-        mRockImage = LoadGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetMoveRock().c_str());
-
         //マップ情報の読み込み
         mMapX = JsonManager::StageDataInstance()->StageOneInstance()->Getx();
         mMapY = JsonManager::StageDataInstance()->StageOneInstance()->Gety();
