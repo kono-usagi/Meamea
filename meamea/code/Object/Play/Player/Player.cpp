@@ -12,7 +12,7 @@ namespace mea
         animNowPattern = 1;
         animNowIndex = 0;
         //メア(プレイヤー)の画像読み込み
-        LoadDivGraph("Mea", ANIM_PATTERN_NUM * ANIM_TYPE_NUM, ANIM_PATTERN_NUM, ANIM_TYPE_NUM, IMAGE_SIZE_X, IMAGE_SIZE_Y, mPlayerHandle);
+        LoadDivGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetPlayer().c_str(), ANIM_PATTERN_NUM * ANIM_TYPE_NUM, ANIM_PATTERN_NUM, ANIM_TYPE_NUM, IMAGE_SIZE_X, IMAGE_SIZE_Y, mPlayerHandle);
     }
    
     Player::~Player()//デストラクタ
