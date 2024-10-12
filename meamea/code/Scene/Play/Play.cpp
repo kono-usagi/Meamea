@@ -24,6 +24,8 @@ namespace mea
         // すべてのゲームオブジェクトの更新
         GameObjectManager::Update(deltaTime);
 
+        GameObjectManager::Draw();
+
         //歩数0でゲーム終了
         if (GameObjectManager::GetGameOver())
         {

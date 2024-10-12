@@ -7,17 +7,13 @@ namespace mea
         :GameObject(playObjectTag.STAGE)
     {
         //マップ画像の読み込み
-        //mMapBackGround =
+        mMapBackGround = LoadGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetBackGround().c_str());
         mMapImage = LoadGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetStage_One_BackGround().c_str());
-        
-        //マップ画像の表示
-        DrawGraph(0, 0, mMapImage, FALSE);
 
         //マップ情報の読み込み
-        mMapX = JsonManager::StageDataInstance()->StageOneInstance()->Getx();
-        mMapY = JsonManager::StageDataInstance()->StageOneInstance()->Gety();
+        /*mMapX = JsonManager::StageDataInstance()->StageOneInstance()->Getx();
+        mMapY = JsonManager::StageDataInstance()->StageOneInstance()->Gety();*/
 
-        //mMapnumber=
 
     }
 
@@ -34,7 +30,9 @@ namespace mea
 
     void Stage::Draw()
     {
-        
+        //マップ画像の表示
+        DrawGraph(0, 0, mMapBackGround, TRUE);
+        DrawGraph(0, 0, mMapImage, TRUE);
         
     }
 

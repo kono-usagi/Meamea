@@ -19,7 +19,7 @@ namespace mea
     }
     void MapObject::Draw()//•`‰æ
     {
-        DrawGraph(mPos.x, mPos.y, mMapObjectHandle,FALSE);
+        DrawGraph(mPos.x, mPos.y, mMapObjectHandle,TRUE);
     }
 
     void MapObject::Move(int keyType)//“®‚©‚·

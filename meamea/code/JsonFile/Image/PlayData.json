@@ -1,17 +1,17 @@
 {
   "play": {
     "global": {
-      "background": "../../../asset/Play/BackGround/BackGround",
-      "leftside": "",
-      "player": "../../../asset/Play/Character/Mea",
-      "moverock": "../../../asset/Play/Map/MoveRock"
+        "background": "../../asset/Play/BackGround/BackGround.PNG",
+        "leftside": "",
+        "player": "../../asset/Play/Character/Mea.PNG",
+        "moverock": "../../asset/Play/Map/MoveRock.PNG"
     },
     "stage": {
-      "one": {
-        "map": "../../../asset/Play/Map/stage_one/Map",
-        "rightside": "",
-        "character": "../../../asset/Play/Character/Lilian"
-      },
+        "one": {
+            "map": "../../asset/Play/Map/stage_one/Map.png",
+            "rightside": "",
+            "character": "../../asset/Play/Character/Lilian.PNG"
+        },
       "two": {
         "map": "",
         "rightside": "",

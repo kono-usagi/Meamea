@@ -1,16 +1,16 @@
 {
   "text": {
     "Lilian": {
-        "Talk1": "../../../asset/Story/Text/TalkText/Lilian_Talk1.txt",
-        "Talk1A": "../../../asset/Story/Text/TalkText/Lilian_Talk1A.txt",
-        "Talk1B": "../../../asset/Story/Text/TalkText/Lilian_Talk1B.txt",
-        "Talk2A": "../../../asset/Story/Text/TalkText/Lilian_Talk2A.txt",
-        "Talk2B": "../../../asset/Story/Text/TalkText/Lilian_Talk2B.txt",
-        "Image1": "../../../asset/Story/Text/ImageText/Lilian_Image1.txt",
-        "Image1A": "../../../asset/Story/Text/ImageText/Lilian_Image1A.txt",
-        "Image1B": "../../../asset/Story/Text/ImageText/Lilian_Image1B.txt",
-        "Image2A": "../../../asset/Story/Text/ImageText/Lilian_Image2A.txt",
-        "Image2B": "../../../asset/Story/Text/ImageText/Lilian_Image2B.txt"
+        "Talk1": "../../asset/Story/Text/TalkText/Lilian_Talk1.txt",
+        "Talk1A": "../../asset/Story/Text/TalkText/Lilian_Talk1A.txt",
+        "Talk1B": "../../asset/Story/Text/TalkText/Lilian_Talk1B.txt",
+        "Talk2A": "../../asset/Story/Text/TalkText/Lilian_Talk2A.txt",
+        "Talk2B": "../../asset/Story/Text/TalkText/Lilian_Talk2B.txt",
+        "Image1": "../../asset/Story/Text/ImageText/Lilian_Image1.txt",
+        "Image1A": "../../asset/Story/Text/ImageText/Lilian_Image1A.txt",
+        "Image1B": "../../asset/Story/Text/ImageText/Lilian_Image1B.txt",
+        "Image2A": "../../asset/Story/Text/ImageText/Lilian_Image2A.txt",
+        "Image2B": "../../asset/Story/Text/ImageText/Lilian_Image2B.txt"
     }
   }
 }

@@ -9,10 +9,10 @@ namespace mea
 		/*Json titleJson = ioutility.Analysis("../../../JsonFile/Image/TitleData");
 		titledata.reset(new TitleData(titleJson["title"]));*/
 
-		Json playJson = ioutility.Analysis("../../../JsonFile/Image/PlayData.json");
+		Json playJson = ioutility.Analysis("../../code/JsonFile/Image/PlayData.json");
 		playdata.reset(new PlayData(playJson["play"]));
 
-		Json storyJson= ioutility.Analysis("../../../JsonFile/Image/StoryData.json");
+		Json storyJson= ioutility.Analysis("../../code/JsonFile/Image/StoryData.json");
 		storydata.reset(new StoryData(storyJson["story"]));
 
 		/*Json endingjson = ioutility.Analysis("../../../JsonFile/Image/EndingData");
