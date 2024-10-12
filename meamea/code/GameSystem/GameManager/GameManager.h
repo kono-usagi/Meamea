@@ -2,6 +2,7 @@
 #include"../Window/Window.h"
 #include"../GamseSetting/GameSetting.h"
 #include"../../Scene/SceneManager/SceneManager.h"
+#include"../../JsonMaster/JsonManager/JsonManager.h"
 
 #include<memory>
 
