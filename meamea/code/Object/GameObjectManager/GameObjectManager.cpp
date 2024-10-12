@@ -60,13 +60,13 @@ namespace mea
             {
                 //XV
                 obj->Update(deltaTime);
-                
-                if (obj->GetAlive() == false)
+                if (tag == playObjectTag.STAGE&& obj->GetAlive() == false)
                 {
                     mInstance->SetGameOver(true);
                 }
             }
         }
+       
     }
 
     void GameObjectManager::Draw()

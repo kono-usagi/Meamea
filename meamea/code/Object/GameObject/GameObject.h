@@ -84,7 +84,7 @@ namespace mea
         const int GetMapY() const { return mMapY; }
 
 
-        bool mAlive;    // 生死状態
+        bool mAlive=true;    // 生死状態
         /// <summary>
         /// ゲームオブジェクト生きているか 
         /// </summary>

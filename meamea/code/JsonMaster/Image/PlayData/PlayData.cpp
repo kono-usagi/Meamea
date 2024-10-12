@@ -5,7 +5,7 @@ namespace mea
 
     PlayData::PlayData(Json json)
     {
-        globaldata.mBackGround = json["global"]["backGround"];
+        globaldata.mBackGround = json["global"]["background"];
         globaldata.mLeftSide = json["global"]["leftside"];
         globaldata.mMoveRock = json["global"]["moverock"];
         globaldata.mPlayer = json["global"]["player"];

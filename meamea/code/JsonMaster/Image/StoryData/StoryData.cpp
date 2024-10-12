@@ -9,12 +9,12 @@ namespace mea
         globaldata.mSelect = json["global"]["select"];
         globaldata.mNameFlame = json["global"]["nameflame"];
 
-        mea.mNormal = json["character"]["mea"];
-        mea.mPuzzled = json["character"]["mea"];
+        mea.mNormal = json["character"]["mea"]["normal"];
+        mea.mPuzzled = json["character"]["mea"]["puzzled"];
 
-        SetCharacterData(lilian, json["character"]["lilian"]);
-        SetCharacterData(laurence, json["character"]["laurence"]);
-        SetCharacterData(layla, json["character"]["layla"]);
+        SetCharacterData(lilian, json["character"]["Lilian"]);
+       // SetCharacterData(laurence, json["character"]["laurence"]);
+        //SetCharacterData(layla, json["character"]["layla"]);
     }
 
     void StoryData::SetCharacterData(CharacterData& dataname, Json json)

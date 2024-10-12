@@ -1,22 +1,22 @@
 {
   "story": {
     "global": {
-        "background": "../../../asset/Story/BackGround/BackGround",
-        "select": "../../../asset/Story/Ui/Select",
-        "noselect": "../../../asset/Story/Ui/NoSelect",
-        "nameflame": "../../../asset/Story/Ui/Name"
+        "background": "../../asset/Story/BackGround/BackGround",
+        "select": "../../asset/Story/Ui/Select",
+        "noselect": "../../asset/Story/Ui/NoSelect",
+        "nameflame": "../../asset/Story/Ui/Name"
 
     },
     "character": {
       "mea": {
-        "normal": "../../../asset/Story/Character/Mea/Normal",
-        "puzzled": "../../../asset/Story/Character/Mea/Puzzled"
+        "normal": "../../asset/Story/Character/Mea/Normal",
+        "puzzled": "../../asset/Story/Character/Mea/Puzzled"
       },
       "Lilian": {
-        "normal": "../../../asset/Story/Character/Lilian/Normal",
-        "puzzled": "../../../asset/Story/Character/Lilian/Puzzled",
-        "like": "../../../asset/Story/Character/Lilian/Like",
-        "impatience": "../../../asset/Story/Character/Lilian/Impatience"
+        "normal": "../../asset/Story/Character/Lilian/Normal",
+        "puzzled": "../../asset/Story/Character/Lilian/Puzzled",
+        "like": "../../asset/Story/Character/Lilian/Like",
+        "impatience": "../../asset/Story/Character/Lilian/Impatience"
       },
       "Laurence": {
         "normal": "",

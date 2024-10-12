@@ -11,8 +11,12 @@ namespace mea
         animNowType = ANIM_LEFT;//左向きアニメーション種類
         animNowPattern = 1;
         animNowIndex = 0;
+
+        mPos.x = 300;
+        mPos.y = 300;
+
         //メア(プレイヤー)の画像読み込み
-        LoadDivGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetPlayer().c_str(), ANIM_PATTERN_NUM * ANIM_TYPE_NUM, ANIM_PATTERN_NUM, ANIM_TYPE_NUM, IMAGE_SIZE_X, IMAGE_SIZE_Y, mPlayerHandle);
+        LoadDivGraph(JsonManager::ImgDataInstance()->PlayInstance()->GetPlayer().c_str(), (ANIM_PATTERN_NUM * ANIM_TYPE_NUM),  ANIM_TYPE_NUM, ANIM_PATTERN_NUM, IMAGE_SIZE_X, IMAGE_SIZE_Y, mPlayerHandle);
     }
    
     Player::~Player()//デストラクタ

@@ -24,12 +24,12 @@ namespace mea
     /// </summary>
     static std::vector<std::string>PlayObjectTagAll
     {
-        playObjectTag.PLAYER,
-        playObjectTag.LILIAN,
         playObjectTag.LAURENCE,
         playObjectTag.LAYLA,
-        playObjectTag.MAPOBJECT,
         playObjectTag.STAGE,
+        playObjectTag.MAPOBJECT,
+        playObjectTag.LILIAN,
+        playObjectTag.PLAYER,
         playObjectTag.UI,
     };
 }
